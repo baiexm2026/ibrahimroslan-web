@@ -11,22 +11,26 @@
         .container { max-width: 680px; margin: 0 auto; background: #ffffff; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 30px; }
         .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
-        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 20px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: #2b6cb0; }
         h1 { font-size: 1.5em; color: #1a202c; margin-bottom: 15px; }
         p { margin-bottom: 18px; color: #4a5568; font-size: 1em; }
         footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
-        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 15px; } }
+        footer a { color: #a0aec0; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 12px; } }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Header -->
         <nav>
             <a href="index.html" class="brand">Ibrahim Roslan</a>
             <div class="nav-links">
                 <a href="about.html" style="color: #2b6cb0; font-weight: 600;">Tentang Saya</a>
-                <a href="index.html">Catatan</a>
+                <a href="index.html">Blog</a>
+                <a href="refleksi.html">Thoughts</a>
             </div>
         </nav>
 
@@ -37,7 +41,12 @@
         <p>Niat ringkas: menceritakan sudut pandang jujur daripada pengalaman sendiri. Semoga apa yang baik dapat menjadi panduan buat sesiapa yang sedang berdepan situasi yang sama. Pada masa yang sama, saya juga berharap dapat belajar sesuatu daripada cerita hidup orang lain yang turut berkongsi di mana-mana platform.</p>
         <p>Berasal dari Batu Gajah, Perak dan kini menetap di Putrajaya. Ada sesuatu nak ditanya atau sekadar mahu menyapa? Hubungi saya di <a href="mailto:hello@ibrahimroslan.com" style="color: #3182ce;">hello@ibrahimroslan.com</a>.</p>
 
+        <!-- Footer -->
         <footer>
+            <div style="margin-bottom: 10px;">
+                <a href="privacy.html">Privacy Policy</a> &bull; 
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
             &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
         </footer>
     </div>
