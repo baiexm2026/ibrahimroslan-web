@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Ibrahim Roslan</title>
+    <meta name="description" content="Arsip penuh penulisan dan artikel peribadi Ibrahim Roslan mengikut kategori.">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #2d3748; background-color: #f7fafc; padding: 20px 15px; }
+        .container { max-width: 680px; margin: 0 auto; background: #ffffff; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 30px; }
+        .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
+        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #2b6cb0; }
+        
+        h1 { font-size: 1.5em; color: #1a202c; margin-bottom: 15px; }
+        
+        /* Butang Penapis Kategori */
+        .filter-container { display: flex; gap: 8px; margin-bottom: 25px; flex-wrap: wrap; }
+        .filter-btn { background: #edf2f7; color: #4a5568; border: none; padding: 6px 14px; border-radius: 20px; font-size: 0.88em; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .filter-btn:hover { background: #e2e8f0; color: #1a202c; }
+        .filter-btn.active { background: #3182ce; color: #ffffff; }
+        
+        .post-card { display: block; text-decoration: none; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 20px; margin-bottom: 15px; transition: transform 0.15s, border-color 0.15s; }
+        .post-card:hover { transform: translateY(-2px); border-color: #cbd5e0; }
+        .post-title { font-size: 1.05em; font-weight: 600; color: #1a202c; margin-bottom: 6px; }
+        .post-excerpt { font-size: 0.9em; color: #718096; margin-bottom: 8px; }
+        .post-meta { font-size: 0.8em; color: #a0aec0; }
+        
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
+        footer a { color: #a0aec0; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 12px; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <nav>
+            <a href="index.html" class="brand">Ibrahim Roslan</a>
+            <div class="nav-links">
+                <a href="about.html">Tentang Saya</a>
+                <a href="blog.html" style="color: #2b6cb0; font-weight: 600;">Blog</a>
+                <a href="refleksi.html">Thoughts</a>
+            </div>
+        </nav>
+
+        <h1>Arsip Blog</h1>
+
+        <!-- Butang Penapisan -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterPosts('all')">Semua</button>
+            <button class="filter-btn" onclick="filterPosts('buku')">Buku</button>
+            <button class="filter-btn" onclick="filterPosts('hubungan')">Hubungan</button>
+            <button class="filter-btn" onclick="filterPosts('rumah')">Rumah</button>
+        </div>
+
+        <!-- Senarai Artikel -->
+        <div id="posts-list">
+            <a href="catatan/review-buku-atomic-habits-bm.html" class="post-card" data-category="buku">
+                <div class="post-title">Review Jujur Buku Atomic Habits Versi BM: Berbaloi Beli atau Tanya AI Je?</div>
+                <div class="post-excerpt">Ulasan ikhlas selepas mengamalkan 4 sistem utama buku Atomic Habits dan tips elak buku cetak rompak di Shopee.</div>
+                <div class="post-meta">8 Sep 2026 &bull; Buku</div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div style="margin-bottom: 10px;">
+                <a href="privacy.html">Privacy Policy</a> &bull; 
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+            &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
+        </footer>
+    </div>
+
+    <!-- Skrip Interaktif Penapis -->
+    <script>
+        function filterPosts(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const posts = document.querySelectorAll('.post-card');
+            posts.forEach(post => {
+                if (category === 'all' || post.getAttribute('data-category') === category) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
