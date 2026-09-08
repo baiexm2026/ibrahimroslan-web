@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Roslan | Catatan & Perkongsian Peribadi</title>
+    <title>Ibrahim Roslan | Blog & Perkongsian Peribadi</title>
     <meta name="description" content="Laman web peribadi Ibrahim Roslan mengenai pengalaman hidup, perkakas rumah, dan perancangan aset.">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -11,7 +11,7 @@
         .container { max-width: 680px; margin: 0 auto; background: #ffffff; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 30px; }
         .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
-        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 20px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
+        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: #2b6cb0; }
         h1 { font-size: 1.5em; color: #1a202c; margin-bottom: 15px; }
         p { margin-bottom: 18px; color: #4a5568; font-size: 1em; }
@@ -22,17 +22,21 @@
         .post-title { font-size: 1.05em; font-weight: 600; color: #1a202c; margin-bottom: 6px; }
         .post-meta { font-size: 0.8em; color: #a0aec0; }
         footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
-        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 15px; } }
+        footer a { color: #a0aec0; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 12px; } }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Header -->
         <nav>
             <a href="index.html" class="brand">Ibrahim Roslan</a>
             <div class="nav-links">
                 <a href="about.html">Tentang Saya</a>
-                <a href="index.html">Catatan</a>
+                <a href="index.html" style="color: #2b6cb0; font-weight: 600;">Blog</a>
+                <a href="refleksi.html">Thoughts</a>
             </div>
         </nav>
 
@@ -44,24 +48,27 @@
 
         <hr style="border: 0; border-top: 1px solid #edf2f7; margin: 30px 0;">
 
-        <!-- Senarai Catatan Terkini -->
+        <!-- Senarai Artikel Terkini -->
         <div class="section-header">
-            <span class="section-title">Catatan Terkini</span>
+            <span class="section-title">Artikel Blog Terkini</span>
         </div>
 
-        <!-- Artikel 1 (Menggunakan fail template.html dalam folder catatan) -->
         <a href="catatan/template.html" class="post-card">
             <div class="post-title">Cara Saya Fikir Sebelum Memilih Aircond Inverter Rumah</div>
             <div class="post-meta">Panduan Penjimatan &amp; Pengalaman Peribadi</div>
         </a>
 
-        <!-- Artikel 2 (Dummy tambahan) -->
         <a href="catatan/template.html" class="post-card">
             <div class="post-title">Pertimbangan Utama Pembelian Kereta Pertama</div>
             <div class="post-meta">Pengurusan Kewangan &amp; Komitmen Panjang</div>
         </a>
 
+        <!-- Footer -->
         <footer>
+            <div style="margin-bottom: 10px;">
+                <a href="privacy.html">Privacy Policy</a> &bull; 
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
             &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
         </footer>
     </div>
