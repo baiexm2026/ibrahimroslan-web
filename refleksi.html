@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoughts & Refleksi | Ibrahim Roslan</title>
-    <meta name="description" content="Koleksi kata-kata azimat, petikan inspirasi, dan refleksi fikiran pilihan Ibrahim Roslan.">
+    <title>Thoughts | Ibrahim Roslan</title>
+    <meta name="description" content="Himpunan kata-kata hikmah, persoalan, dan buah fikiran pilihan Ibrahim Roslan.">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.8; color: #2d3748; background-color: #f7fafc; padding: 20px 15px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #2d3748; background-color: #f7fafc; padding: 20px 15px; }
         .container { max-width: 680px; margin: 0 auto; background: #ffffff; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
         nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 30px; }
         .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
         .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: #2b6cb0; }
-        h1 { font-size: 1.5em; color: #1a202c; margin-bottom: 8px; }
-        .subtitle { color: #718096; font-size: 0.95em; margin-bottom: 30px; }
         
-        .quote-card { background: #f8fafc; border-left: 4px solid #3182ce; padding: 20px; margin-bottom: 20px; border-radius: 0 8px 8px 0; }
-        .quote-text { font-size: 1.05em; color: #2d3748; font-style: italic; margin-bottom: 10px; }
-        .quote-author { font-size: 0.85em; color: #718096; font-weight: 600; text-align: right; }
+        h1 { font-size: 1.5em; color: #1a202c; margin-bottom: 10px; }
+        .subtitle { color: #718096; font-size: 0.95em; margin-bottom: 25px; }
+        
+        /* Butang Penapis */
+        .filter-container { display: flex; gap: 8px; margin-bottom: 25px; flex-wrap: wrap; }
+        .filter-btn { background: #edf2f7; color: #4a5568; border: none; padding: 6px 14px; border-radius: 20px; font-size: 0.88em; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .filter-btn:hover { background: #e2e8f0; color: #1a202c; }
+        .filter-btn.active { background: #3182ce; color: #ffffff; }
+        
+        /* Kad Thoughts */
+        .thought-card { display: block; text-decoration: none; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 22px; margin-bottom: 18px; transition: transform 0.15s, border-color 0.15s; }
+        .thought-card:hover { transform: translateY(-2px); border-color: #cbd5e0; }
+        .thought-quote { font-size: 1.05em; font-style: italic; color: #1a202c; margin-bottom: 10px; line-height: 1.6; }
+        .thought-source { font-size: 0.9em; font-weight: 600; color: #4a5568; margin-bottom: 12px; }
+        .thought-meta { font-size: 0.8em; color: #a0aec0; }
         
         footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
         footer a { color: #a0aec0; text-decoration: none; }
@@ -29,27 +39,44 @@
 <body>
 
     <div class="container">
-        <!-- Header -->
+        <!-- Header Navigasi -->
         <nav>
             <a href="index.html" class="brand">Ibrahim Roslan</a>
             <div class="nav-links">
                 <a href="blog.html">Blog</a>
-                <a href="refleksi.html">Thoughts</a>
+                <a href="refleksi.html" style="color: #2b6cb0; font-weight: 600;">Thoughts</a>
                 <a href="about.html">Tentang Saya</a>
             </div>
         </nav>
 
-        <h1>Thoughts & Refleksi</h1>
-        <p class="subtitle">Koleksi petikan dan prinsip ringkas yang memberi inspirasi dalam perjalanan hidup saya.</p>
+        <h1>Thoughts</h1>
+        <p class="subtitle">Koleksi kata-kata hikmah, persoalan, dan buah fikiran pilihan.</p>
 
-        <div class="quote-card">
-            <div class="quote-text">“Listening is a part of emotional intelligence.”</div>
-            <div class="quote-author">&mdash; Dr. Har</div>
+        <!-- Penapis Tag -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterThoughts('all')">Semua</button>
+            <button class="filter-btn" onclick="filterThoughts('persoalan')">Persoalan</button>
+            <button class="filter-btn" onclick="filterThoughts('kehidupan')">Kehidupan</button>
+            <button class="filter-btn" onclick="filterThoughts('disiplin')">Disiplin</button>
         </div>
 
-        <div class="quote-card">
-            <div class="quote-text">“If you want to grow, don't try to win big. Try to win small.”</div>
-            <div class="quote-author">&mdash; John C. Maxwell</div>
+        <!-- Senarai Kad Thoughts -->
+        <div id="thoughts-list">
+            
+            <!-- Contoh Kad 1 (Menunjuk ke folder thought/) -->
+            <a href="thought/sistem-vs-matlamat.html" class="thought-card" data-category="disiplin">
+                <div class="thought-quote">“Kita tidak jatuh ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.”</div>
+                <div class="thought-source">— James Clear (Atomic Habits)</div>
+                <div class="thought-meta">8 Sep 2026 &bull; Disiplin</div>
+            </a>
+
+            <!-- Contoh Kad 2 (Menunjuk ke folder thought/) -->
+            <a href="thought/soalan-persepsi.html" class="thought-card" data-category="persoalan">
+                <div class="thought-quote">“Adakah kita benar-benar inginkan perkara ini, atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?”</div>
+                <div class="thought-source">— The Psychology of Money</div>
+                <div class="thought-meta">8 Sep 2026 &bull; Persoalan</div>
+            </a>
+
         </div>
 
         <!-- Footer -->
@@ -61,6 +88,24 @@
             &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
         </footer>
     </div>
+
+    <!-- Skrip Penapis Interaktif -->
+    <script>
+        function filterThoughts(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const cards = document.querySelectorAll('.thought-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
