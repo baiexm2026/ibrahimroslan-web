@@ -14,15 +14,18 @@
             touch-action: manipulation;
         }
 
-        /* Container Visual 3D */
         #canvas-container {
             width: 100%;
-            height: 60vh; /* Mengambil 60% tinggi skrin mobile */
+            height: 55vh;
             position: relative;
             background: #ffffff;
+            cursor: grab;
         }
 
-        /* Mesej Kad Bawah Canvas */
+        #canvas-container:active {
+            cursor: grabbing;
+        }
+
         .content-box {
             max-width: 680px;
             margin: 0 auto;
@@ -51,85 +54,79 @@
         }
     </style>
 
-    <!-- Import Three.js & OrbitControls dari CDN Percuma -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- Skrip Three.js & OrbitControls Versi Stabil & Serasi -->
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
 
-    <!-- Ruang Paparan 3D -->
     <div id="canvas-container"></div>
 
-    <!-- Teks Penerangan Perspektif -->
     <div class="content-box">
         <div class="title">Sudut Pandang & Perspektif</div>
         <div class="subtitle">
             Dunia bergerak mengikut paksinya. Di satu sudut ada kepanasan, di sudut lain ada kedinginan. Begitu juga kehidupan — perbezaan pandangan bergantung kepada sudut mana kita berdiri.
         </div>
-        <div class="instruction">👈 Usap skrin menggunakan jari untuk memusingkan dunia 👉</div>
+        <div class="instruction">👈 Usap skrin / Klik & Drag untuk memusingkan dunia 👉</div>
     </div>
 
-    <!-- Skrip Teras Three.js -->
     <script>
-        // 1. Persediaan Scene, Camera & Renderer
         const container = document.getElementById('canvas-container');
+        
+        // 1. Scene
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff); // Latar belakang putih kekal
+        scene.background = new THREE.Color(0xffffff);
 
+        // 2. Camera
         const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
         camera.position.z = 4.5;
 
+        // 3. Renderer
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(container.clientWidth, container.clientHeight);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); // Optimasi untuk skrin mobile Retina
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         container.appendChild(renderer.domElement);
 
-        // 2. Kawalan Sentuhan Jari (OrbitControls)
+        // 4. Controls (OrbitControls)
         const controls = new THREE.OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
         controls.dampingFactor = 0.05;
-        controls.enableZoom = false; // Matikan zoom supaya skrin mobile tak terganggu apabila di-scroll
+        controls.enableZoom = false;
 
-        // 3. Pembinaan Sfera 3D (Bumi Geometri)
-        const geometry = new THREE.IcosahedronGeometry(1.5, 12); // Sfera berstuktur moden
+        // 5. Geometry (Bumi) & Material (Pembetulan Hex Color: 0xcbd5e0)
+        const geometry = new THREE.IcosahedronGeometry(1.4, 6);
         const material = new THREE.MeshStandardMaterial({
-            color: #e2e8f0,
-            roughness: 0.4,
+            color: 0xcbd5e0,
+            roughness: 0.3,
             metalness: 0.1,
-            flatShading: true // Memberi tekstur bucu poli untuk gaya artistik
+            flatShading: true
         });
         const globe = new THREE.Mesh(geometry, material);
         scene.add(globe);
 
-        // 4. Pencahayaan Bermesej (Panas vs Sejuk)
-        
-        // Cahaya Warm (Panas/Oren) dari Sisi Kanan
-        const warmLight = new THREE.DirectionalLight(0xff7700, 2.2);
+        // 6. Pencahayaan
+        const warmLight = new THREE.DirectionalLight(0xff6600, 2.5);
         warmLight.position.set(5, 3, 2);
         scene.add(warmLight);
 
-        // Cahaya Cool (Sejuk/Biru) dari Sisi Kiri
-        const coolLight = new THREE.DirectionalLight(0x0088ff, 2.2);
+        const coolLight = new THREE.DirectionalLight(0x0088ff, 2.5);
         coolLight.position.set(-5, -3, -2);
         scene.add(coolLight);
 
-        // Cahaya Ambiens Lembut (Kekalkan Kecerahan Putih)
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
         scene.add(ambientLight);
 
-        // 5. Animasi Putaran Perlahan Automatik
+        // 7. Render Loop
         function animate() {
             requestAnimationFrame(animate);
-            
-            // Bumi berputar perlahan secara automatik jika tidak diusik jari
             globe.rotation.y += 0.002;
-            
             controls.update();
             renderer.render(scene, camera);
         }
+        
         animate();
 
-        // 6. Khas Untuk Responsif Saiz Skrin Telefon / Desktop
+        // 8. Responsif Saiz Skrin
         window.addEventListener('resize', () => {
             const width = container.clientWidth;
             const height = container.clientHeight;
