@@ -53,10 +53,21 @@
         .perspective-text h1 { font-family: 'Playfair Display', serif; font-size: 1.6em; line-height: 1.5; margin-bottom: 10px; color: #1a202c; font-weight: 600; }
         
         .highlight { position: relative; font-style: italic; white-space: nowrap; }
-        .highlight::after { content: ''; position: absolute; bottom: 4px; left: 0; width: 100%; height: 8px; background-color: var(--accent-blue); opacity: 0.4; z-index: -1; transform: skewX(-10deg); }
         
-        .sub-text { font-size: 0.95em; color: #718096; line-height: 1.6; margin-bottom: 1.2rem; }
-        .instruction { font-size: 0.75em; color: #a0aec0; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+        .sub-text { font-size: 0.95em; color: #718096; line-height: 1.6; margin-bottom: 1.4rem; }
+        .instruction {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 0.85em;
+            color: #a0aec0;
+            letter-spacing: 0.3px;
+            font-weight: 400;
+        }
+        .instruction svg { flex-shrink: 0; opacity: 0.75; animation: spin-hint 3.5s linear infinite; }
+        @keyframes spin-hint { to { transform: rotate(360deg); } }
 
         /* Pos Terkini */
         .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; margin-top: 20px; }
@@ -112,7 +123,10 @@
         <section class="perspective-text">
             <h1>"Satu perkara, <span class="highlight">beribu perspektif</span>.<br>Setiap sisi membawa cerita yang berbeza."</h1>
             <p class="sub-text">Apa yang kita lihat mungkin cuma satu sisi daripada keseluruhan cerita.</p>
-            <p class="instruction">↻ Pusingkan objek untuk melihat sisi yang lain</p>
+            <p class="instruction">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3.5-7.1"/><path d="M21 3v6h-6"/></svg>
+                Pusingkan objek untuk melihat sisi yang lain
+            </p>
         </section>
 
         <hr style="border: 0; border-top: 1px solid #edf2f7; margin-bottom: 25px;">
@@ -141,7 +155,6 @@
     <!-- Skrip 3D Dipermudah (Simplified) -->
     <script type="module">
         import * as THREE from 'three';
-        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
         // 1. Setup Asas
         const container = document.getElementById('hero-container');
@@ -175,6 +188,13 @@
         );
         sculpture.add(mainMesh);
 
+        // Garis sisi (wireframe) supaya bentuk poligon lebih jelas & "berlapis"
+        const edgeLines = new THREE.LineSegments(
+            new THREE.EdgesGeometry(mainMesh.geometry),
+            new THREE.LineBasicMaterial({ color: 0x8FA6AD, transparent: true, opacity: 0.35 })
+        );
+        mainMesh.add(edgeLines);
+
         const glowMesh = new THREE.Mesh(
             new THREE.IcosahedronGeometry(0.92, 2),
             new THREE.MeshBasicMaterial({ color: 0xEEF4F5, transparent: true, opacity: 0.28 })
@@ -193,6 +213,7 @@
         };
         const ring1 = createRing(1.55, 0.018, 0x9FBBC3, Math.PI / 2.8, -0.25);
         const ring2 = createRing(1.75, 0.012, 0xE4C9C9, -Math.PI / 3.4, 0.4);
+        const ring3 = createRing(1.95, 0.008, 0xD9C9E4, Math.PI / 5.5, -0.6);
 
         // 5. Objek Terapung
         const createFloatingShape = (geo, color, pos, scale = 1) => {
@@ -206,29 +227,62 @@
         const floater1 = createFloatingShape(new THREE.BoxGeometry(0.22, 0.22, 0.22), 0xE9D7C5, {x: 1.65, y: 0.7, z: 0.15});
         const floater2 = createFloatingShape(new THREE.OctahedronGeometry(0.18, 0), 0xC8DDD2, {x: -1.55, y: -0.65, z: 0.3});
         const floater3 = createFloatingShape(new THREE.TetrahedronGeometry(0.2, 0), 0xE8C6C6, {x: 0.95, y: -1.35, z: -0.15});
+        const floater4 = createFloatingShape(new THREE.IcosahedronGeometry(0.14, 0), 0xD9C9E4, {x: -1.1, y: 1.3, z: -0.35}, 1);
 
         // Hiasan Titik (Dots)
+        const dots = [];
         const createDot = (x, y, z) => {
             const dot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), new THREE.MeshBasicMaterial({ color: 0xB6C9CE }));
             dot.position.set(x, y, z);
             sculpture.add(dot);
+            dots.push(dot);
         };
-        createDot(1.9, -0.4, 0.25); createDot(-1.8, 0.35, -0.1); createDot(0.2, 1.75, 0.15);
+        createDot(1.9, -0.4, 0.25); createDot(-1.8, 0.35, -0.1); createDot(0.2, 1.75, 0.15); createDot(-0.6, -1.9, -0.2);
 
-        // 6. Kawalan Interaktif
-        const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.06;
-        controls.enableZoom = false;
-        controls.enablePan = false;
-        controls.autoRotate = true;
-        controls.autoRotateSpeed = 0.65;
+        // 6. Kawalan Interaktif — putaran objek terus (quaternion), bukan orbit kamera,
+        // supaya tiada had "kutub" dan objek boleh dipusing 360° penuh ke semua arah.
+        let isDragging = false;
+        let lastX = 0, lastY = 0;
+        let velX = 0, velY = 0; // untuk kesan "lontar" (momentum) lepas lepas tangan
+        const dragSensitivity = 0.006;
+        const autoRotateSpeed = 0.010; // laju putaran automatik (lebih laju dari sebelum ini)
+
+        const rotateSculpture = (axis, angle) => {
+            const q = new THREE.Quaternion().setFromAxisAngle(axis, angle);
+            sculpture.quaternion.premultiply(q);
+        };
+
+        const onPointerDown = (e) => {
+            isDragging = true;
+            velX = 0; velY = 0;
+            lastX = e.clientX; lastY = e.clientY;
+            container.style.cursor = 'grabbing';
+        };
+        const onPointerMove = (e) => {
+            if (!isDragging) return;
+            const dx = e.clientX - lastX;
+            const dy = e.clientY - lastY;
+            lastX = e.clientX; lastY = e.clientY;
+            velX = dx; velY = dy;
+            rotateSculpture(new THREE.Vector3(0, 1, 0), dx * dragSensitivity);
+            rotateSculpture(new THREE.Vector3(1, 0, 0), dy * dragSensitivity);
+        };
+        const onPointerUp = () => {
+            isDragging = false;
+            container.style.cursor = 'grab';
+        };
+
+        container.addEventListener('pointerdown', onPointerDown);
+        window.addEventListener('pointermove', onPointerMove);
+        window.addEventListener('pointerup', onPointerUp);
+        window.addEventListener('pointercancel', onPointerUp);
 
         // 7. Loop Animasi
         const floatData = [
             { obj: floater1, baseY: 0.7, speed: 1.4, amp: 0.12 },
             { obj: floater2, baseY: -0.65, speed: 1.1, amp: 0.10 },
-            { obj: floater3, baseY: -1.35, speed: 1.6, amp: 0.14 }
+            { obj: floater3, baseY: -1.35, speed: 1.6, amp: 0.14 },
+            { obj: floater4, baseY: 1.3, speed: 1.25, amp: 0.10 }
         ];
 
         const animate = () => {
@@ -240,15 +294,34 @@
             floater1.rotation.set(floater1.rotation.x + 0.008, floater1.rotation.y + 0.012, 0);
             floater2.rotation.set(floater2.rotation.x - 0.006, 0, floater2.rotation.z + 0.01);
             floater3.rotation.set(0, floater3.rotation.y + 0.009, floater3.rotation.z - 0.006);
+            floater4.rotation.set(floater4.rotation.x + 0.01, floater4.rotation.y - 0.007, 0);
             
             ring1.rotation.z += 0.0015;
             ring2.rotation.z -= 0.001;
+            ring3.rotation.z += 0.0009;
 
             // Kesan "bernafas" untuk objek tengah
             mainMesh.scale.setScalar(1 + Math.sin(time * 1.2) * 0.012);
             glowMesh.scale.setScalar(1 + Math.sin(time * 0.9) * 0.025);
 
-            controls.update();
+            // Kesan "twinkle" untuk titik-titik hiasan
+            dots.forEach((dot, i) => {
+                const s = 1 + Math.sin(time * 1.8 + i * 1.7) * 0.35;
+                dot.scale.setScalar(s);
+            });
+
+            if (isDragging) {
+                // sudah dikendalikan dalam onPointerMove
+            } else if (Math.abs(velX) > 0.01 || Math.abs(velY) > 0.01) {
+                // momentum lepas tangan dilepaskan, beransur perlahan
+                rotateSculpture(new THREE.Vector3(0, 1, 0), velX * dragSensitivity);
+                rotateSculpture(new THREE.Vector3(1, 0, 0), velY * dragSensitivity);
+                velX *= 0.94; velY *= 0.94;
+            } else {
+                // putaran automatik berterusan, bebas 360°, bila tangan tak digunakan
+                rotateSculpture(new THREE.Vector3(0, 1, 0), autoRotateSpeed);
+            }
+
             renderer.render(scene, camera);
         };
         animate();
