@@ -3,376 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Roslan | Perspektif Dalam Kehidupan</title>
+    <title>Ibrahim Roslan | Perspektif</title>
     
-    <!-- Font: Inter (Penting untuk look minimalis moden) -->
+    <!-- Google Fonts: Inter (Teks) & Playfair Display (Tajuk) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 
     <style>
-        /* --- 1. CSS RESET & VARIABLES --- */
+        /* --- 1. GLOBAL STYLES --- */
         :root {
             --bg-color: #ffffff;
-            --text-primary: #111111;
-            --text-secondary: #666666;
-            --accent-blue: #a3c4f3; /* Pastel Blue */
-            --accent-purple: #c7ceea; /* Pastel Purple */
-            --accent-pink: #f9d5e5; /* Pastel Pink */
-            --grid-gap: 40px;
+            --text-main: #1a1a1a;
+            --text-muted: #666666;
+            --accent-blue: #A0C3D2;  /* Pastel Blue */
+            --accent-pink: #EAC7C7;  /* Pastel Pink */
+            --outline: 2px solid #000;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
-            color: var(--text-primary);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            overflow-x: hidden; /* Elak scroll tepi */
         }
 
-        a { text-decoration: none; color: inherit; transition: opacity 0.3s; }
-        a:hover { opacity: 0.6; }
-
-        /* --- 2. NAVIGATION (Minimalist Sticky) --- */
+        /* --- 2. NAVIGATION (Minimalist) --- */
         nav {
-            position: fixed;
-            top: 0; width: 100%;
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 24px 5%;
-            background: rgba(255,255,255,0.9);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 100;
         }
 
-        .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: -0.5px; }
-        .nav-links a { margin-left: 24px; font-size: 0.9rem; color: var(--text-secondary); }
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
 
-        /* --- 3. HERO SECTION (3D Canvas) --- */
-        #hero {
-            height: 80vh; /* Tinggi Hero */
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        /* --- 3. HERO SECTION (3D Container) --- */
+        #hero-container {
             width: 100%;
+            height: 60vh; /* 60% tinggi skrin */
             position: relative;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            cursor: grab; /* Tunjuk user boleh pegang */
         }
 
-        /* Teks Intro terapung di atas 3D */
-        .hero-text {
-            position: absolute;
-            bottom: 10%;
+        #hero-container:active {
+            cursor: grabbing;
+        }
+
+        canvas {
+            outline: none; /* Hilang border biru bila klik */
+            display: block; /* Buang gap bawah canvas */
+        }
+
+        /* --- 4. TEXT SECTION --- */
+        .perspective-text {
             text-align: center;
-            pointer-events: none; /* Biar user boleh click 3D di belakang */
+            padding: 0 20px 4rem 20px;
+            max-width: 700px;
+            margin: -20px auto 0; /* Tarik sikit ke atas rapat dengan 3D */
+            position: relative;
             z-index: 10;
         }
 
-        .hero-text h1 {
-            font-size: 1rem;
+        .perspective-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            line-height: 1.6;
             font-weight: 400;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: #222;
+        }
+
+        .highlight {
+            position: relative;
+            white-space: nowrap;
+            font-style: italic;
+        }
+        
+        /* Garisan pen marker di bawah perkataan */
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: var(--accent-blue);
+            opacity: 0.4;
+            z-index: -1;
+            transform: skewX(-10deg);
+        }
+
+        .highlight-warm::after { background-color: var(--accent-pink); }
+
+        .sub-text {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        .instruction {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: #aaa;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        .scroll-indicator {
-            margin-top: 10px;
-            width: 1px; height: 40px;
-            background: var(--text-secondary);
-            animation: grow 2s infinite;
-        }
-
-        @keyframes grow { 0% {height:0; opacity:0;} 50% {height:40px; opacity:1;} 100% {height:0; opacity:0; margin-top: 40px;} }
-
-        /* Tempat Canvas 3D */
-        #canvas-container {
-            width: 100%;
-            height: 100%;
-            cursor: grab;
-        }
-        #canvas-container:active { cursor: grabbing; }
-
-        /* --- 4. CONTENT GRID (Clean Cards) --- */
-        #content {
-            padding: 80px 5%;
+        /* --- 5. BENTO GRID (Preview Content) --- */
+        .content-section {
+            padding: 2rem 5%;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto 4rem;
         }
 
-        .section-header {
-            margin-bottom: 60px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-            display: flex; justify-content: space-between; align-items: flex-end;
+        .grid-header {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .section-title { font-size: 1.5rem; font-weight: 800; }
-        .view-all { font-size: 0.9rem; color: var(--text-secondary); text-decoration: underline; }
-
-        .grid {
+        .bento-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--grid-gap);
+            gap: 20px;
         }
 
         .card {
-            display: flex; flex-direction: column;
-            gap: 12px;
-            transition: transform 0.3s ease;
-        }
-        
-        .card:hover { transform: translateY(-5px); }
-
-        .card-meta {
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: flex; align-items: center; gap: 8px;
+            border: 2px solid #f0f0f0; /* Garisan nipis */
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            background: #fff;
         }
 
-        /* Indikator Warna Kategori */
-        .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-        .dot.blue { background-color: var(--accent-blue); }
-        .dot.purple { background-color: var(--accent-purple); }
-        .dot.pink { background-color: var(--accent-pink); }
-
-        .card-title {
-            font-size: 1.8rem;
-            font-weight: 800;
-            line-height: 1.2;
-            letter-spacing: -1px;
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #000;
         }
 
-        .card-snippet {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
+        .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: #f4f4f4;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #777;
         }
 
         /* Mobile Adjustments */
         @media (max-width: 768px) {
-            .grid { grid-template-columns: 1fr; gap: 60px; }
-            .card-title { font-size: 1.5rem; }
-            #hero { height: 60vh; }
-        }
-
-        footer {
-            text-align: center; padding: 40px; font-size: 0.8rem; color: #ccc; margin-top: 40px;
+            .perspective-text h1 { font-size: 1.4rem; }
+            #hero-container { height: 50vh; }
         }
     </style>
-
-    <!-- Import Map untuk Three.js (Cara moden load library) -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
 </head>
 <body>
 
-    <!-- NAV -->
+    <!-- NAVIGASI -->
     <nav>
-        <a href="index.html" class="logo">Ibrahim Roslan.</a>
+        <a href="#" class="logo">IBRAHIM ROSLAN.</a>
         <div class="nav-links">
-            <a href="blog.html">Blog</a>
-            <a href="thoughts.html">Thoughts</a>
-            <a href="about.html">Tentang</a>
+            <a href="#">Tentang</a>
+            <a href="#">Jurnal</a>
         </div>
     </nav>
 
-    <!-- HERO SECTION (3D) -->
-    <section id="hero">
-        <div id="canvas-container"></div>
-        <div class="hero-text">
-            <h1>Perspektif Dalam Kehidupan</h1>
-            <div style="display:flex; justify-content:center;"><div class="scroll-indicator"></div></div>
+    <!-- 3D HERO SECTION -->
+    <header id="hero-container">
+        <!-- Canvas Three.js akan masuk sini secara automatik -->
+    </header>
+
+    <!-- TEKS PERSPEKTIF -->
+    <section class="perspective-text">
+        <h1>
+            "Dunia bergerak mengikut paksinya.<br> 
+            Di satu sudut ada <span class="highlight highlight-warm">kepanasan</span>, 
+            di sudut lain ada <span class="highlight">kedinginan</span>."
+        </h1>
+        
+        <p class="sub-text">
+            Begitu juga kehidupan — perbezaan pandangan bergantung kepada sudut mana kita berdiri.
+            Setiap sisi mempunyai ceritanya yang tersendiri.
+        </p>
+
+        <p class="instruction">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg> 
+            Pusingkan Objek Di Atas
+        </p>
+    </section>
+
+    <!-- BENTO GRID (KANDUNGAN) -->
+    <section class="content-section">
+        <div class="grid-header">Terkini</div>
+        <div class="bento-grid">
+            <!-- Card 1 -->
+            <a href="#" class="card">
+                <span class="tag" style="color: #e63946;">THOUGHTS</span>
+                <h3>Seni Melakukan 'Nothing'</h3>
+                <p>Kenapa produktiviti toksik merosakkan ketenangan minda kita.</p>
+            </a>
+            <!-- Card 2 -->
+            <a href="#" class="card">
+                <span class="tag" style="color: #457b9d;">REVIEW BUKU</span>
+                <h3>Atomic Habits: Masih Relevan?</h3>
+                <p>Ulasan jujur selepas 3 tahun mempraktikkan teknik James Clear.</p>
+            </a>
+            <!-- Card 3 -->
+            <a href="#" class="card">
+                <span class="tag" style="color: #2a9d8f;">PERKAKAS</span>
+                <h3>Setup Meja Minimalis 2024</h3>
+                <p>Barang murah tapi nampak mahal yang saya gunakan setiap hari.</p>
+            </a>
         </div>
     </section>
 
-    <!-- CONTENT SECTION -->
-    <section id="content">
-        <div class="section-header">
-            <h2 class="section-title">Penulisan Terkini</h2>
-            <a href="blog.html" class="view-all">Lihat Arkib →</a>
-        </div>
-
-        <div class="grid">
-            <!-- Article 1 -->
-            <article class="card">
-                <div class="card-meta">
-                    <span class="dot blue"></span> Review Buku
-                </div>
-                <h3 class="card-title"><a href="#">Atomic Habits: Berbaloi Beli atau Sekadar Hype?</a></h3>
-                <p class="card-snippet">Selepas 3 bulan mencuba sistem James Clear, ini satu-satunya teknik yang berjaya mengubah rutin pagi saya.</p>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="card">
-                <div class="card-meta">
-                    <span class="dot pink"></span> Rumah & Living
-                </div>
-                <h3 class="card-title"><a href="#">Kenapa Saya Pilih Konsep 'Open Wardrobe'</a></h3>
-                <p class="card-snippet">Bukan sebab nak jimat duit almari, tapi sebab psikologi visual. Lihat bagaimana ia mengurangkan stress memilih baju.</p>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="card">
-                <div class="card-meta">
-                    <span class="dot purple"></span> Thoughts
-                </div>
-                <h3 class="card-title"><a href="#">Harga Sebuah Kelajuan</a></h3>
-                <p class="card-snippet">Dalam dunia yang mengagungkan kepantasan, saya belajar bahawa perlahan itu sebenarnya lebih tepat.</p>
-            </article>
-
-             <!-- Article 4 -->
-             <article class="card">
-                <div class="card-meta">
-                    <span class="dot blue"></span> Tech
-                </div>
-                <h3 class="card-title"><a href="#">GitHub Pages untuk Personal Branding</a></h3>
-                <p class="card-snippet">Panduan asas membina laman web statik tanpa kos hosting, sesuai untuk bukan programmer.</p>
-            </article>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
-    </footer>
-
-    <!-- SCRIPT 3D -->
+    <!-- JAVASCRIPT (THREE.JS) -->
+    <!-- Kita guna module dari CDN supaya tak perlu install apa-apa -->
     <script type="module">
-        import * as THREE from 'three';
+        import * as THREE from 'https://unpkg.com/three@0.158.0/build/three.module.js';
+        import { OrbitControls } from 'https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js';
 
-        // 1. Scene Setup
-        const container = document.getElementById('canvas-container');
+        // 1. SETUP ASAS (Scene, Camera, Renderer)
+        const container = document.getElementById('hero-container');
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff); // Background Putih
-        // Pilihan: Tambah sedikit kabus untuk depth
-        scene.fog = new THREE.Fog(0xffffff, 5, 15);
+        // Background transparent supaya nampak putih bersih website
+        scene.background = null; 
 
-        const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
-        camera.position.set(4, 3, 5); // Sudut pandang isometrik
-        camera.lookAt(0, 0, 0);
+        const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+        camera.position.z = 5; // Jarak kamera
 
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(container.clientWidth, container.clientHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setPixelRatio(window.devicePixelRatio); // Tajamkan di skrin retina/mobile
         container.appendChild(renderer.domElement);
 
-        // 2. Lighting (Penting untuk Toon Effect)
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        // 2. PENCAHAYAAN (Penting untuk efek kartun)
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6); // Cahaya rata
         scene.add(ambientLight);
 
-        const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.8); // Cahaya matahari
         dirLight.position.set(5, 10, 7);
         scene.add(dirLight);
 
-        // 3. The Object Group (Main Cube + Decorations)
-        const mainGroup = new THREE.Group();
-        scene.add(mainGroup);
+        // 3. OBJEK KARTUN (The Perspective Poly)
+        const group = new THREE.Group(); // Group untuk pusingkan semua sekali
+        scene.add(group);
 
-        // --- A. The Main Cube (Pastel Color) ---
-        const geometry = new THREE.BoxGeometry(2, 2, 2);
-        // Tips: MeshToonMaterial nampak kartun bila kena cahaya
-        const material = new THREE.MeshToonMaterial({ color: 0xc7ceea }); // Pastel Purple
-        const cube = new THREE.Mesh(geometry, material);
-        mainGroup.add(cube);
+        // A. BENTUK UTAMA (Icosahedron - Bola bersegi)
+        const geometry = new THREE.IcosahedronGeometry(1.4, 0); // 1.4 = saiz, 0 = detail rendah (low poly)
+        
+        // Material Kartun (Toon Shader)
+        const material = new THREE.MeshToonMaterial({ 
+            color: 0xE0E7FF, // Warna Biru Lembut (Ice Blue)
+        });
+        const shape = new THREE.Mesh(geometry, material);
+        group.add(shape);
 
-        // --- B. The Outlines (Garisan Hitam Komik) ---
+        // B. GARISAN HITAM (Outline - Kunci kepada gaya kartun/komik)
         const edges = new THREE.EdgesGeometry(geometry);
         const lineMaterial = new THREE.LineBasicMaterial({ color: 0x000000, linewidth: 2 });
-        const wireframe = new THREE.LineSegments(edges, lineMaterial);
-        // Skala sikit supaya garisan tak tenggelam
-        wireframe.scale.set(1.001, 1.001, 1.001); 
-        mainGroup.add(wireframe);
+        const outline = new THREE.LineSegments(edges, lineMaterial);
+        // Skalakan sikit outline supaya tak tenggelam
+        outline.scale.set(1.001, 1.001, 1.001); 
+        group.add(outline);
 
-        // --- C. Dekorasi Simbol (Procedural Geometry) ---
-        
-        // Simbol 1: Buku (Di atas)
-        const bookGeo = new THREE.BoxGeometry(1.2, 0.3, 0.8);
-        const bookMat = new THREE.MeshToonMaterial({ color: 0xffffff }); // Putih
-        const book = new THREE.Mesh(bookGeo, bookMat);
-        book.position.set(0, 1.15, 0); // Atas kubus
-        
-        // Garisan Buku
-        const bookEdges = new THREE.LineSegments(
-            new THREE.EdgesGeometry(bookGeo), 
-            new THREE.LineBasicMaterial({ color: 0x000000 })
-        );
-        book.add(bookEdges);
-        mainGroup.add(book);
-
-        // Simbol 2: Butang/Sfera (Di sisi kanan)
-        const sphereGeo = new THREE.SphereGeometry(0.4, 16, 16);
-        const sphereMat = new THREE.MeshToonMaterial({ color: 0xa3c4f3 }); // Biru
-        const sphere = new THREE.Mesh(sphereGeo, sphereMat);
-        sphere.position.set(1.15, 0, 0); // Sisi Kanan
-
-        // Garisan Sfera (Guna wireframe untuk nampak 'tech')
-        const sphereWire = new THREE.Mesh(sphereGeo, new THREE.MeshBasicMaterial({ color: 0x000000, wireframe: true, transparent: true, opacity: 0.2 }));
-        sphere.add(sphereWire);
-        mainGroup.add(sphere);
-
-
-        // 4. Animation & Interaction
-        let mouseX = 0;
-        let mouseY = 0;
-        let targetRotationX = 0;
-        let targetRotationY = 0;
-
-        // Auto rotation speed
-        const autoRotateSpeed = 0.002;
-
-        // Event Listener untuk Mouse Move (Parallax Effect)
-        document.addEventListener('mousemove', (event) => {
-            const windowHalfX = window.innerWidth / 2;
-            const windowHalfY = window.innerHeight / 2;
+        // C. PARTIKEL TERAPUNG (Orbiting Elements)
+        // Menambah "depth" supaya nampak macam sistem solar kecil
+        function createFloatingItem(size, x, y, z) {
+            const g = new THREE.BoxGeometry(size, size, size);
+            const m = new THREE.MeshToonMaterial({ color: 0xFFC3A0 }); // Warna Peach
+            const mesh = new THREE.Mesh(g, m);
+            mesh.position.set(x, y, z);
             
-            mouseX = (event.clientX - windowHalfX) * 0.001;
-            mouseY = (event.clientY - windowHalfY) * 0.001;
+            // Tambah outline juga untuk partikel kecil
+            const e = new THREE.EdgesGeometry(g);
+            const l = new THREE.LineBasicMaterial({ color: 0x000000 });
+            const w = new THREE.LineSegments(e, l);
+            mesh.add(w);
+            
+            return mesh;
+        }
+
+        const float1 = createFloatingItem(0.3, 2, 0.5, 0);
+        const float2 = createFloatingItem(0.2, -1.8, -0.8, 0.5);
+        group.add(float1);
+        group.add(float2);
+
+        // 4. INTERAKSI (Controls)
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Rasa 'berat' bila pusing (smooth)
+        controls.dampingFactor = 0.05;
+        controls.enableZoom = false; // Tak boleh zoom in/out
+        controls.enablePan = false;  // Tak boleh alih kedudukan
+        controls.autoRotate = true;  // Pusing sendiri
+        controls.autoRotateSpeed = 2.0; // Kelajuan pusing (Slow)
+
+        // Reset interaksi bila user usik
+        controls.addEventListener('start', () => {
+            // Optional: Boleh stop autoRotate bila user pegang
         });
 
-        // Touch support for mobile
-        document.addEventListener('touchmove', (event) => {
-             const windowHalfX = window.innerWidth / 2;
-             const windowHalfY = window.innerHeight / 2;
-             mouseX = (event.touches[0].clientX - windowHalfX) * 0.002;
-             mouseY = (event.touches[0].clientY - windowHalfY) * 0.002;
-        });
-
+        // 5. ANIMASI LOOP
         function animate() {
             requestAnimationFrame(animate);
 
-            // 1. Auto Rotate (Base movement)
-            mainGroup.rotation.y += autoRotateSpeed;
-            mainGroup.rotation.x += autoRotateSpeed * 0.5;
+            // Animasi tambahan untuk partikel terapung
+            const time = Date.now() * 0.001;
+            float1.rotation.x += 0.01;
+            float1.position.y += Math.sin(time) * 0.002; // Naik turun perlahan
+            float2.rotation.y += 0.02;
 
-            // 2. Interactive Rotate (Mouse influence)
-            // Kita campurkan auto rotate dengan mouse movement
-            mainGroup.rotation.y += mouseX * 2;
-            mainGroup.rotation.x += mouseY * 2;
-
-            // Lerping (Melembutkan pergerakan mouse supaya tak kaku)
-            // Reset mouse influence slowly
-            mouseX *= 0.95;
-            mouseY *= 0.95;
-
-            // Floating effect (naik turun sikit)
-            mainGroup.position.y = Math.sin(Date.now() * 0.001) * 0.1;
-
+            controls.update();
             renderer.render(scene, camera);
         }
-
         animate();
 
-        // 5. Handle Resize
+        // 6. RESPONSIVE (Bila ubah saiz window)
         window.addEventListener('resize', () => {
             camera.aspect = container.clientWidth / container.clientHeight;
             camera.updateProjectionMatrix();
