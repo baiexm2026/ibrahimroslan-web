@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibrahim Roslan | Perkongsian & Catatan Peribadi</title>
-    <meta name="description" content="Himpunan ulasan buku, panduan rumah, dan refleksi peribadi oleh Ibrahim Roslan.">
+    <meta name="description" content="Himpunan ulasan buku, panduan rumah, dan refleksi peribadi.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
     <style>
+        :root {
+            --bg-color: #f7fafc;
+            --accent-blue: #A0C3D2;
+        }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #2d3748; background-color: #f7fafc; padding: 20px 15px; }
-        .container { max-width: 680px; margin: 0 auto; background: #ffffff; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
-        nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 30px; }
+        
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            color: #2d3748; 
+            background-color: var(--bg-color); 
+            padding: 20px 15px; 
+            overflow-x: hidden; 
+        }
+
+        .container { 
+            max-width: 680px; 
+            margin: 0 auto; 
+            background: #ffffff; 
+            padding: 35px 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
+        }
+
+        /* Navigasi Diselaraskan */
+        nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 20px; }
         .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
         .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
         .nav-links a:hover { color: #2b6cb0; }
+
+        /* Ruang 3D */
+        #hero-container { width: 100%; height: 40vh; min-height: 320px; position: relative; background: transparent; touch-action: none; cursor: grab; }
+        #hero-container:active { cursor: grabbing; }
+        canvas { display: block; width: 100% !important; height: 100% !important; outline: none; }
+
+        /* Teks Perspektif */
+        .perspective-text { text-align: center; padding: 0 10px 2rem; margin-top: -20px; z-index: 10; position: relative; }
+        .perspective-text h1 { font-family: 'Playfair Display', serif; font-size: 1.6em; line-height: 1.5; margin-bottom: 10px; color: #1a202c; font-weight: 600; }
         
-        .hero { margin-bottom: 35px; }
-        .hero h1 { font-size: 1.6em; color: #1a202c; margin-bottom: 8px; line-height: 1.3; }
-        .hero p { color: #718096; font-size: 1em; }
+        .highlight { position: relative; font-style: italic; white-space: nowrap; }
+        .highlight::after { content: ''; position: absolute; bottom: 4px; left: 0; width: 100%; height: 8px; background-color: var(--accent-blue); opacity: 0.4; z-index: -1; transform: skewX(-10deg); }
         
-        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .sub-text { font-size: 0.95em; color: #718096; line-height: 1.6; margin-bottom: 1.2rem; }
+        .instruction { font-size: 0.75em; color: #a0aec0; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+
+        /* Pos Terkini */
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; margin-top: 20px; }
         .section-title { font-size: 1.1em; font-weight: 700; color: #2d3748; }
         .view-all { font-size: 0.88em; color: #3182ce; text-decoration: none; font-weight: 600; }
         .view-all:hover { text-decoration: underline; }
@@ -27,12 +68,29 @@
         .post-card:hover { transform: translateY(-2px); border-color: #cbd5e0; }
         .post-title { font-size: 1.05em; font-weight: 600; color: #1a202c; margin-bottom: 6px; }
         .post-meta { font-size: 0.8em; color: #a0aec0; }
-        
+
+        /* Footer Diselaraskan */
         footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
         footer a { color: #a0aec0; text-decoration: none; }
         footer a:hover { text-decoration: underline; }
-        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 12px; } }
+
+        @media (max-width: 480px) { 
+            .container { padding: 20px 18px; } 
+            nav { flex-direction: column; align-items: flex-start; gap: 12px; } 
+            .nav-links a { margin-left: 0; margin-right: 12px; } 
+            .perspective-text h1 { font-size: 1.4em; }
+        }
     </style>
+
+    <!-- Import Three.js Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
 </head>
 <body>
 
@@ -47,23 +105,27 @@
             </div>
         </nav>
 
-        <!-- Hero Ringkas -->
-        <div class="hero">
-            <h1>Perkongsian Pengalaman &amp; Ulasan Jujur</h1>
-            <p>Ruang nota peribadi mengenai ulasan buku, perkakas rumah, dan garis masa persediaan kehidupan.</p>
-        </div>
+        <!-- Elemen 3D -->
+        <div id="hero-container"></div>
 
-        <hr style="border: 0; border-top: 1px solid #edf2f7; margin-bottom: 30px;">
+        <!-- Teks 3D -->
+        <section class="perspective-text">
+            <h1>"Satu perkara, <span class="highlight">beribu perspektif</span>.<br>Setiap sisi membawa cerita yang berbeza."</h1>
+            <p class="sub-text">Apa yang kita lihat mungkin cuma satu sisi daripada keseluruhan cerita.</p>
+            <p class="instruction">↻ Pusingkan objek untuk melihat sisi yang lain</p>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #edf2f7; margin-bottom: 25px;">
 
         <!-- Artikel Terkini -->
         <div class="section-header">
             <span class="section-title">Penulisan Terkini</span>
-            <a href="blog.html" class="view-all">Lihat Semua Blog &rarr;</a>
+            <a href="blog.html" class="view-all">Lihat Semua Artikel &rarr;</a>
         </div>
 
         <a href="catatan/review-buku-atomic-habits-bm.html" class="post-card">
             <div class="post-title">Review Jujur Buku Atomic Habits Versi BM: Berbaloi Beli atau Tanya AI Je?</div>
-            <div class="post-meta">8 Sep 2026 &bull; Buku &bull; 3 minit bacaan</div>
+            <div class="post-meta">8 Sep 2026 &bull; Buku</div>
         </a>
 
         <!-- Footer -->
@@ -76,5 +138,129 @@
         </footer>
     </div>
 
+    <!-- Skrip 3D Dipermudah (Simplified) -->
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // 1. Setup Asas
+        const container = document.getElementById('hero-container');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 100);
+        camera.position.z = 5;
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.outputColorSpace = THREE.SRGBColorSpace;
+        container.appendChild(renderer.domElement);
+
+        // 2. Pencahayaan
+        scene.add(new THREE.AmbientLight(0xffffff, 1.3));
+        const keyLight = new THREE.DirectionalLight(0xffffff, 1.8);
+        keyLight.position.set(4, 6, 5);
+        scene.add(keyLight);
+        
+        const softLight = new THREE.DirectionalLight(0xDDE9EC, 0.7);
+        softLight.position.set(-4, 2, -3);
+        scene.add(softLight);
+
+        // 3. Objek Utama & Kumpulan (Group)
+        const sculpture = new THREE.Group();
+        scene.add(sculpture);
+
+        const mainMesh = new THREE.Mesh(
+            new THREE.IcosahedronGeometry(1.25, 1),
+            new THREE.MeshStandardMaterial({ color: 0xDCE7EA, roughness: 0.72, metalness: 0.05, flatShading: true })
+        );
+        sculpture.add(mainMesh);
+
+        const glowMesh = new THREE.Mesh(
+            new THREE.IcosahedronGeometry(0.92, 2),
+            new THREE.MeshBasicMaterial({ color: 0xEEF4F5, transparent: true, opacity: 0.28 })
+        );
+        sculpture.add(glowMesh);
+
+        // 4. Gelang Orbit (Rings)
+        const createRing = (radius, thickness, color, rotX, rotZ) => {
+            const ring = new THREE.Mesh(
+                new THREE.TorusGeometry(radius, thickness, 16, 100),
+                new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.65 })
+            );
+            ring.rotation.set(rotX, 0, rotZ);
+            sculpture.add(ring);
+            return ring;
+        };
+        const ring1 = createRing(1.55, 0.018, 0x9FBBC3, Math.PI / 2.8, -0.25);
+        const ring2 = createRing(1.75, 0.012, 0xE4C9C9, -Math.PI / 3.4, 0.4);
+
+        // 5. Objek Terapung
+        const createFloatingShape = (geo, color, pos, scale = 1) => {
+            const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color, roughness: 0.65, metalness: 0.05, flatShading: true }));
+            mesh.position.set(pos.x, pos.y, pos.z);
+            mesh.scale.setScalar(scale);
+            sculpture.add(mesh);
+            return mesh;
+        };
+        
+        const floater1 = createFloatingShape(new THREE.BoxGeometry(0.22, 0.22, 0.22), 0xE9D7C5, {x: 1.65, y: 0.7, z: 0.15});
+        const floater2 = createFloatingShape(new THREE.OctahedronGeometry(0.18, 0), 0xC8DDD2, {x: -1.55, y: -0.65, z: 0.3});
+        const floater3 = createFloatingShape(new THREE.TetrahedronGeometry(0.2, 0), 0xE8C6C6, {x: 0.95, y: -1.35, z: -0.15});
+
+        // Hiasan Titik (Dots)
+        const createDot = (x, y, z) => {
+            const dot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), new THREE.MeshBasicMaterial({ color: 0xB6C9CE }));
+            dot.position.set(x, y, z);
+            sculpture.add(dot);
+        };
+        createDot(1.9, -0.4, 0.25); createDot(-1.8, 0.35, -0.1); createDot(0.2, 1.75, 0.15);
+
+        // 6. Kawalan Interaktif
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.06;
+        controls.enableZoom = false;
+        controls.enablePan = false;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.65;
+
+        // 7. Loop Animasi
+        const floatData = [
+            { obj: floater1, baseY: 0.7, speed: 1.4, amp: 0.12 },
+            { obj: floater2, baseY: -0.65, speed: 1.1, amp: 0.10 },
+            { obj: floater3, baseY: -1.35, speed: 1.6, amp: 0.14 }
+        ];
+
+        const animate = () => {
+            requestAnimationFrame(animate);
+            const time = performance.now() * 0.001;
+
+            // Animasi objek terapung & putaran paksi
+            floatData.forEach(item => item.obj.position.y = item.baseY + Math.sin(time * item.speed) * item.amp);
+            floater1.rotation.set(floater1.rotation.x + 0.008, floater1.rotation.y + 0.012, 0);
+            floater2.rotation.set(floater2.rotation.x - 0.006, 0, floater2.rotation.z + 0.01);
+            floater3.rotation.set(0, floater3.rotation.y + 0.009, floater3.rotation.z - 0.006);
+            
+            ring1.rotation.z += 0.0015;
+            ring2.rotation.z -= 0.001;
+
+            // Kesan "bernafas" untuk objek tengah
+            mainMesh.scale.setScalar(1 + Math.sin(time * 1.2) * 0.012);
+            glowMesh.scale.setScalar(1 + Math.sin(time * 0.9) * 0.025);
+
+            controls.update();
+            renderer.render(scene, camera);
+        };
+        animate();
+
+        // 8. Responsif Skrin
+        window.addEventListener('resize', () => {
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+            renderer.setSize(width, height);
+        });
+    </script>
 </body>
 </html>
