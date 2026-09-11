@@ -1,101 +1,192 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="ms" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Ibrahim Roslan</title>
-    <meta name="description" content="Himpunan penulisan dan ulasan peribadi Ibrahim Roslan mengikut kategori.">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #2d3748; background-color: #f7fafc; padding: 20px 15px; }
-        .container { max-width: 680px; margin: 0 auto; background: #ffffff; padding: 35px 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
-        nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 30px; }
-        .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
-        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: #2b6cb0; }
-        
-        h1 { font-size: 1.5em; color: #1a202c; margin-bottom: 15px; }
-        
-        /* Butang Penapis Kategori */
-        .filter-container { display: flex; gap: 8px; margin-bottom: 25px; flex-wrap: wrap; }
-        .filter-btn { background: #edf2f7; color: #4a5568; border: none; padding: 6px 14px; border-radius: 20px; font-size: 0.88em; font-weight: 500; cursor: pointer; transition: all 0.2s; }
-        .filter-btn:hover { background: #e2e8f0; color: #1a202c; }
-        .filter-btn.active { background: #3182ce; color: #ffffff; }
-        
-        .post-card { display: block; text-decoration: none; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 20px; margin-bottom: 15px; transition: transform 0.15s, border-color 0.15s; }
-        .post-card:hover { transform: translateY(-2px); border-color: #cbd5e0; }
-        .post-title { font-size: 1.05em; font-weight: 600; color: #1a202c; margin-bottom: 6px; }
-        .post-excerpt { font-size: 0.9em; color: #718096; margin-bottom: 8px; }
-        .post-meta { font-size: 0.8em; color: #a0aec0; }
-        
-        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
-        footer a { color: #a0aec0; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-        @media (max-width: 480px) { .container { padding: 20px 18px; } nav { flex-direction: column; align-items: flex-start; gap: 12px; } .nav-links a { margin-left: 0; margin-right: 12px; } }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Semua Blog — Ulasan Buku, Rumah &amp; Pengalaman | Ibrahim Roslan</title>
+<meta name="description" content="Senarai penuh blog Ibrahim Roslan: ulasan buku, panduan memilih perkakas rumah, dan pengalaman peribadi tentang keputusan besar hidup.">
+<link rel="canonical" href="https://www.ibrahimroslan.com/blog.html">
+<meta name="author" content="Ibrahim Roslan">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ibrahim Roslan">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:title" content="Semua Blog — Ulasan Buku, Rumah &amp; Pengalaman">
+<meta property="og:description" content="Senarai penuh blog: ulasan buku, panduan perkakas rumah, dan pengalaman peribadi.">
+<meta property="og:url" content="https://www.ibrahimroslan.com/blog.html">
+<meta property="og:image" content="https://www.ibrahimroslan.com/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ibrahim Roslan — satu perkara, beribu perspektif.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Semua Blog — Ulasan Buku, Rumah &amp; Pengalaman">
+<meta name="twitter:description" content="Senarai penuh blog: ulasan buku, panduan perkakas rumah, dan pengalaman peribadi.">
+<meta name="twitter:image" content="https://www.ibrahimroslan.com/assets/img/og-default.png">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Ibrahim Roslan — Blog" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<script>
+document.documentElement.classList.add("js");
+(function(){try{var s=localStorage.getItem("ir-theme");var d=s||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",d);}catch(e){}})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://www.ibrahimroslan.com/blog.html#page",
+  "url": "https://www.ibrahimroslan.com/blog.html",
+  "name": "Semua Blog",
+  "description": "Senarai penuh blog: ulasan buku, panduan perkakas rumah, dan pengalaman peribadi.",
+  "inLanguage": "ms-MY",
+  "isPartOf": { "@type": "WebSite", "@id": "https://www.ibrahimroslan.com/#website", "name": "Ibrahim Roslan" },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Laman utama", "item": "https://www.ibrahimroslan.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ibrahimroslan.com/blog.html" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://www.ibrahimroslan.com/blog/review-buku-atomic-habits-bm.html",
+        "name": "Review jujur buku Atomic Habits versi BM: berbaloi beli atau tanya AI je?"
+      }
+    ]
+  }
+}
+</script>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header -->
-        <nav>
-            <a href="index.html" class="brand">Ibrahim Roslan</a>
-            <div class="nav-links">
-                <a href="blog.html">Blog</a>
-                <a href="refleksi.html">Thoughts</a>
-                <a href="about.html">Tentang Saya</a>
-            </div>
-        </nav>
+<a class="skip" href="#utama">Langkau ke kandungan</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="guides" aria-hidden="true"><span></span><span></span><span></span></div>
 
-        <h1>Semua Artikel</h1>
-        <p style="color: #718096; font-size: 0.95em; margin-bottom: 25px;">
-            Himpunan penulisan mengenai ulasan buku, perkakas rumah, dan pengalaman peribadi.
-        </p>
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="/">
+      <span class="wordmark__name">Ibrahim Roslan</span>
+      <span class="wordmark__sub">Jurnal Peribadi</span>
+    </a>
+    <div class="masthead__right">
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a class="nav__link" href="/blog.html" aria-current="page">Blog</a>
+        <a class="nav__link" href="/thought.html">Thought</a>
+        <a class="nav__link" href="/about.html">Tentang</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Tukar ke mod gelap">
+        <svg class="icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="3.1"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.1 3.1l1.1 1.1M11.8 11.8l1.1 1.1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1"/></svg>
+        <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 0 1 6.4 2.8a5.6 5.6 0 1 0 6.8 6.8z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Buka menu">
+        <svg class="icon-menu" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5h12M2 8h12M2 11.5h12"/></svg>
+        <svg class="icon-close" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-        <!-- Butang Penapisan -->
-        <div class="filter-container">
-            <button class="filter-btn active" onclick="filterPosts('all')">Semua</button>
-            <button class="filter-btn" onclick="filterPosts('buku')">Buku</button>
-            <button class="filter-btn" onclick="filterPosts('hubungan')">Hubungan</button>
-            <button class="filter-btn" onclick="filterPosts('rumah')">Rumah</button>
-        </div>
+<main id="utama">
+  <div class="page-head shell">
+    <p class="label rise" style="--i:0">
+      <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
+      Indeks penulisan
+    </p>
+    <h1 class="page-head__title rise" style="--i:1">Semua blog</h1>
+    <p class="page-head__lede rise" style="--i:2">Ulasan buku, panduan memilih perkakas rumah, dan
+    pengalaman peribadi. Setiap satu ditulis selepas saya sendiri melaluinya.</p>
+  </div>
 
-        <!-- Senarai Artikel -->
-        <div id="posts-list">
-            <a href="catatan/review-buku-atomic-habits-bm.html" class="post-card" data-category="buku">
-                <div class="post-title">Review Jujur Buku Atomic Habits Versi BM: Berbaloi Beli atau Tanya AI Je?</div>
-                <div class="post-excerpt">Ulasan ikhlas selepas mengamalkan 4 sistem utama buku Atomic Habits dan tips elak buku cetak rompak di Shopee.</div>
-                <div class="post-meta">8 Sep 2026 &bull; Buku &bull; 3 minit bacaan</div>
-            </a>
-        </div>
-
-        <!-- Footer -->
-        <footer>
-            <div style="margin-bottom: 10px;">
-                <a href="privacy.html">Privacy Policy</a> &bull; 
-                <a href="disclaimer.html">Disclaimer</a>
-            </div>
-            &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
-        </footer>
+  <div class="shell">
+    <div class="filters" data-filters role="group" aria-label="Tapis blog mengikut kategori">
+      <span class="label filters__label" aria-hidden="true">Tapis</span>
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">Semua <span class="chip__count" aria-hidden="true"></span></button>
+      <button class="chip" type="button" data-filter="buku" aria-pressed="false">Buku <span class="chip__count" aria-hidden="true"></span></button>
+      <button class="chip" type="button" data-filter="rumah" aria-pressed="false">Rumah <span class="chip__count" aria-hidden="true"></span></button>
+      <button class="chip" type="button" data-filter="hubungan" aria-pressed="false">Hubungan <span class="chip__count" aria-hidden="true"></span></button>
     </div>
 
-    <!-- Skrip Interaktif Penapis -->
-    <script>
-        function filterPosts(category) {
-            const buttons = document.querySelectorAll('.filter-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+    <ol class="index" data-filterable aria-live="polite">
+      <li class="index__item" data-category="buku">
+        <a class="index__link" href="/blog/review-buku-atomic-habits-bm.html">
+          <span class="index__num" data-num aria-hidden="true">01</span>
+          <span class="index__body">
+            <span class="index__title">Review jujur buku Atomic Habits versi BM: berbaloi beli atau tanya AI je?</span>
+            <span class="index__excerpt">Ulasan ikhlas selepas mengamalkan empat sistem utama buku ini, plus cara elak buku cetak rompak di Shopee.</span>
+          </span>
+          <span class="index__meta">
+            <time class="index__date" datetime="2026-09-08">8 Sep 2026</time>
+            <span class="tag">Buku</span>
+          </span>
+        </a>
+      </li>
+    </ol>
 
-            const posts = document.querySelectorAll('.post-card');
-            posts.forEach(post => {
-                if (category === 'all' || post.getAttribute('data-category') === category) {
-                    post.style.display = 'block';
-                } else {
-                    post.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <div class="empty" data-empty hidden>
+      <p class="label">Tiada catatan</p>
+      <p>Belum ada penulisan dalam kategori ini. Cuba kategori lain.</p>
+    </div>
 
+    <div class="section" style="border-bottom:0">
+      <p class="label">
+        <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
+        Jurnal ini masih muda — blog baharu ditambah bila ada sesuatu yang berbaloi dikongsi.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="colophon__grid">
+      <div class="colophon__brand">
+        <p class="label label--clay">
+          <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
+          Ibrahim Roslan
+        </p>
+        <p class="colophon__blurb">Satu perkara, beribu perspektif. Blog, ulasan dan thought
+        daripada pengalaman sendiri — ditulis di Putrajaya.</p>
+      </div>
+      <nav aria-labelledby="kaki-terokai">
+        <p class="label" id="kaki-terokai">Terokai</p>
+        <ul class="colophon__list">
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/thought.html">Thought</a></li>
+          <li><a href="/about.html">Tentang saya</a></li>
+          <li><a href="/feed.xml">Suapan RSS</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="kaki-rasmi">
+        <p class="label" id="kaki-rasmi">Rasmi</p>
+        <ul class="colophon__list">
+          <li><a href="/cdn-cgi/l/email-protection#d7bfb2bbbbb897beb5a5b6bfbebaa5b8a4bbb6b9f9b4b8ba">hantar e-mel</a></li>
+          <li><a href="/privacy.html">Dasar privasi</a></li>
+          <li><a href="/disclaimer.html">Penafian</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="colophon__bar">
+      <span>&copy; <span data-year>2026</span> Ibrahim Roslan. Hak cipta terpelihara.</span>
+      <span>Ditulis tangan dengan HTML, CSS &amp; sedikit JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/site.js" defer></script>
 </body>
 </html>
