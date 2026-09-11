@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ibrahim Roslan — Blog</title>
+    <link>https://www.ibrahimroslan.com/</link>
+    <description>Satu perkara, beribu perspektif. Ulasan buku, panduan memilih perkakas rumah, dan thought daripada pengalaman sendiri.</description>
+    <language>ms-MY</language>
+    <copyright>Hak cipta terpelihara, Ibrahim Roslan</copyright>
+    <managingEditor>hello@ibrahimroslan.com (Ibrahim Roslan)</managingEditor>
+    <webMaster>hello@ibrahimroslan.com (Ibrahim Roslan)</webMaster>
+    <lastBuildDate>Thu, 10 Sep 2026 09:00:00 +0800</lastBuildDate>
+    <atom:link href="https://www.ibrahimroslan.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Review jujur buku Atomic Habits versi BM: berbaloi beli atau tanya AI je?</title>
+      <link>https://www.ibrahimroslan.com/blog/review-buku-atomic-habits-bm.html</link>
+      <guid isPermaLink="true">https://www.ibrahimroslan.com/blog/review-buku-atomic-habits-bm.html</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 +0800</pubDate>
+      <category>Ulasan Buku</category>
+      <description>Ulasan ikhlas selepas mengamalkan empat sistem utama buku ini, plus cara elak buku cetak rompak di Shopee.</description>
+    </item>
+
+  </channel>
+</rss>
