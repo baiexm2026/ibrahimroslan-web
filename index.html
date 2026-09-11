@@ -35,6 +35,531 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;display=swap">
 <link rel="stylesheet" href="/assets/css/main.css">
 
+<!-- =====================================================
+     RESPONSIVE / MOBILE OVERRIDES
+     Kekalkan CSS desktop sedia ada, tetapi jadikan halaman
+     lebih selesa untuk skrin tablet dan telefon.
+     ===================================================== -->
+<style>
+  /* Asas anti-horizontal-scroll */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+
+  .shell {
+    width: min(100% - 40px, 1180px);
+    margin-inline: auto;
+  }
+
+  /* =====================================================
+     TABLET
+     ===================================================== */
+  @media (max-width: 900px) {
+    .shell {
+      width: min(100% - 32px, 760px);
+    }
+
+    .masthead {
+      position: relative;
+      z-index: 100;
+    }
+
+    .masthead__inner {
+      min-height: 72px;
+      gap: 16px;
+    }
+
+    .masthead__right {
+      gap: 10px;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      padding-block: 64px 72px;
+    }
+
+    .hero__text {
+      max-width: 720px;
+    }
+
+    .hero__visual {
+      width: 100%;
+      min-height: 360px;
+    }
+
+    .section {
+      padding-block: 56px;
+    }
+
+    .article-layout {
+      grid-template-columns: minmax(150px, 220px) 1fr;
+      gap: 32px;
+    }
+
+    .colophon__grid {
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 30px;
+    }
+  }
+
+  /* =====================================================
+     TELEFON
+     ===================================================== */
+  @media (max-width: 700px) {
+    :root {
+      --mobile-gutter: 20px;
+    }
+
+    .shell {
+      width: calc(100% - (var(--mobile-gutter) * 2));
+    }
+
+    /* ---------- HEADER ---------- */
+    .masthead__inner {
+      min-height: 64px;
+      padding-block: 10px;
+      align-items: center;
+    }
+
+    .wordmark {
+      min-width: 0;
+      max-width: calc(100vw - 155px);
+    }
+
+    .wordmark__name {
+      font-size: clamp(17px, 5vw, 21px);
+      line-height: 1.05;
+    }
+
+    .wordmark__sub {
+      font-size: 9px;
+      letter-spacing: .14em;
+    }
+
+    .masthead__right {
+      flex-shrink: 0;
+      gap: 7px;
+      margin-left: auto;
+    }
+
+    .theme-toggle,
+    .nav-toggle {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      display: grid;
+      place-items: center;
+      padding: 0;
+      border-radius: 999px;
+    }
+
+    .nav-toggle {
+      display: grid;
+      position: relative;
+      z-index: 110;
+    }
+
+    /* Menu mobile: dropdown bawah header */
+    .nav {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: var(--mobile-gutter);
+      left: var(--mobile-gutter);
+      display: grid;
+      gap: 4px;
+      padding: 8px;
+      background: var(--bg, #fff);
+      border: 1px solid var(--line, rgba(0,0,0,.12));
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.10);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+      z-index: 105;
+    }
+
+    .nav.is-open,
+    .nav[data-open="true"] {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .nav__link {
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    .nav__link:active,
+    .nav__link:hover {
+      background: rgba(0,0,0,.05);
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      padding-block: 42px 54px;
+    }
+
+    .hero__text {
+      width: 100%;
+      max-width: none;
+    }
+
+    .hero__eyebrow {
+      margin-bottom: 18px;
+      font-size: 11px;
+    }
+
+    .hero__quote {
+      max-width: 12.5ch;
+      margin: 0;
+      font-size: clamp(42px, 12vw, 66px);
+      line-height: .98;
+      letter-spacing: -.04em;
+      text-wrap: balance;
+    }
+
+    .hero__lede {
+      max-width: 100%;
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    .hero__actions {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .hero__actions .btn {
+      width: 100%;
+      min-height: 50px;
+      justify-content: center;
+    }
+
+    .hero__visual {
+      width: 100%;
+      min-height: 300px;
+      display: grid;
+      place-items: center;
+    }
+
+    .facet {
+      max-width: 100%;
+      touch-action: pan-y;
+    }
+
+    .facet__hint {
+      text-align: center;
+      max-width: 220px;
+      line-height: 1.5;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    .section {
+      padding-block: 44px;
+    }
+
+    .section__head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px 14px;
+      align-items: end;
+    }
+
+    .section__title {
+      min-width: 0;
+      font-size: clamp(26px, 7vw, 34px);
+      line-height: 1.08;
+    }
+
+    .section__rule {
+      display: none;
+    }
+
+    .section__link {
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    /* ---------- ARTIKEL ---------- */
+    .index__link {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding-block: 20px;
+    }
+
+    .index__num {
+      padding-top: 3px;
+    }
+
+    .index__body {
+      min-width: 0;
+    }
+
+    .index__title {
+      font-size: 18px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .index__excerpt {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .index__meta {
+      grid-column: 2;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 0;
+    }
+
+    /* ---------- THOUGHT ---------- */
+    .thought {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 14px;
+      padding-block: 20px;
+    }
+
+    .thought__mark {
+      width: 24px;
+      height: 24px;
+    }
+
+    .thought__body {
+      min-width: 0;
+    }
+
+    .thought__quote {
+      font-size: clamp(20px, 5.7vw, 28px);
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .thought__source {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 12px;
+    }
+
+    .thought__foot {
+      gap: 8px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- TENTANG ---------- */
+    .article-layout {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .article-rail {
+      width: 100%;
+    }
+
+    .article-rail__block {
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      column-gap: 12px;
+      row-gap: 4px;
+      padding: 18px 0;
+    }
+
+    .article-rail dt {
+      margin: 0;
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .article-rail dd {
+      margin: 0;
+      min-width: 0;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .prose {
+      min-width: 0;
+    }
+
+    .prose p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .colophon {
+      padding-block: 44px 24px;
+    }
+
+    .colophon__grid {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+
+    .colophon__brand {
+      max-width: none;
+    }
+
+    .colophon__blurb {
+      max-width: 34rem;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .colophon__list {
+      display: grid;
+      gap: 3px;
+    }
+
+    .colophon__list a {
+      display: inline-flex;
+      min-height: 38px;
+      align-items: center;
+    }
+
+    .colophon__bar {
+      display: grid;
+      gap: 8px;
+      padding-top: 22px;
+      margin-top: 32px;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+  }
+
+  /* =====================================================
+     TELEFON KECIL
+     ===================================================== */
+  @media (max-width: 420px) {
+    :root {
+      --mobile-gutter: 16px;
+    }
+
+    .wordmark__name {
+      font-size: 17px;
+    }
+
+    .wordmark__sub {
+      font-size: 8px;
+    }
+
+    .masthead__right {
+      gap: 5px;
+    }
+
+    .theme-toggle,
+    .nav-toggle {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+    }
+
+    .hero {
+      padding-block: 34px 44px;
+      gap: 28px;
+    }
+
+    .hero__quote {
+      font-size: clamp(38px, 11.5vw, 50px);
+    }
+
+    .hero__lede {
+      font-size: 15px;
+    }
+
+    .hero__visual {
+      min-height: 250px;
+    }
+
+    .section {
+      padding-block: 38px;
+    }
+
+    .section__head {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+
+    .section__link {
+      justify-self: start;
+    }
+
+    .index__link {
+      grid-template-columns: 30px 1fr;
+      gap: 11px;
+    }
+
+    .index__title {
+      font-size: 17px;
+    }
+
+    .index__excerpt {
+      font-size: 13px;
+    }
+
+    .thought {
+      grid-template-columns: 22px 1fr;
+      gap: 11px;
+    }
+
+    .thought__mark {
+      width: 20px;
+      height: 20px;
+    }
+
+    .thought__quote {
+      font-size: 20px;
+    }
+  }
+
+  /* Kurangkan animasi untuk pengguna yang memilih reduced motion. */
+  @media (prefers-reduced-motion: reduce) {
+    .nav {
+      transition: none;
+    }
+  }
+</style>
+
+
 <script>
 /* Tema ditetapkan sebelum lukisan pertama supaya tiada kelipan putih. */
 document.documentElement.classList.add("js");
@@ -288,6 +813,41 @@ document.documentElement.classList.add("js");
   </div>
 </footer>
 
+
+<script>
+/* Pastikan menu hamburger berfungsi walaupun site.js gagal dimuatkan. */
+(function () {
+  var toggle = document.querySelector('[data-nav-toggle]');
+  var nav = document.querySelector('#nav');
+  if (!toggle || !nav) return;
+
+  function setMenu(open) {
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
+    nav.classList.toggle('is-open', open);
+    nav.setAttribute('data-open', String(open));
+    document.body.classList.toggle('nav-open', open);
+  }
+
+  toggle.addEventListener('click', function () {
+    setMenu(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+
+  nav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setMenu(false); });
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+      setMenu(false);
+    }
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 700) setMenu(false);
+  });
+})();
+</script>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/site.js" defer></script>
 <script src="/assets/js/facet.js" defer></script>
 </body>
