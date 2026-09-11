@@ -21,7 +21,7 @@
   function setTheme(name, persist) {
     root.setAttribute("data-theme", name);
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", name === "dark" ? "#12110d" : "#f4f1e8");
+    if (meta) meta.setAttribute("content", name === "dark" ? "#1a202c" : "#ffffff");
     var btn = document.querySelector("[data-theme-toggle]");
     if (btn) {
       btn.setAttribute("aria-pressed", String(name === "dark"));
