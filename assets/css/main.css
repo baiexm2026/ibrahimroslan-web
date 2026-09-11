@@ -9,22 +9,20 @@
    [1] TOKENS
    ========================================================================== */
 :root {
-  /* Kertas & dakwat */
-  --paper:        #f4f1e8;
-  --paper-raised: #fbf9f3;
-  --paper-sunk:   #ebe7da;
-  --ink:          #141310;
-  --ink-soft:     #57534a;
-  /* Nota: --ink-faint dipakai untuk label mono kecil, jadi ia mesti
-     mencapai nisbah kontras 4.5:1 terhadap --paper (kini ~4.6:1). */
-  --ink-faint:    #726c5e;
-  --rule:         #dcd6c6;
-  --rule-strong:  #c6bfab;
+  /* Kertas & dakwat (Latar putih bersih, tulisan gelap) */
+  --paper:        #ffffff;
+  --paper-raised: #ffffff;
+  --paper-sunk:   #f7fafc;
+  --ink:          #1a202c;
+  --ink-soft:     #4a5568;
+  --ink-faint:    #718096;
+  --rule:         #edf2f7;
+  --rule-strong:  #e2e8f0;
 
-  /* Aksen tanah liat */
-  --clay:      #9e4a2b;
-  --clay-soft: #c9724f;
-  --clay-wash: #f0e2d8;
+  /* Aksen (Kembalikan ke warna biru asal anda) */
+  --clay:      #2b6cb0;
+  --clay-soft: #4299e1;
+  --clay-wash: #ebf8ff;
 
   /* Tipografi */
   --display: "Fraunces", "Iowan Old Style", Georgia, serif;
@@ -53,20 +51,20 @@
   --ease-out-back: cubic-bezier(0.34, 1.4, 0.64, 1);
 }
 
-/* Mod gelap — "dakwat malam" */
+/* Mod gelap — Disesuaikan dengan tona kelabu sejuk */
 [data-theme="dark"] {
-  --paper:        #12110d;
-  --paper-raised: #1a1915;
-  --paper-sunk:   #0d0c09;
-  --ink:          #ede9dd;
-  --ink-soft:     #b3ab99;
-  --ink-faint:    #8a8271;
-  --rule:         #2c2a23;
-  --rule-strong:  #423f34;
+  --paper:        #1a202c;
+  --paper-raised: #2d3748;
+  --paper-sunk:   #171923;
+  --ink:          #f7fafc;
+  --ink-soft:     #a0aec0;
+  --ink-faint:    #718096;
+  --rule:         #2d3748;
+  --rule-strong:  #4a5568;
 
-  --clay:      #dd8a63;
-  --clay-soft: #c9724f;
-  --clay-wash: #241c16;
+  --clay:      #63b3ed;
+  --clay-soft: #90cdf4;
+  --clay-wash: #2a4365;
 }
 
 /* ==========================================================================
@@ -161,7 +159,7 @@ hr {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0; /* <--- PASTIKAN NILAI INI 0 */
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.32'/%3E%3C/svg%3E");
 }
