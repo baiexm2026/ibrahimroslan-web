@@ -1,0 +1,9 @@
+# ibrahimroslan.com
+# Semua kandungan awam dibenarkan untuk diindeks.
+
+User-agent: *
+Allow: /
+Disallow: /blog/_template.html
+Disallow: /404.html
+
+Sitemap: https://www.ibrahimroslan.com/sitemap.xml
