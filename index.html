@@ -1,339 +1,294 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="ms" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibrahim Roslan | Perkongsian & Catatan Peribadi</title>
-    <meta name="description" content="Himpunan ulasan buku, panduan rumah, dan refleksi peribadi.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        :root {
-            --bg-color: #f7fafc;
-            --accent-blue: #A0C3D2;
-        }
+<title>Ibrahim Roslan — Ulasan Buku, Panduan Rumah &amp; Pengalaman Peribadi</title>
+<meta name="description" content="Jurnal peribadi Ibrahim Roslan: ulasan buku yang jujur, panduan memilih perkakas rumah, dan thought tentang keputusan besar hidup — semuanya daripada pengalaman sendiri.">
+<link rel="canonical" href="https://www.ibrahimroslan.com/">
+<meta name="author" content="Ibrahim Roslan">
+<meta name="theme-color" content="#ffffff">
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.7; 
-            color: #2d3748; 
-            background-color: var(--bg-color); 
-            padding: 20px 15px; 
-            overflow-x: hidden; 
-        }
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ibrahim Roslan">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:title" content="Ibrahim Roslan — Ulasan Buku, Panduan Rumah &amp; Pengalaman Peribadi">
+<meta property="og:description" content="Ulasan buku yang jujur, panduan perkakas rumah, dan thought tentang keputusan besar hidup — daripada pengalaman sendiri.">
+<meta property="og:url" content="https://www.ibrahimroslan.com/">
+<meta property="og:image" content="https://www.ibrahimroslan.com/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ibrahim Roslan — satu perkara, beribu perspektif.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ibrahim Roslan — Ulasan Buku, Panduan Rumah &amp; Pengalaman Peribadi">
+<meta name="twitter:description" content="Ulasan buku yang jujur, panduan perkakas rumah, dan thought tentang keputusan besar hidup — daripada pengalaman sendiri.">
+<meta name="twitter:image" content="https://www.ibrahimroslan.com/assets/img/og-default.png">
 
-        .container { 
-            max-width: 680px; 
-            margin: 0 auto; 
-            background: #ffffff; 
-            padding: 35px 30px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
-        }
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Ibrahim Roslan — Blog" href="/feed.xml">
 
-        /* Navigasi Diselaraskan */
-        nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #edf2f7; padding-bottom: 20px; margin-bottom: 20px; }
-        .brand { font-weight: 700; font-size: 1.15em; color: #1a202c; text-decoration: none; }
-        .nav-links a { color: #4a5568; text-decoration: none; margin-left: 18px; font-size: 0.95em; font-weight: 500; transition: color 0.2s; }
-        .nav-links a:hover { color: #2b6cb0; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/main.css">
 
-        /* Ruang 3D */
-        #hero-container { width: 100%; height: 40vh; min-height: 320px; position: relative; background: transparent; touch-action: none; cursor: grab; }
-        #hero-container:active { cursor: grabbing; }
-        canvas { display: block; width: 100% !important; height: 100% !important; outline: none; }
+<script>
+/* Tema ditetapkan sebelum lukisan pertama supaya tiada kelipan putih. */
+document.documentElement.classList.add("js");
+(function(){try{var s=localStorage.getItem("ir-theme");var d=s||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",d);}catch(e){}})();
+</script>
 
-        /* Teks Perspektif */
-        .perspective-text { text-align: center; padding: 0 10px 2rem; margin-top: -20px; z-index: 10; position: relative; }
-        .perspective-text h1 { font-family: 'Playfair Display', serif; font-size: 1.6em; line-height: 1.5; margin-bottom: 10px; color: #1a202c; font-weight: 600; }
-        
-        .highlight { position: relative; font-style: italic; white-space: nowrap; }
-        
-        .sub-text { font-size: 0.95em; color: #718096; line-height: 1.6; margin-bottom: 1.4rem; }
-        .instruction {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 0.85em;
-            color: #a0aec0;
-            letter-spacing: 0.3px;
-            font-weight: 400;
-        }
-        .instruction svg { flex-shrink: 0; opacity: 0.75; animation: spin-hint 3.5s linear infinite; }
-        @keyframes spin-hint { to { transform: rotate(360deg); } }
-
-        /* Pos Terkini */
-        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; margin-top: 20px; }
-        .section-title { font-size: 1.1em; font-weight: 700; color: #2d3748; }
-        .view-all { font-size: 0.88em; color: #3182ce; text-decoration: none; font-weight: 600; }
-        .view-all:hover { text-decoration: underline; }
-        
-        .post-card { display: block; text-decoration: none; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 20px; margin-bottom: 15px; transition: transform 0.15s, border-color 0.15s; }
-        .post-card:hover { transform: translateY(-2px); border-color: #cbd5e0; }
-        .post-title { font-size: 1.05em; font-weight: 600; color: #1a202c; margin-bottom: 6px; }
-        .post-meta { font-size: 0.8em; color: #a0aec0; }
-
-        /* Footer Diselaraskan */
-        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #edf2f7; text-align: center; font-size: 0.8em; color: #a0aec0; }
-        footer a { color: #a0aec0; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-
-        @media (max-width: 480px) { 
-            .container { padding: 20px 18px; } 
-            nav { flex-direction: column; align-items: flex-start; gap: 12px; } 
-            .nav-links a { margin-left: 0; margin-right: 12px; } 
-            .perspective-text h1 { font-size: 1.4em; }
-        }
-    </style>
-
-    <!-- Import Three.js Map -->
-    <script type="importmap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-        "imports": {
-            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-        }
+      "@type": "WebSite",
+      "@id": "https://www.ibrahimroslan.com/#website",
+      "url": "https://www.ibrahimroslan.com/",
+      "name": "Ibrahim Roslan",
+      "description": "Jurnal peribadi: ulasan buku, panduan rumah, dan thought.",
+      "inLanguage": "ms-MY",
+      "publisher": { "@id": "https://www.ibrahimroslan.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.ibrahimroslan.com/#person",
+      "name": "Ibrahim Roslan",
+      "url": "https://www.ibrahimroslan.com/",
+      "email": "hello@ibrahimroslan.com",
+      "birthPlace": { "@type": "Place", "name": "Batu Gajah, Perak, Malaysia" },
+      "homeLocation": { "@type": "Place", "name": "Putrajaya, Malaysia" },
+      "knowsLanguage": ["ms", "en"]
     }
-    </script>
+  ]
+}
+</script>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header -->
-        <nav>
-            <a href="index.html" class="brand">Ibrahim Roslan</a>
-            <div class="nav-links">
-                <a href="blog.html">Blog</a>
-                <a href="refleksi.html">Thoughts</a>
-                <a href="about.html">Tentang Saya</a>
-            </div>
-        </nav>
+<a class="skip" href="#utama">Langkau ke kandungan</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="guides" aria-hidden="true"><span></span><span></span><span></span></div>
 
-        <!-- Elemen 3D -->
-        <div id="hero-container"></div>
+<!-- ====================================================== KEPALA TAPAK -->
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="/">
+      <span class="wordmark__name">Ibrahim Roslan</span>
+      <span class="wordmark__sub">Jurnal Peribadi</span>
+    </a>
 
-        <!-- Teks 3D -->
-        <section class="perspective-text">
-            <h1>"Satu perkara, <span class="highlight">beribu perspektif</span>.<br>Setiap sisi membawa cerita yang berbeza."</h1>
-            <p class="sub-text">Apa yang kita lihat mungkin cuma satu sisi daripada keseluruhan cerita.</p>
-            <p class="instruction">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3.5-7.1"/><path d="M21 3v6h-6"/></svg>
-                Pusingkan objek untuk melihat sisi yang lain
-            </p>
-        </section>
+    <div class="masthead__right">
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a class="nav__link" href="/blog.html">Blog</a>
+        <a class="nav__link" href="/thought.html">Thought</a>
+        <a class="nav__link" href="/about.html">Tentang</a>
+      </nav>
 
-        <hr style="border: 0; border-top: 1px solid #edf2f7; margin-bottom: 25px;">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Tukar ke mod gelap">
+        <svg class="icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="3.1"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.1 3.1l1.1 1.1M11.8 11.8l1.1 1.1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1"/></svg>
+        <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 0 1 6.4 2.8a5.6 5.6 0 1 0 6.8 6.8z"/></svg>
+      </button>
 
-        <!-- Artikel Terkini -->
-        <div class="section-header">
-            <span class="section-title">Penulisan Terkini</span>
-            <a href="blog.html" class="view-all">Lihat Semua Artikel &rarr;</a>
-        </div>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Buka menu">
+        <svg class="icon-menu" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5h12M2 8h12M2 11.5h12"/></svg>
+        <svg class="icon-close" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-        <a href="catatan/review-buku-atomic-habits-bm.html" class="post-card">
-            <div class="post-title">Review Jujur Buku Atomic Habits Versi BM: Berbaloi Beli atau Tanya AI Je?</div>
-            <div class="post-meta">8 Sep 2026 &bull; Buku</div>
+<main id="utama">
+  <!-- ==================================================== HERO -->
+  <section class="hero shell">
+    <div class="hero__text">
+      <p class="label hero__eyebrow rise" style="--i:0">
+        <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
+        Batu Gajah &rarr; Putrajaya
+      </p>
+
+      <h1 class="hero__quote rise" style="--i:1">Satu perkara, <em>beribu perspektif</em>.</h1>
+
+      <p class="hero__lede rise" style="--i:2">
+        Saya Ibrahim Roslan. Di sini saya kongsi ulasan buku yang jujur, panduan memilih
+        perkakas rumah, dan thought tentang keputusan besar hidup — semuanya daripada
+        pengalaman sendiri, bukan teori.
+      </p>
+
+      <div class="hero__actions rise" style="--i:3">
+        <a class="btn" href="/blog.html">
+          Baca blog
+          <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
         </a>
-
-        <!-- Footer -->
-        <footer>
-            <div style="margin-bottom: 10px;">
-                <a href="privacy.html">Privacy Policy</a> &bull; 
-                <a href="disclaimer.html">Disclaimer</a>
-            </div>
-            &copy; 2026 Ibrahim Roslan. Hak cipta terpelihara.
-        </footer>
+        <a class="btn btn--ghost" href="/about.html">
+          Tentang saya
+          <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
+        </a>
+      </div>
     </div>
 
-    <!-- Skrip 3D Dipermudah (Simplified) -->
-    <script type="module">
-        import * as THREE from 'three';
+    <div class="hero__visual fade" style="--i:2">
+      <div class="facet" data-facet tabindex="0" role="img"
+           aria-label="Objek bersegi yang boleh dipusing. Guna kekunci anak panah untuk melihat sisi lain.">
+        <p class="label facet__hint">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8a6 6 0 1 1-2.3-4.7"/><path d="M14 2v4h-4"/></svg>
+          Pusingkan untuk lihat sisi lain
+        </p>
+      </div>
+    </div>
+  </section>
 
-        // 1. Setup Asas
-        const container = document.getElementById('hero-container');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(50, container.clientWidth / container.clientHeight, 0.1, 100);
-        camera.position.z = 5;
+  <!-- ==================================================== PENULISAN TERKINI -->
+  <section class="section shell reveal" aria-labelledby="tajuk-terkini">
+    <div class="section__head">
+      <h2 class="section__title" id="tajuk-terkini">Penulisan terkini</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+      <a class="section__link" href="/blog.html">
+        Semua blog
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
+      </a>
+    </div>
 
-        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.outputColorSpace = THREE.SRGBColorSpace;
-        container.appendChild(renderer.domElement);
+    <ol class="index index--flush">
+      <li class="index__item">
+        <a class="index__link" href="/blog/review-buku-atomic-habits-bm.html">
+          <span class="index__num" aria-hidden="true">01</span>
+          <span class="index__body">
+            <span class="index__title">Review jujur buku Atomic Habits versi BM: berbaloi beli atau tanya AI je?</span>
+            <span class="index__excerpt">Ulasan ikhlas selepas mengamalkan empat sistem utama buku ini, plus cara elak buku cetak rompak di Shopee.</span>
+          </span>
+          <span class="index__meta">
+            <time class="index__date" datetime="2026-09-08">8 Sep 2026</time>
+            <span class="tag">Buku</span>
+          </span>
+        </a>
+      </li>
+    </ol>
+  </section>
 
-        // 2. Pencahayaan
-        scene.add(new THREE.AmbientLight(0xffffff, 1.3));
-        const keyLight = new THREE.DirectionalLight(0xffffff, 1.8);
-        keyLight.position.set(4, 6, 5);
-        scene.add(keyLight);
-        
-        const softLight = new THREE.DirectionalLight(0xDDE9EC, 0.7);
-        softLight.position.set(-4, 2, -3);
-        scene.add(softLight);
+  <!-- ==================================================== THOUGHT PILIHAN -->
+  <section class="section shell reveal" aria-labelledby="tajuk-thought">
+    <div class="section__head">
+      <h2 class="section__title" id="tajuk-thought">Thought pilihan</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+      <a class="section__link" href="/thought.html">
+        Semua thought
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
+      </a>
+    </div>
 
-        // 3. Objek Utama & Kumpulan (Group)
-        const sculpture = new THREE.Group();
-        scene.add(sculpture);
+    <ul class="thoughts thoughts--flush">
+      <li class="thought">
+        <span class="thought__mark" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8M2 5l6 3.4L14 5"/></svg>
+        </span>
+        <div class="thought__body">
+          <blockquote class="thought__quote">Kita tidak jatuh ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.</blockquote>
+          <p class="thought__source">— James Clear, <cite>Atomic Habits</cite></p>
+          <div class="thought__foot">
+            <time class="numeral" datetime="2026-09-08">8 Sep 2026</time>
+            <span class="tag">Disiplin</span>
+          </div>
+        </div>
+      </li>
 
-        const mainMesh = new THREE.Mesh(
-            new THREE.IcosahedronGeometry(1.25, 1),
-            new THREE.MeshStandardMaterial({ color: 0xDCE7EA, roughness: 0.72, metalness: 0.05, flatShading: true })
-        );
-        sculpture.add(mainMesh);
+      <li class="thought">
+        <span class="thought__mark" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8M2 5l6 3.4L14 5"/></svg>
+        </span>
+        <div class="thought__body">
+          <blockquote class="thought__quote">Adakah kita benar-benar inginkan perkara ini, atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?</blockquote>
+          <p class="thought__source">— Morgan Housel, <cite>The Psychology of Money</cite></p>
+          <div class="thought__foot">
+            <time class="numeral" datetime="2026-09-08">8 Sep 2026</time>
+            <span class="tag">Persoalan</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-        // Garis sisi (wireframe) supaya bentuk poligon lebih jelas & "berlapis"
-        const edgeLines = new THREE.LineSegments(
-            new THREE.EdgesGeometry(mainMesh.geometry),
-            new THREE.LineBasicMaterial({ color: 0x8FA6AD, transparent: true, opacity: 0.35 })
-        );
-        mainMesh.add(edgeLines);
+  <!-- ==================================================== TENTANG (RINGKAS) -->
+  <section class="section shell reveal" aria-labelledby="tajuk-tentang">
+    <div class="section__head">
+      <h2 class="section__title" id="tajuk-tentang">Tentang jurnal ini</h2>
+      <span class="section__rule" aria-hidden="true"></span>
+      <a class="section__link" href="/about.html">
+        Kisah penuh
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
+      </a>
+    </div>
 
-        const glowMesh = new THREE.Mesh(
-            new THREE.IcosahedronGeometry(0.92, 2),
-            new THREE.MeshBasicMaterial({ color: 0xEEF4F5, transparent: true, opacity: 0.28 })
-        );
-        sculpture.add(glowMesh);
+    <div class="article-layout" style="padding-block:0">
+      <dl class="article-rail">
+        <div class="article-rail__block">
+          <dt>Asal</dt>
+          <dd>Batu Gajah, Perak</dd>
+          <dt>Kini</dt>
+          <dd>Putrajaya</dd>
+          <dt>Hubungi</dt>
+          <dd><a href="/cdn-cgi/l/email-protection#d7bfb2bbbbb897beb5a5b6bfbebaa5b8a4bbb6b9f9b4b8ba">Hantar e-mel</a></dd>
+        </div>
+      </dl>
 
-        // 4. Gelang Orbit (Rings)
-        const createRing = (radius, thickness, color, rotX, rotZ) => {
-            const ring = new THREE.Mesh(
-                new THREE.TorusGeometry(radius, thickness, 16, 100),
-                new THREE.MeshBasicMaterial({ color: color, transparent: true, opacity: 0.65 })
-            );
-            ring.rotation.set(rotX, 0, rotZ);
-            sculpture.add(ring);
-            return ring;
-        };
-        const ring1 = createRing(1.55, 0.018, 0x9FBBC3, Math.PI / 2.8, -0.25);
-        const ring2 = createRing(1.75, 0.012, 0xE4C9C9, -Math.PI / 3.4, 0.4);
-        const ring3 = createRing(1.95, 0.008, 0xD9C9E4, Math.PI / 5.5, -0.6);
+      <div class="prose">
+        <p>Saya bercerita tentang keputusan yang saya betul-betul buat — daripada yang kecil
+        seperti memilih perkakas rumah, sampai yang besar dan membawa komitmen kewangan
+        panjang seperti membina keluarga dan merancang untuk memiliki aset sendiri.</p>
 
-        // 5. Objek Terapung
-        const createFloatingShape = (geo, color, pos, scale = 1) => {
-            const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color, roughness: 0.65, metalness: 0.05, flatShading: true }));
-            mesh.position.set(pos.x, pos.y, pos.z);
-            mesh.scale.setScalar(scale);
-            sculpture.add(mesh);
-            return mesh;
-        };
-        
-        const floater1 = createFloatingShape(new THREE.BoxGeometry(0.22, 0.22, 0.22), 0xE9D7C5, {x: 1.65, y: 0.7, z: 0.15});
-        const floater2 = createFloatingShape(new THREE.OctahedronGeometry(0.18, 0), 0xC8DDD2, {x: -1.55, y: -0.65, z: 0.3});
-        const floater3 = createFloatingShape(new THREE.TetrahedronGeometry(0.2, 0), 0xE8C6C6, {x: 0.95, y: -1.35, z: -0.15});
-        const floater4 = createFloatingShape(new THREE.IcosahedronGeometry(0.14, 0), 0xD9C9E4, {x: -1.1, y: 1.3, z: -0.35}, 1);
+        <p>Apa yang ditulis di sini berdasarkan apa yang saya sudah lalui setakat ini. Saya juga
+        tidak lari daripada melakukan kesilapan. Niatnya ringkas: menceritakan sudut pandang
+        yang jujur, dan mungkin ia berguna untuk sesiapa yang sedang berdepan situasi sama.</p>
+      </div>
+    </div>
+  </section>
+</main>
 
-        // Hiasan Titik (Dots)
-        const dots = [];
-        const createDot = (x, y, z) => {
-            const dot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 16, 16), new THREE.MeshBasicMaterial({ color: 0xB6C9CE }));
-            dot.position.set(x, y, z);
-            sculpture.add(dot);
-            dots.push(dot);
-        };
-        createDot(1.9, -0.4, 0.25); createDot(-1.8, 0.35, -0.1); createDot(0.2, 1.75, 0.15); createDot(-0.6, -1.9, -0.2);
+<!-- ====================================================== KOLOFON -->
+<footer class="colophon">
+  <div class="shell">
+    <div class="colophon__grid">
+      <div class="colophon__brand">
+        <p class="label label--clay">
+          <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
+          Ibrahim Roslan
+        </p>
+        <p class="colophon__blurb">Satu perkara, beribu perspektif. Blog, ulasan dan thought
+        daripada pengalaman sendiri — ditulis di Putrajaya.</p>
+      </div>
 
-        // 6. Kawalan Interaktif — putaran objek terus (quaternion), bukan orbit kamera,
-        // supaya tiada had "kutub" dan objek boleh dipusing 360° penuh ke semua arah.
-        let isDragging = false;
-        let lastX = 0, lastY = 0;
-        let velX = 0, velY = 0; // untuk kesan "lontar" (momentum) lepas lepas tangan
-        const dragSensitivity = 0.006;
-        const autoRotateSpeed = 0.010; // laju putaran automatik (lebih laju dari sebelum ini)
+      <nav aria-labelledby="kaki-terokai">
+        <p class="label" id="kaki-terokai">Terokai</p>
+        <ul class="colophon__list">
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/thought.html">Thought</a></li>
+          <li><a href="/about.html">Tentang saya</a></li>
+          <li><a href="/feed.xml">Suapan RSS</a></li>
+        </ul>
+      </nav>
 
-        const rotateSculpture = (axis, angle) => {
-            const q = new THREE.Quaternion().setFromAxisAngle(axis, angle);
-            sculpture.quaternion.premultiply(q);
-        };
+      <nav aria-labelledby="kaki-rasmi">
+        <p class="label" id="kaki-rasmi">Rasmi</p>
+        <ul class="colophon__list">
+          <li><a href="/cdn-cgi/l/email-protection#cda5a8a1a1a28da4afbfaca5a4a0bfa2bea1aca3e3aea2a0">hantar e-mel</a></li>
+          <li><a href="/privacy.html">Dasar privasi</a></li>
+          <li><a href="/disclaimer.html">Penafian</a></li>
+        </ul>
+      </nav>
+    </div>
 
-        const onPointerDown = (e) => {
-            isDragging = true;
-            velX = 0; velY = 0;
-            lastX = e.clientX; lastY = e.clientY;
-            container.style.cursor = 'grabbing';
-        };
-        const onPointerMove = (e) => {
-            if (!isDragging) return;
-            const dx = e.clientX - lastX;
-            const dy = e.clientY - lastY;
-            lastX = e.clientX; lastY = e.clientY;
-            velX = dx; velY = dy;
-            rotateSculpture(new THREE.Vector3(0, 1, 0), dx * dragSensitivity);
-            rotateSculpture(new THREE.Vector3(1, 0, 0), dy * dragSensitivity);
-        };
-        const onPointerUp = () => {
-            isDragging = false;
-            container.style.cursor = 'grab';
-        };
+    <div class="colophon__bar">
+      <span>&copy; <span data-year>2026</span> Ibrahim Roslan. Hak cipta terpelihara.</span>
+      <span>Ditulis tangan dengan HTML, CSS &amp; sedikit JavaScript</span>
+    </div>
+  </div>
+</footer>
 
-        container.addEventListener('pointerdown', onPointerDown);
-        window.addEventListener('pointermove', onPointerMove);
-        window.addEventListener('pointerup', onPointerUp);
-        window.addEventListener('pointercancel', onPointerUp);
-
-        // 7. Loop Animasi
-        const floatData = [
-            { obj: floater1, baseY: 0.7, speed: 1.4, amp: 0.12 },
-            { obj: floater2, baseY: -0.65, speed: 1.1, amp: 0.10 },
-            { obj: floater3, baseY: -1.35, speed: 1.6, amp: 0.14 },
-            { obj: floater4, baseY: 1.3, speed: 1.25, amp: 0.10 }
-        ];
-
-        const animate = () => {
-            requestAnimationFrame(animate);
-            const time = performance.now() * 0.001;
-
-            // Animasi objek terapung & putaran paksi
-            floatData.forEach(item => item.obj.position.y = item.baseY + Math.sin(time * item.speed) * item.amp);
-            floater1.rotation.set(floater1.rotation.x + 0.008, floater1.rotation.y + 0.012, 0);
-            floater2.rotation.set(floater2.rotation.x - 0.006, 0, floater2.rotation.z + 0.01);
-            floater3.rotation.set(0, floater3.rotation.y + 0.009, floater3.rotation.z - 0.006);
-            floater4.rotation.set(floater4.rotation.x + 0.01, floater4.rotation.y - 0.007, 0);
-            
-            ring1.rotation.z += 0.0015;
-            ring2.rotation.z -= 0.001;
-            ring3.rotation.z += 0.0009;
-
-            // Kesan "bernafas" untuk objek tengah
-            mainMesh.scale.setScalar(1 + Math.sin(time * 1.2) * 0.012);
-            glowMesh.scale.setScalar(1 + Math.sin(time * 0.9) * 0.025);
-
-            // Kesan "twinkle" untuk titik-titik hiasan
-            dots.forEach((dot, i) => {
-                const s = 1 + Math.sin(time * 1.8 + i * 1.7) * 0.35;
-                dot.scale.setScalar(s);
-            });
-
-            if (isDragging) {
-                // sudah dikendalikan dalam onPointerMove
-            } else if (Math.abs(velX) > 0.01 || Math.abs(velY) > 0.01) {
-                // momentum lepas tangan dilepaskan, beransur perlahan
-                rotateSculpture(new THREE.Vector3(0, 1, 0), velX * dragSensitivity);
-                rotateSculpture(new THREE.Vector3(1, 0, 0), velY * dragSensitivity);
-                velX *= 0.94; velY *= 0.94;
-            } else {
-                // putaran automatik berterusan, bebas 360°, bila tangan tak digunakan
-                rotateSculpture(new THREE.Vector3(0, 1, 0), autoRotateSpeed);
-            }
-
-            renderer.render(scene, camera);
-        };
-        animate();
-
-        // 8. Responsif Skrin
-        window.addEventListener('resize', () => {
-            const width = container.clientWidth;
-            const height = container.clientHeight;
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-            renderer.setSize(width, height);
-        });
-    </script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/facet.js" defer></script>
 </body>
 </html>
