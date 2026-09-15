@@ -68,6 +68,52 @@
   }
 
   /* =====================================================
+     PELARASAN AM (SEMUA SAIZ SKRIN)
+     ===================================================== */
+
+  /* Saiz tajuk "Penulisan terkini" & petikan "Thought" seragam
+     pada semua breakpoint — ubah nilai --heading-index-size sahaja
+     di dalam media query di bawah, kedua-dua elemen akan ikut sekali. */
+  :root {
+    --heading-index-size: 1.35rem;
+    --heading-index-lh: 1.42;
+  }
+
+  .index__title,
+  .thought__quote {
+    font-size: var(--heading-index-size);
+    line-height: var(--heading-index-lh);
+  }
+
+  /* Seksyen "Tentang jurnal ini" di laman utama tiada lajur sisi (rail),
+     jadi paksa satu lajur supaya perenggan penuhkan ruang sepenuhnya. */
+  .article-layout--full {
+    grid-template-columns: 1fr;
+  }
+
+  /* Bar kaki: baris hakcipta di kiri, lokasi ringkas di kanan. */
+  .colophon__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 16px;
+  }
+
+  .colophon__origin {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    opacity: .65;
+  }
+
+  .colophon__origin svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+
+  /* =====================================================
      TABLET
      ===================================================== */
   @media (max-width: 900px) {
@@ -125,6 +171,8 @@
   @media (max-width: 700px) {
     :root {
       --mobile-gutter: 20px;
+      --heading-index-size: 1.15rem;
+      --heading-index-lh: 1.4;
     }
 
     .shell {
@@ -171,23 +219,26 @@
       z-index: 110;
     }
 
-    /* Menu mobile: dropdown bawah header */
+    /* Menu mobile: dropdown bawah header, dengan backdrop + animasi susun */
     .nav {
       position: absolute;
-      top: calc(100% + 8px);
+      top: calc(100% + 10px);
       right: var(--mobile-gutter);
       left: var(--mobile-gutter);
       display: grid;
       gap: 4px;
-      padding: 8px;
+      padding: 10px;
       background: var(--bg, #fff);
-      border: 1px solid var(--line, rgba(0,0,0,.12));
-      border-radius: 16px;
-      box-shadow: 0 18px 45px rgba(0,0,0,.10);
+      border: 1px solid var(--line, rgba(0,0,0,.10));
+      border-radius: 18px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.16), 0 4px 14px rgba(0,0,0,.06);
       opacity: 0;
       visibility: hidden;
-      transform: translateY(-8px);
-      transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+      transform: translateY(-10px) scale(.97);
+      transform-origin: top right;
+      transition: opacity .22s cubic-bezier(.22,1,.36,1),
+                  transform .22s cubic-bezier(.22,1,.36,1),
+                  visibility .22s ease;
       z-index: 105;
     }
 
@@ -195,21 +246,75 @@
     .nav[data-open="true"] {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
     }
 
     .nav__link {
+      position: relative;
       min-height: 48px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      gap: 10px;
       padding: 0 14px;
-      border-radius: 10px;
+      border-radius: 12px;
       font-size: 14px;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: opacity .2s ease, transform .2s ease, background .15s ease, color .15s ease;
+    }
+
+    .nav.is-open .nav__link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav.is-open .nav__link:nth-child(1) { transition-delay: .05s; }
+    .nav.is-open .nav__link:nth-child(2) { transition-delay: .10s; }
+    .nav.is-open .nav__link:nth-child(3) { transition-delay: .15s; }
+
+    .nav__link::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-top: 1.4px solid currentColor;
+      border-right: 1.4px solid currentColor;
+      transform: rotate(45deg);
+      opacity: .35;
+      transition: transform .15s ease, opacity .15s ease;
+      flex-shrink: 0;
     }
 
     .nav__link:active,
     .nav__link:hover {
       background: rgba(0,0,0,.05);
+    }
+
+    .nav__link:hover::after,
+    .nav__link:active::after {
+      transform: rotate(45deg) translate(2px, -2px);
+      opacity: .7;
+    }
+
+    .nav__link + .nav__link {
+      border-top: 1px solid var(--line, rgba(0,0,0,.07));
+    }
+
+    /* Backdrop gelap di belakang menu bila terbuka */
+    body.nav-open::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 15, 15, .28);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      z-index: 99;
+      animation: nav-backdrop-in .2s ease forwards;
+    }
+
+    @keyframes nav-backdrop-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     /* ---------- HERO ---------- */
@@ -223,11 +328,6 @@
     .hero__text {
       width: 100%;
       max-width: none;
-    }
-
-    .hero__eyebrow {
-      margin-bottom: 18px;
-      font-size: 11px;
     }
 
     .hero__quote {
@@ -317,8 +417,6 @@
     }
 
     .index__title {
-      font-size: 18px;
-      line-height: 1.35;
       overflow-wrap: anywhere;
     }
 
@@ -356,8 +454,6 @@
     }
 
     .thought__quote {
-      font-size: clamp(20px, 5.7vw, 28px);
-      line-height: 1.35;
       overflow-wrap: anywhere;
     }
 
@@ -420,11 +516,13 @@
     }
 
     .colophon__grid {
-      grid-template-columns: 1fr;
-      gap: 34px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 30px;
     }
 
     .colophon__brand {
+      grid-column: 1 / -1;
       max-width: none;
     }
 
@@ -461,6 +559,8 @@
   @media (max-width: 420px) {
     :root {
       --mobile-gutter: 16px;
+      --heading-index-size: 1.05rem;
+      --heading-index-lh: 1.38;
     }
 
     .wordmark__name {
@@ -513,10 +613,6 @@
       gap: 11px;
     }
 
-    .index__title {
-      font-size: 17px;
-    }
-
     .index__excerpt {
       font-size: 13px;
     }
@@ -530,29 +626,21 @@
       width: 20px;
       height: 20px;
     }
-
-    .thought__quote {
-      font-size: 20px;
-    }
-  }
-
-  /* ---------- SAMAKAN SAIZ PETIKAN THOUGHT ---------- */
-  .thought__quote {
-    font-size: 1.35rem;
-    line-height: 1.45;
-  }
-
-  @media (max-width: 700px) {
-    .thought__quote {
-      font-size: 1.35rem;
-      line-height: 1.45;
-    }
   }
 
   /* Kurangkan animasi untuk pengguna yang memilih reduced motion. */
   @media (prefers-reduced-motion: reduce) {
-    .nav {
+    .nav,
+    .nav__link,
+    body.nav-open::before {
       transition: none;
+      animation: none;
+    }
+
+    .nav.is-open .nav__link {
+      opacity: 1;
+      transform: none;
+      transition-delay: 0s;
     }
   }
 </style>
@@ -627,20 +715,15 @@ document.documentElement.classList.add("js");
   <!-- ==================================================== HERO -->
   <section class="hero shell">
     <div class="hero__text">
-      <p class="label hero__eyebrow rise" style="--i:0">
-        <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
-        Batu Gajah &rarr; Putrajaya
-      </p>
+      <h1 class="hero__quote rise" style="--i:0">Satu perkara, <em>beribu perspektif</em>.</h1>
 
-      <h1 class="hero__quote rise" style="--i:1">Satu perkara, <em>beribu perspektif</em>.</h1>
-
-      <p class="hero__lede rise" style="--i:2">
+      <p class="hero__lede rise" style="--i:1">
         Saya Ibrahim Roslan. Di sini saya kongsi ulasan buku yang jujur, panduan memilih
         perkakas rumah, dan thought tentang keputusan besar hidup — semuanya daripada
         pengalaman sendiri, bukan teori.
       </p>
 
-      <div class="hero__actions rise" style="--i:3">
+      <div class="hero__actions rise" style="--i:2">
         <a class="btn" href="/blog.html">
           Baca blog
           <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
@@ -652,7 +735,7 @@ document.documentElement.classList.add("js");
       </div>
     </div>
 
-    <div class="hero__visual fade" style="--i:2">
+    <div class="hero__visual fade" style="--i:1">
       <div class="facet" data-facet tabindex="0" role="img"
            aria-label="Objek bersegi interaktif.">
       </div>
@@ -740,7 +823,7 @@ document.documentElement.classList.add("js");
       </a>
     </div>
 
-    <div class="article-layout" style="padding-block:0">
+    <div class="article-layout article-layout--full" style="padding-block:0">
       <div class="prose">
         <p>Saya bercerita tentang keputusan yang saya betul-betul buat — daripada yang kecil
         seperti memilih perkakas rumah, sampai yang besar dan membawa komitmen kewangan
@@ -788,6 +871,10 @@ document.documentElement.classList.add("js");
 
     <div class="colophon__bar">
       <span>&copy; <span data-year>2026</span> Ibrahim Roslan. Hak cipta terpelihara.</span>
+      <span class="colophon__origin">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
+        Batu Gajah &rarr; Putrajaya
+      </span>
     </div>
   </div>
 </footer>
