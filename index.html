@@ -85,12 +85,6 @@
     line-height: var(--heading-index-lh);
   }
 
-  /* Seksyen "Tentang jurnal ini" di laman utama tiada lajur sisi (rail),
-     jadi paksa satu lajur supaya perenggan penuhkan ruang sepenuhnya. */
-  .article-layout--full {
-    grid-template-columns: 1fr;
-  }
-
   /* Bar kaki: baris hakcipta di kiri, lokasi ringkas di kanan. */
   .colophon__bar {
     display: flex;
@@ -111,6 +105,28 @@
     width: 12px;
     height: 12px;
     flex-shrink: 0;
+  }
+
+  /* Selaraskan saiz semua teks footer supaya sama besar —
+     sepadan dengan saiz teks kecil (contoh: petikan sumber/tag)
+     di bahagian penulisan atas. Guna !important sebab beberapa
+     elemen footer ada saiz sendiri di main.css/breakpoint lain. */
+  .colophon,
+  .colophon p,
+  .colophon a,
+  .colophon span,
+  .colophon time {
+    font-size: 0.8125rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Buang padding/margin tambahan pada footer supaya ruang kiri/kanan
+     sepadan dengan seksyen penulisan di atas (guna .shell yang sama). */
+  .colophon__grid,
+  .colophon__brand {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   /* =====================================================
@@ -628,6 +644,17 @@
     }
   }
 
+  /* =====================================================
+     WEBSITE (BUKAN MOBILE)
+     Selaraskan label tarikh/tag "Thought pilihan" ke kanan,
+     sama macam label tarikh/tag "Penulisan terkini".
+     ===================================================== */
+  @media (min-width: 701px) {
+    .thought__foot {
+      justify-content: flex-end;
+    }
+  }
+
   /* Kurangkan animasi untuk pengguna yang memilih reduced motion. */
   @media (prefers-reduced-motion: reduce) {
     .nav,
@@ -812,29 +839,7 @@ document.documentElement.classList.add("js");
     </ul>
   </section>
 
-  <!-- ==================================================== TENTANG (RINGKAS) -->
-  <section class="section shell reveal" aria-labelledby="tajuk-tentang">
-    <div class="section__head">
-      <h2 class="section__title" id="tajuk-tentang">Tentang jurnal ini</h2>
-      <span class="section__rule" aria-hidden="true"></span>
-      <a class="section__link" href="/about.html">
-        Kisah penuh
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
-      </a>
-    </div>
 
-    <div class="article-layout article-layout--full" style="padding-block:0">
-      <div class="prose">
-        <p>Saya bercerita tentang keputusan yang saya betul-betul buat — daripada yang kecil
-        seperti memilih perkakas rumah, sampai yang besar dan membawa komitmen kewangan
-        panjang seperti membina keluarga dan merancang untuk memiliki aset sendiri.</p>
-
-        <p>Apa yang ditulis di sini berdasarkan apa yang saya sudah lalui setakat ini. Saya juga
-        tidak lari daripada melakukan kesilapan. Niatnya ringkas: menceritakan sudut pandang
-        yang jujur, dan mungkin ia berguna untuk sesiapa yang sedang berdepan situasi sama.</p>
-      </div>
-    </div>
-  </section>
 </main>
 
 <!-- ====================================================== KOLOFON -->
@@ -862,7 +867,7 @@ document.documentElement.classList.add("js");
       <nav aria-labelledby="kaki-rasmi">
         <p class="label" id="kaki-rasmi">Rasmi</p>
         <ul class="colophon__list">
-          <li><a href="/cdn-cgi/l/email-protection#cda5a8a1a1a28da4afbfaca5a4a0bfa2bea1aca3e3aea2a0">hantar e-mel</a></li>
+          <li><a href="/cdn-cgi/l/email-protection#cda5a8a1a1a28da4afbfaca5a4a0bfa2bea1aca3e3aea2a0">Hantar e-mel</a></li>
           <li><a href="/privacy.html">Dasar privasi</a></li>
           <li><a href="/disclaimer.html">Penafian</a></li>
         </ul>
