@@ -4,11 +4,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/blog/review-buku-atomic-habits-bm.html",
-      "destination": "/blog.html",
-      "permanent": true
-    },
-    {
       "source": "/thought/sistem-vs-matlamat.html",
       "destination": "/thought.html",
       "permanent": true
