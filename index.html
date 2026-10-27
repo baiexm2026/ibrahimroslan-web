@@ -1,656 +1,33 @@
 <!DOCTYPE html>
-<html lang="ms" data-theme="light">
+<html lang="ms">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Ibrahim Roslan — Ulasan Buku, Panduan Rumah &amp; Pengalaman Peribadi</title>
-<meta name="description" content="Jurnal peribadi Ibrahim Roslan: ulasan buku yang jujur, panduan memilih perkakas rumah, dan thought tentang keputusan besar hidup — semuanya daripada pengalaman sendiri.">
+<title>Ibrahim Roslan — Jurnal Peribadi</title>
+<meta name="description" content="Laman peribadi Ibrahim Roslan dari Putrajaya: ulasan buku, panduan memilih barang rumah, dan cerita tentang keputusan besar hidup, semuanya daripada pengalaman sendiri.">
 <link rel="canonical" href="https://www.ibrahimroslan.com/">
 <meta name="author" content="Ibrahim Roslan">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#fbfaf7">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ibrahim Roslan">
 <meta property="og:locale" content="ms_MY">
-<meta property="og:title" content="Ibrahim Roslan — Ulasan Buku, Panduan Rumah &amp; Pengalaman Peribadi">
-<meta property="og:description" content="Ulasan buku yang jujur, panduan perkakas rumah, dan thought tentang keputusan besar hidup — daripada pengalaman sendiri.">
+<meta property="og:title" content="Ibrahim Roslan — Jurnal Peribadi">
+<meta property="og:description" content="Laman peribadi Ibrahim Roslan dari Putrajaya: ulasan buku, panduan memilih barang rumah, dan cerita tentang keputusan besar hidup, semuanya daripada pengalaman sendiri.">
 <meta property="og:url" content="https://www.ibrahimroslan.com/">
-<meta property="og:image" content="https://www.ibrahimroslan.com/assets/img/og-default.png">
+<meta property="og:image" content="https://www.ibrahimroslan.com/assets/img/og-ibrahim-roslan.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Ibrahim Roslan — satu perkara, beribu perspektif.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ibrahim Roslan — Ulasan Buku, Panduan Rumah &amp; Pengalaman Peribadi">
-<meta name="twitter:description" content="Ulasan buku yang jujur, panduan perkakas rumah, dan thought tentang keputusan besar hidup — daripada pengalaman sendiri.">
-<meta name="twitter:image" content="https://www.ibrahimroslan.com/assets/img/og-default.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico" sizes="32x32">
-<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Ibrahim Roslan — Blog" href="/feed.xml">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&amp;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&amp;display=swap">
-<link rel="stylesheet" href="/assets/css/main.css">
-
-<!-- =====================================================
-     RESPONSIVE / MOBILE OVERRIDES
-     Kekalkan CSS desktop sedia ada, tetapi jadikan halaman
-     lebih selesa untuk skrin tablet dan telefon.
-     ===================================================== -->
-<style>
-  /* Asas anti-horizontal-scroll */
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  img,
-  svg,
-  video,
-  canvas {
-    max-width: 100%;
-  }
-
-  .shell {
-    width: min(100% - 40px, 1180px);
-    margin-inline: auto;
-  }
-
-  /* =====================================================
-     PELARASAN AM (SEMUA SAIZ SKRIN)
-     ===================================================== */
-
-  /* Saiz tajuk "Penulisan terkini" & petikan "Thought" seragam
-     pada semua breakpoint — ubah nilai --heading-index-size sahaja
-     di dalam media query di bawah, kedua-dua elemen akan ikut sekali. */
-  :root {
-    --heading-index-size: 1.35rem;
-    --heading-index-lh: 1.42;
-  }
-
-  .index__title,
-  .thought__quote {
-    font-size: var(--heading-index-size);
-    line-height: var(--heading-index-lh);
-  }
-
-  /* Seksyen "Tentang jurnal ini" di laman utama tiada lajur sisi (rail),
-     jadi paksa satu lajur supaya perenggan penuhkan ruang sepenuhnya. */
-  .article-layout--full {
-    grid-template-columns: 1fr;
-  }
-
-  /* Bar kaki: baris hakcipta di kiri, lokasi ringkas di kanan. */
-  .colophon__bar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px 16px;
-  }
-
-  .colophon__origin {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    opacity: .65;
-  }
-
-  .colophon__origin svg {
-    width: 12px;
-    height: 12px;
-    flex-shrink: 0;
-  }
-
-  /* =====================================================
-     TABLET
-     ===================================================== */
-  @media (max-width: 900px) {
-    .shell {
-      width: min(100% - 32px, 760px);
-    }
-
-    .masthead {
-      position: relative;
-      z-index: 100;
-    }
-
-    .masthead__inner {
-      min-height: 72px;
-      gap: 16px;
-    }
-
-    .masthead__right {
-      gap: 10px;
-    }
-
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 48px;
-      padding-block: 64px 72px;
-    }
-
-    .hero__text {
-      max-width: 720px;
-    }
-
-    .hero__visual {
-      width: 100%;
-      min-height: 360px;
-    }
-
-    .section {
-      padding-block: 56px;
-    }
-
-    .article-layout {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-
-    .colophon__grid {
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 30px;
-    }
-  }
-
-  /* =====================================================
-     TELEFON
-     ===================================================== */
-  @media (max-width: 700px) {
-    :root {
-      --mobile-gutter: 20px;
-      --heading-index-size: 1.15rem;
-      --heading-index-lh: 1.4;
-    }
-
-    .shell {
-      width: calc(100% - (var(--mobile-gutter) * 2));
-    }
-
-    /* ---------- HEADER ---------- */
-    .masthead__inner {
-      min-height: 64px;
-      padding-block: 10px;
-      align-items: center;
-    }
-
-    .wordmark {
-      min-width: 0;
-      max-width: calc(100vw - 155px);
-    }
-
-    .wordmark__name {
-      font-size: clamp(17px, 5vw, 21px);
-      line-height: 1.05;
-    }
-
-    .masthead__right {
-      flex-shrink: 0;
-      gap: 7px;
-      margin-left: auto;
-    }
-
-    .theme-toggle,
-    .nav-toggle {
-      width: 40px;
-      height: 40px;
-      min-width: 40px;
-      display: grid;
-      place-items: center;
-      padding: 0;
-      border-radius: 999px;
-    }
-
-    .nav-toggle {
-      display: grid;
-      position: relative;
-      z-index: 110;
-    }
-
-    /* Menu mobile: dropdown bawah header, dengan backdrop + animasi susun */
-    .nav {
-      position: absolute;
-      top: calc(100% + 10px);
-      right: var(--mobile-gutter);
-      left: var(--mobile-gutter);
-      display: grid;
-      gap: 4px;
-      padding: 10px;
-      background: var(--bg, #fff);
-      border: 1px solid var(--line, rgba(0,0,0,.10));
-      border-radius: 18px;
-      box-shadow: 0 24px 60px rgba(0,0,0,.16), 0 4px 14px rgba(0,0,0,.06);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-10px) scale(.97);
-      transform-origin: top right;
-      transition: opacity .22s cubic-bezier(.22,1,.36,1),
-                  transform .22s cubic-bezier(.22,1,.36,1),
-                  visibility .22s ease;
-      z-index: 105;
-    }
-
-    .nav.is-open,
-    .nav[data-open="true"] {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0) scale(1);
-    }
-
-    .nav__link {
-      position: relative;
-      min-height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      padding: 0 14px;
-      border-radius: 12px;
-      font-size: 14px;
-      opacity: 0;
-      transform: translateY(-6px);
-      transition: opacity .2s ease, transform .2s ease, background .15s ease, color .15s ease;
-    }
-
-    .nav.is-open .nav__link {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .nav.is-open .nav__link:nth-child(1) { transition-delay: .05s; }
-    .nav.is-open .nav__link:nth-child(2) { transition-delay: .10s; }
-    .nav.is-open .nav__link:nth-child(3) { transition-delay: .15s; }
-
-    .nav__link::after {
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-top: 1.4px solid currentColor;
-      border-right: 1.4px solid currentColor;
-      transform: rotate(45deg);
-      opacity: .35;
-      transition: transform .15s ease, opacity .15s ease;
-      flex-shrink: 0;
-    }
-
-    .nav__link:active,
-    .nav__link:hover {
-      background: rgba(0,0,0,.05);
-    }
-
-    .nav__link:hover::after,
-    .nav__link:active::after {
-      transform: rotate(45deg) translate(2px, -2px);
-      opacity: .7;
-    }
-
-    .nav__link + .nav__link {
-      border-top: 1px solid var(--line, rgba(0,0,0,.07));
-    }
-
-    /* Backdrop gelap di belakang menu bila terbuka */
-    body.nav-open::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 15, 15, .28);
-      backdrop-filter: blur(2px);
-      -webkit-backdrop-filter: blur(2px);
-      z-index: 99;
-      animation: nav-backdrop-in .2s ease forwards;
-    }
-
-    @keyframes nav-backdrop-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    /* ---------- HERO ---------- */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-      padding-block: 42px 54px;
-    }
-
-    .hero__text {
-      width: 100%;
-      max-width: none;
-    }
-
-    .hero__quote {
-      max-width: 12.5ch;
-      margin: 0;
-      font-size: clamp(42px, 12vw, 66px);
-      line-height: .98;
-      letter-spacing: -.04em;
-      text-wrap: balance;
-    }
-
-    .hero__lede {
-      max-width: 100%;
-      margin-top: 24px;
-      font-size: 16px;
-      line-height: 1.72;
-    }
-
-    .hero__actions {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-      margin-top: 26px;
-    }
-
-    .hero__actions .btn {
-      width: 100%;
-      min-height: 50px;
-      justify-content: center;
-    }
-
-    .hero__visual {
-      width: 100%;
-      min-height: 300px;
-      display: grid;
-      place-items: center;
-    }
-
-    .facet {
-      max-width: 100%;
-      touch-action: pan-y;
-    }
-
-    /* ---------- SECTIONS ---------- */
-    .section {
-      padding-block: 44px;
-    }
-
-    .section__head {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px 14px;
-      align-items: end;
-    }
-
-    .section__title {
-      min-width: 0;
-      font-size: clamp(26px, 7vw, 34px);
-      line-height: 1.08;
-    }
-
-    .section__rule {
-      display: none;
-    }
-
-    .section__link {
-      font-size: 11px;
-      white-space: nowrap;
-    }
-
-    /* ---------- ARTIKEL ---------- */
-    .index__link {
-      display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: 14px;
-      align-items: start;
-      padding-block: 20px;
-    }
-
-    .index__num {
-      padding-top: 3px;
-    }
-
-    .index__body {
-      min-width: 0;
-    }
-
-    .index__title {
-      overflow-wrap: anywhere;
-    }
-
-    .index__excerpt {
-      margin-top: 8px;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .index__meta {
-      grid-column: 2;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding-top: 0;
-    }
-
-    /* ---------- THOUGHT ---------- */
-    .thought {
-      display: grid;
-      grid-template-columns: 26px 1fr;
-      gap: 14px;
-      padding-block: 20px;
-    }
-
-    .thought__mark {
-      width: 24px;
-      height: 24px;
-    }
-
-    .thought__body {
-      min-width: 0;
-    }
-
-    .thought__quote {
-      overflow-wrap: anywhere;
-    }
-
-    .thought__source {
-      font-size: 13px;
-      line-height: 1.5;
-      margin-top: 12px;
-    }
-
-    .thought__foot {
-      gap: 8px;
-      margin-top: 14px;
-      flex-wrap: wrap;
-    }
-
-    /* ---------- TENTANG ---------- */
-    .article-layout {
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-
-    .article-rail {
-      width: 100%;
-    }
-
-    .article-rail__block {
-      display: grid;
-      grid-template-columns: 74px 1fr;
-      column-gap: 12px;
-      row-gap: 4px;
-      padding: 18px 0;
-    }
-
-    .article-rail dt {
-      margin: 0;
-      font-size: 10px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    .article-rail dd {
-      margin: 0;
-      min-width: 0;
-      font-size: 14px;
-      overflow-wrap: anywhere;
-    }
-
-    .prose {
-      min-width: 0;
-    }
-
-    .prose p {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    /* ---------- FOOTER ---------- */
-    .colophon {
-      padding-block: 44px 24px;
-    }
-
-    .colophon__grid {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-      row-gap: 30px;
-    }
-
-    .colophon__brand {
-      grid-column: 1 / -1;
-      max-width: none;
-    }
-
-    .colophon__blurb {
-      max-width: 34rem;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .colophon__list {
-      display: grid;
-      gap: 3px;
-    }
-
-    .colophon__list a {
-      display: inline-flex;
-      min-height: 38px;
-      align-items: center;
-    }
-
-    .colophon__bar {
-      display: grid;
-      gap: 8px;
-      padding-top: 22px;
-      margin-top: 32px;
-      font-size: 10px;
-      line-height: 1.5;
-    }
-  }
-
-  /* =====================================================
-     TELEFON KECIL
-     ===================================================== */
-  @media (max-width: 420px) {
-    :root {
-      --mobile-gutter: 16px;
-      --heading-index-size: 1.05rem;
-      --heading-index-lh: 1.38;
-    }
-
-    .wordmark__name {
-      font-size: 17px;
-    }
-
-    .masthead__right {
-      gap: 5px;
-    }
-
-    .theme-toggle,
-    .nav-toggle {
-      width: 38px;
-      height: 38px;
-      min-width: 38px;
-    }
-
-    .hero {
-      padding-block: 34px 44px;
-      gap: 28px;
-    }
-
-    .hero__quote {
-      font-size: clamp(38px, 11.5vw, 50px);
-    }
-
-    .hero__lede {
-      font-size: 15px;
-    }
-
-    .hero__visual {
-      min-height: 250px;
-    }
-
-    .section {
-      padding-block: 38px;
-    }
-
-    .section__head {
-      grid-template-columns: 1fr;
-      align-items: start;
-    }
-
-    .section__link {
-      justify-self: start;
-    }
-
-    .index__link {
-      grid-template-columns: 30px 1fr;
-      gap: 11px;
-    }
-
-    .index__excerpt {
-      font-size: 13px;
-    }
-
-    .thought {
-      grid-template-columns: 22px 1fr;
-      gap: 11px;
-    }
-
-    .thought__mark {
-      width: 20px;
-      height: 20px;
-    }
-  }
-
-  /* Kurangkan animasi untuk pengguna yang memilih reduced motion. */
-  @media (prefers-reduced-motion: reduce) {
-    .nav,
-    .nav__link,
-    body.nav-open::before {
-      transition: none;
-      animation: none;
-    }
-
-    .nav.is-open .nav__link {
-      opacity: 1;
-      transform: none;
-      transition-delay: 0s;
-    }
-  }
-</style>
-
-
-<script>
-/* Tema ditetapkan sebelum lukisan pertama supaya tiada kelipan putih. */
-document.documentElement.classList.add("js");
-(function(){try{var s=localStorage.getItem("ir-theme");var d=s||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",d);}catch(e){}})();
-</script>
+<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/main.css?v=2">
+<script>try{var t=localStorage.getItem("ir-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 
 <script type="application/ld+json">
 {
@@ -661,260 +38,139 @@ document.documentElement.classList.add("js");
       "@id": "https://www.ibrahimroslan.com/#website",
       "url": "https://www.ibrahimroslan.com/",
       "name": "Ibrahim Roslan",
-      "description": "Jurnal peribadi: ulasan buku, panduan rumah, dan thought.",
       "inLanguage": "ms-MY",
-      "publisher": { "@id": "https://www.ibrahimroslan.com/#person" }
+      "publisher": {
+        "@id": "https://www.ibrahimroslan.com/#person"
+      }
     },
     {
       "@type": "Person",
       "@id": "https://www.ibrahimroslan.com/#person",
       "name": "Ibrahim Roslan",
+      "givenName": "Ibrahim",
+      "familyName": "Roslan",
       "url": "https://www.ibrahimroslan.com/",
-      "email": "hello@ibrahimroslan.com",
-      "birthPlace": { "@type": "Place", "name": "Batu Gajah, Perak, Malaysia" },
-      "homeLocation": { "@type": "Place", "name": "Putrajaya, Malaysia" },
-      "knowsLanguage": ["ms", "en"]
+      "image": "https://www.ibrahimroslan.com/assets/img/ibrahim-roslan.jpg",
+      "email": "mailto:hello@ibrahimroslan.com",
+      "description": "Penulis jurnal peribadi tentang buku, barang rumah dan keputusan besar hidup. Berasal dari Batu Gajah, Perak; kini di Putrajaya.",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Batu Gajah, Perak, Malaysia"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Putrajaya, Malaysia"
+      },
+      "knowsLanguage": [
+        "ms",
+        "en"
+      ]
     }
   ]
 }
 </script>
 </head>
 <body>
-
 <a class="skip" href="#utama">Langkau ke kandungan</a>
-<div class="grain" aria-hidden="true"></div>
 
-<!-- ====================================================== KEPALA TAPAK -->
-<header class="masthead">
-  <div class="shell masthead__inner">
-    <a class="wordmark" href="/">
-      <span class="wordmark__name">Ibrahim Roslan</span>
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="/" aria-label="Ibrahim Roslan — laman utama">
+      <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#1f6b52"/><path d="M43 0h5a16 16 0 0 1 16 16v5z" fill="#7cc7a6"/><g fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="square"><path d="M18 19v27"/><path d="M29.5 46V19h8a8.25 8.25 0 0 1 0 16.5h-8"/><path d="M38 36.5l8 9.5"/></g></svg>
+      <span class="brand__name">Ibrahim Roslan</span>
     </a>
-
-    <div class="masthead__right">
-      <nav class="nav" id="nav" aria-label="Navigasi utama">
-        <a class="nav__link" href="/blog.html">Blog</a>
-        <a class="nav__link" href="/thought.html">Thought</a>
-        <a class="nav__link" href="/about.html">Tentang</a>
+    <div class="site-head__right">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="/blog.html">Blog</a>
+        <a href="/thought.html">Thought</a>
+        <a href="/about.html">Tentang</a>
       </nav>
-
       <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Tukar ke mod gelap">
-        <svg class="icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="3.1"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.1 3.1l1.1 1.1M11.8 11.8l1.1 1.1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1"/></svg>
-        <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 0 1 6.4 2.8a5.6 5.6 0 1 0 6.8 6.8z"/></svg>
-      </button>
-
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav" aria-label="Buka menu">
-        <svg class="icon-menu" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M2 4.5h12M2 8h12M2 11.5h12"/></svg>
-        <svg class="icon-close" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg>
+        <svg class="icon-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="3.1"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.1 3.1l1.1 1.1M11.8 11.8l1.1 1.1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1"/></svg><svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 9.6A5.6 5.6 0 0 1 6.4 2.8a5.6 5.6 0 1 0 6.8 6.8z"/></svg>
       </button>
     </div>
   </div>
 </header>
 
-<main id="utama">
-  <!-- ==================================================== HERO -->
-  <section class="hero shell">
-    <div class="hero__text">
-      <h1 class="hero__quote rise" style="--i:0">Satu perkara, <em>beribu perspektif</em>.</h1>
-
-      <p class="hero__lede rise" style="--i:1">
-        Saya Ibrahim Roslan. Di sini saya kongsi ulasan buku yang jujur, panduan memilih
-        perkakas rumah, dan thought tentang keputusan besar hidup — semuanya daripada
-        pengalaman sendiri, bukan teori.
-      </p>
-
-      <div class="hero__actions rise" style="--i:2">
-        <a class="btn" href="/blog.html">
-          Baca blog
-          <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
-        </a>
-        <a class="btn btn--ghost" href="/about.html">
-          Tentang saya
-          <svg class="btn__arrow" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="hero__visual fade" style="--i:1">
-      <div class="facet" data-facet tabindex="0" role="img"
-           aria-label="Objek bersegi interaktif.">
-      </div>
+<main id="utama" class="wrap">
+  <section class="hero" aria-labelledby="nama">
+    <img class="avatar" src="/assets/img/ibrahim-roslan.jpg" width="168" height="168" alt="Gambar Ibrahim Roslan" fetchpriority="high">
+    <div>
+      <p class="hero__hello">Hai, saya</p>
+      <h1 class="hero__name" id="nama">Ibrahim Roslan</h1>
+      <p class="hero__tagline">Satu perkara, beribu perspektif.</p>
     </div>
   </section>
 
-  <!-- ==================================================== PENULISAN TERKINI -->
-  <section class="section shell reveal" aria-labelledby="tajuk-terkini">
+  <p class="lead">Saya berasal dari Batu Gajah, Perak dan kini menetap di Putrajaya. Di sini saya
+  tulis tentang keputusan hidup yang saya betul-betul lalui: buku yang saya baca dan amalkan, barang
+  rumah yang saya beli, dan keputusan besar seperti membina keluarga dan memiliki aset sendiri.</p>
+
+  <div class="actions">
+    <a class="btn" href="/about.html">Kenali saya</a>
+    <a class="btn btn--ghost" href="/blog.html">Baca blog</a>
+  </div>
+
+  <section class="section" aria-labelledby="tajuk-terkini">
     <div class="section__head">
       <h2 class="section__title" id="tajuk-terkini">Penulisan terkini</h2>
-      <span class="section__rule" aria-hidden="true"></span>
-      <a class="section__link" href="/blog.html">
-        Semua blog
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
-      </a>
+      <a class="section__link" href="/blog.html">Semua blog &rarr;</a>
     </div>
-
-    <ol class="index index--flush">
-      <li class="index__item">
-        <a class="index__link" href="/blog/review-buku-atomic-habits-bm.html">
-          <span class="index__num" aria-hidden="true">01</span>
-          <span class="index__body">
-            <span class="index__title">Review jujur buku Atomic Habits versi BM: berbaloi beli atau tanya AI je?</span>
-            <span class="index__excerpt">Ulasan ikhlas selepas mengamalkan empat sistem utama buku ini, plus cara elak buku cetak rompak di Shopee.</span>
-          </span>
-          <span class="index__meta">
-            <time class="index__date" datetime="2026-09-08">8 Sep 2026</time>
-            <span class="tag">Buku</span>
-          </span>
-        </a>
-      </li>
-    </ol>
+  <!-- SENARAI ARTIKEL
+       Bila artikel pertama siap, padam kotak <div class="note"> di bawah dan guna format ini:
+       <ul class="posts">
+         <li class="post">
+           <a href="/blog/nama-artikel.html">
+             <span class="post__title">Tajuk artikel</span>
+             <span class="post__excerpt">Ringkasan satu ayat.</span>
+             <span class="post__meta"><time datetime="2026-11-01">1 Nov 2026</time> · Rumah</span>
+           </a>
+         </li>
+       </ul>
+  -->
+  <div class="note">
+    <p><strong>Artikel pertama sedang ditulis.</strong> Sementara itu, kenali
+    <a href="/about.html">siapa saya dan apa yang akan saya tulis di sini</a>.</p>
+  </div>
   </section>
 
-  <!-- ==================================================== THOUGHT PILIHAN -->
-  <section class="section shell reveal" aria-labelledby="tajuk-thought">
+  <section class="section" aria-labelledby="tajuk-thought">
     <div class="section__head">
       <h2 class="section__title" id="tajuk-thought">Thought pilihan</h2>
-      <span class="section__rule" aria-hidden="true"></span>
-      <a class="section__link" href="/thought.html">
-        Semua thought
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
-      </a>
+      <a class="section__link" href="/thought.html">Semua thought &rarr;</a>
     </div>
-
-    <ul class="thoughts thoughts--flush">
-      <li class="thought">
-        <span class="thought__mark" aria-hidden="true">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8M2 5l6 3.4L14 5"/></svg>
-        </span>
-        <div class="thought__body">
-          <blockquote class="thought__quote">Kita tidak jatuh ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.</blockquote>
-          <p class="thought__source">— James Clear, <cite>Atomic Habits</cite></p>
-          <div class="thought__foot">
-            <time class="numeral" datetime="2026-09-08">8 Sep 2026</time>
-            <span class="tag">Disiplin</span>
-          </div>
-        </div>
-      </li>
-
-      <li class="thought">
-        <span class="thought__mark" aria-hidden="true">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8M2 5l6 3.4L14 5"/></svg>
-        </span>
-        <div class="thought__body">
-          <blockquote class="thought__quote">Adakah kita benar-benar inginkan perkara ini, atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?</blockquote>
-          <p class="thought__source">— Morgan Housel, <cite>The Psychology of Money</cite></p>
-          <div class="thought__foot">
-            <time class="numeral" datetime="2026-09-08">8 Sep 2026</time>
-            <span class="tag">Persoalan</span>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ==================================================== TENTANG (RINGKAS) -->
-  <section class="section shell reveal" aria-labelledby="tajuk-tentang">
-    <div class="section__head">
-      <h2 class="section__title" id="tajuk-tentang">Tentang jurnal ini</h2>
-      <span class="section__rule" aria-hidden="true"></span>
-      <a class="section__link" href="/about.html">
-        Kisah penuh
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h10M9 4.5 12.5 8 9 11.5"/></svg>
-      </a>
-    </div>
-
-    <div class="article-layout article-layout--full" style="padding-block:0">
-      <div class="prose">
-        <p>Saya bercerita tentang keputusan yang saya betul-betul buat — daripada yang kecil
-        seperti memilih perkakas rumah, sampai yang besar dan membawa komitmen kewangan
-        panjang seperti membina keluarga dan merancang untuk memiliki aset sendiri.</p>
-
-        <p>Apa yang ditulis di sini berdasarkan apa yang saya sudah lalui setakat ini. Saya juga
-        tidak lari daripada melakukan kesilapan. Niatnya ringkas: menceritakan sudut pandang
-        yang jujur, dan mungkin ia berguna untuk sesiapa yang sedang berdepan situasi sama.</p>
-      </div>
-    </div>
+  <ul class="quotes">
+    <li>
+      <figure class="quote">
+        <blockquote>Kita tidak jatuh ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.</blockquote>
+        <figcaption class="quote__source">— James Clear, <cite>Atomic Habits</cite></figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure class="quote">
+        <blockquote>Adakah kita benar-benar inginkan perkara ini, atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?</blockquote>
+        <figcaption class="quote__source">— Morgan Housel, <cite>The Psychology of Money</cite></figcaption>
+      </figure>
+    </li>
+  </ul>
   </section>
 </main>
 
-<!-- ====================================================== KOLOFON -->
-<footer class="colophon">
-  <div class="shell">
-    <div class="colophon__grid">
-      <div class="colophon__brand">
-        <p class="label label--clay">
-          <svg class="facet-mark" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
-          Ibrahim Roslan
-        </p>
-        <p class="colophon__blurb">Satu perkara, beribu perspektif. Blog, ulasan dan thought
-        daripada pengalaman sendiri — ditulis di Putrajaya.</p>
-      </div>
-
-      <nav aria-labelledby="kaki-terokai">
-        <p class="label" id="kaki-terokai">Terokai</p>
-        <ul class="colophon__list">
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/thought.html">Thought</a></li>
-          <li><a href="/about.html">Tentang saya</a></li>
-        </ul>
-      </nav>
-
-      <nav aria-labelledby="kaki-rasmi">
-        <p class="label" id="kaki-rasmi">Rasmi</p>
-        <ul class="colophon__list">
-          <li><a href="/cdn-cgi/l/email-protection#cda5a8a1a1a28da4afbfaca5a4a0bfa2bea1aca3e3aea2a0">hantar e-mel</a></li>
-          <li><a href="/privacy.html">Dasar privasi</a></li>
-          <li><a href="/disclaimer.html">Penafian</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="colophon__bar">
-      <span>&copy; <span data-year>2026</span> Ibrahim Roslan. Hak cipta terpelihara.</span>
-      <span class="colophon__origin">
-        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.6 14 5v6l-6 3.4L2 11V5z"/><path d="M8 1.6v12.8"/></svg>
-        Batu Gajah &rarr; Putrajaya
-      </span>
-    </div>
+<footer class="site-foot">
+  <div class="wrap">
+    <ul class="site-foot__links">
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a href="/thought.html">Thought</a></li>
+      <li><a href="/about.html">Tentang saya</a></li>
+      <li><a href="mailto:hello@ibrahimroslan.com">E-mel</a></li>
+      <li><a href="/privacy.html">Dasar privasi</a></li>
+      <li><a href="/disclaimer.html">Penafian</a></li>
+      <li><a href="/feed.xml">RSS</a></li>
+    </ul>
+    <p>&copy; <span data-year>2026</span> Ibrahim Roslan · Batu Gajah &rarr; Putrajaya</p>
   </div>
 </footer>
 
-
-<script>
-/* Pastikan menu hamburger berfungsi walaupun site.js gagal dimuatkan. */
-(function () {
-  var toggle = document.querySelector('[data-nav-toggle]');
-  var nav = document.querySelector('#nav');
-  if (!toggle || !nav) return;
-
-  function setMenu(open) {
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
-    nav.classList.toggle('is-open', open);
-    nav.setAttribute('data-open', String(open));
-    document.body.classList.toggle('nav-open', open);
-  }
-
-  toggle.addEventListener('click', function () {
-    setMenu(toggle.getAttribute('aria-expanded') !== 'true');
-  });
-
-  nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () { setMenu(false); });
-  });
-
-  document.addEventListener('click', function (event) {
-    if (!nav.contains(event.target) && !toggle.contains(event.target)) {
-      setMenu(false);
-    }
-  });
-
-  window.addEventListener('resize', function () {
-    if (window.innerWidth > 700) setMenu(false);
-  });
-})();
-</script>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/site.js" defer></script>
-<script src="/assets/js/facet.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
 </body>
 </html>
