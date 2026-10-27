@@ -34,12 +34,12 @@
   --sans:  "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
 
-  --fs-small: 0.9375rem;                                 /* 15px */
-  --fs-body:  clamp(1.0625rem, 1rem + 0.25vw, 1.15rem);  /* 17–18.4px */
-  --fs-lead:  clamp(1.125rem, 1.05rem + 0.4vw, 1.3rem);
-  --fs-h3:    clamp(1.2rem, 1.1rem + 0.4vw, 1.4rem);
-  --fs-h2:    clamp(1.45rem, 1.25rem + 0.8vw, 1.9rem);
-  --fs-h1:    clamp(2rem, 1.5rem + 2.2vw, 3rem);
+  --fs-small: 0.875rem;                                  /* 14px */
+  --fs-body:  clamp(1rem, 0.97rem + 0.15vw, 1.0625rem); /* 16–17px */
+  --fs-lead:  clamp(1.0625rem, 1rem + 0.3vw, 1.2rem);
+  --fs-h3:    clamp(1.1rem, 1.04rem + 0.3vw, 1.25rem);
+  --fs-h2:    clamp(1.35rem, 1.2rem + 0.6vw, 1.7rem);
+  --fs-h1:    clamp(1.85rem, 1.45rem + 1.8vw, 2.6rem);
 
   --wrap:    46rem;      /* lebar maksimum kandungan */
   --gutter:  clamp(1.1rem, 4vw, 2rem);
@@ -173,6 +173,20 @@ svg { display: block; }
 .page-head h1 { font-size: var(--fs-h1); margin-bottom: 0.6rem; }
 .page-head .lead { margin: 0; }
 
+/* Hero laman utama: identiti di kiri, objek berputar di kanan */
+.hero--home { grid-template-columns: minmax(0, 1fr) auto; gap: clamp(1rem, 4vw, 2.5rem); }
+.hero__id { display: flex; align-items: center; gap: clamp(1rem, 3vw, 1.5rem); }
+.hero--home .avatar { width: clamp(84px, 14vw, 112px); }
+.prism { margin: 0; text-align: center; }
+.prism__stage {
+  width: clamp(190px, 24vw, 250px); aspect-ratio: 1; margin: 0 auto;
+  cursor: grab; touch-action: pan-y; border-radius: 50%;
+}
+.prism__stage.is-dragging { cursor: grabbing; }
+.prism__stage canvas { display: block; }
+.prism figcaption { margin-top: 0.35rem; font-size: 0.8125rem; color: var(--ink-faint); line-height: 1.4; }
+.prism__hint { display: block; opacity: .8; }
+
 /* Butang */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
@@ -211,10 +225,10 @@ svg { display: block; }
 /* Thought (petikan) */
 .quotes { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
 .quote {
-  margin: 0; padding: 1.4rem 1.5rem; border-radius: var(--radius);
+  margin: 0; padding: 1.15rem 1.25rem; border-radius: var(--radius);
   background: var(--bg-soft); border-left: 4px solid var(--accent);
 }
-.quote blockquote { margin: 0; font-family: var(--serif); font-size: var(--fs-h3); line-height: 1.45; color: var(--ink); }
+.quote blockquote { margin: 0; font-family: var(--serif); font-size: clamp(1.02rem, 0.98rem + 0.2vw, 1.1rem); line-height: 1.55; color: var(--ink); }
 .quote__source { margin: 0.75rem 0 0; font-size: var(--fs-small); color: var(--ink-soft); }
 .quote__note { margin: 0.75rem 0 0; color: var(--ink-soft); }
 
@@ -282,6 +296,8 @@ svg { display: block; }
   .brand__name { display: none; }        /* logo sahaja supaya menu muat */
   .nav a { padding: 0 0.6rem; }
   .hero { grid-template-columns: 1fr; text-align: left; }
+  .hero--home { gap: 1.5rem; }
+  .prism__stage { width: min(68vw, 240px); }
   .actions .btn { flex: 1 1 100%; }
   .section__head { flex-wrap: wrap; }
   .author { flex-direction: column; align-items: flex-start; }
