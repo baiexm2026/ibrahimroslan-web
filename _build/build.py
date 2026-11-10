@@ -12,7 +12,11 @@ NAME = "Ibrahim Roslan"
 EMAIL = "hello@ibrahimroslan.com"
 OG = f"{SITE}/assets/img/og-ibrahim-roslan.png"
 PHOTO = "/assets/img/ibrahim-roslan.jpg?v=3"
-UPDATED = "2026-10-27"
+UPDATED = "2026-11-10"            # tarikh kemas kini terakhir halaman & artikel yang diubah
+UPDATED_DISP = "10 Nov 2026"
+PRIVACY_UPDATED = "2026-10-27"    # dasar privasi tidak berubah sejak tarikh ini
+LINKEDIN = "https://www.linkedin.com/in/ibrahim-roslan-478582153/"
+CSS_VER = "4"                     # naikkan nombor ini setiap kali main.css diubah
 
 PERSON = {
     "@type": "Person",
@@ -29,7 +33,7 @@ PERSON = {
     "knowsLanguage": ["ms", "en"],
     # Tambah pautan profil awam anda di sini (LinkedIn, Instagram, X, Threads...).
     # Ini bantu Google faham bahawa semua profil itu milik orang yang sama.
-    "sameAs": [],
+    "sameAs": [LINKEDIN],
 }
 if not PERSON['sameAs']:
     del PERSON['sameAs']
@@ -60,8 +64,15 @@ def esc(s):
     return s.replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;")
 
 
-def page(path, title, desc, body, *, og_type="website", graph=None, robots=None, active=None, prefix="", js=None, og=None):
+def og_for(slug):
+    """Gambar kongsi khas artikel (dijana oleh _build/og.py) jika ada; jika tiada guna gambar umum."""
+    f = pathlib.Path(__file__).resolve().parent.parent / "assets" / "img" / f"og-{slug}.png"
+    return f"{SITE}/assets/img/og-{slug}.png" if f.exists() else OG
+
+
+def page(path, title, desc, body, *, og_type="website", graph=None, robots=None, active=None, prefix="", js=None, og=None, og_alt=None):
     og_img = og or OG
+    og_alt = og_alt or f"{NAME} — satu perkara, beribu perspektif."
     extra_js = ('\n<script src="' + js + '" defer></script>') if js else ""
     url = SITE + ("/" if path == "index.html" else "/" + path)
     graph = graph or [WEBSITE, {"@id": f"{SITE}/#person"}]
@@ -89,7 +100,7 @@ def page(path, title, desc, body, *, og_type="website", graph=None, robots=None,
 <meta property="og:image" content="{og_img}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{NAME} — satu perkara, beribu perspektif.">
+<meta property="og:image:alt" content="{esc(og_alt)}">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -98,8 +109,8 @@ def page(path, title, desc, body, *, og_type="website", graph=None, robots=None,
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="{NAME} — Blog" href="/feed.xml">
 <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/main.css?v=3">
-<script>try{{var t=localStorage.getItem("ir-theme");if(t)document.documentElement.setAttribute("data-theme",t)}}catch(e){{}}</script>
+<link rel="stylesheet" href="/assets/css/main.css?v={CSS_VER}">
+<script src="/assets/js/theme.js"></script>
 
 <script type="application/ld+json">
 {ld}
@@ -150,27 +161,30 @@ def page(path, title, desc, body, *, og_type="website", graph=None, robots=None,
 """
 
 
+# (teks, siapa, buku, nota, jenis)  jenis: "petikan" = kata-kata penulis; "idea" = rumusan saya daripada idea penulis
 QUOTES = [
-    ("Kita tidak jatuh ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.",
+    ("Kita tidak naik ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.",
      "James Clear", "Atomic Habits",
      "Ayat inilah yang menukar cara saya fikir tentang azam. Matlamat cuma menetapkan arah; yang "
      "benar-benar menentukan kemajuan ialah rutin harian yang cukup kecil sampai tak perlu semangat untuk mula. "
-     '<a href="/blog/review-buku-atomic-habits-bm.html">Baca pandangan penuh saya</a>.'),
+     '<a href="/blog/review-buku-atomic-habits-bm.html">Baca pandangan penuh saya</a>.', "petikan"),
     ("Adakah kita benar-benar inginkan perkara ini, atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?",
      "Morgan Housel", "The Psychology of Money",
      "Soalan yang menyakitkan bila ditanya betul-betul, terutama sebelum membuat pembelian besar. Saya "
-     "simpan ia sebagai penapis sebelum keputusan yang membawa komitmen kewangan panjang."),
+     "simpan ia sebagai penapis sebelum keputusan yang membawa komitmen kewangan panjang.", "idea"),
 ]
 
 
 def quotes(with_notes):
     items = []
-    for q, who, book, note in QUOTES:
+    for q, who, book, note, kind in QUOTES:
         n = f'\n      <p class="quote__note">{note}</p>' if with_notes else ""
+        src = (f"— {who}, <cite>{book}</cite>" if kind == "petikan"
+               else f"Idea daripada {who}, <cite>{book}</cite>")
         items.append(f"""    <li>
       <figure class="quote">
         <blockquote>{q}</blockquote>
-        <figcaption class="quote__source">— {who}, <cite>{book}</cite></figcaption>{n}
+        <figcaption class="quote__source">{src}</figcaption>{n}
       </figure>
     </li>""")
     return '  <ul class="quotes">\n' + "\n".join(items) + "\n  </ul>"
@@ -181,14 +195,36 @@ def quotes(with_notes):
 # Artikel baharu: tambah di ATAS senarai ini (paling baru dahulu).
 POSTS = [
     ("/blog/the-anxious-generation-kecewakan-anak.html",
-     "The Anxious Generation: betul ke kita patut sengaja kecewakan anak? Pandangan peribadi saya",
-     "Satu petikan tular kata ibu bapa patut kecewakan anak setiap hari. Saya selidik dari mana ia datang dan apa isi sebenar buku ni.",
+     "The Anxious Generation: betul ke kita patut sengaja kecewakan anak?",
+     "Satu petikan tular kata ibu bapa patut kecewakan anak setiap hari. Saya selidik dari mana ia datang dan apa isi utama buku ni.",
      "2026-10-27", "27 Okt 2026", "Buku"),
     ("/blog/review-buku-atomic-habits-bm.html",
-     "Atomic Habits versi BM: berbaloi beli atau tanya AI je? Pandangan peribadi saya",
+     "Atomic Habits versi BM: berbaloi beli atau tanya AI je?",
      "Saya baca versi English tapi banyak belajar daripada perkongsian versi BM di media sosial.",
      "2026-09-08", "8 Sep 2026", "Buku"),
 ]
+
+# Tarikh kemas kini terakhir setiap artikel (untuk sitemap). Artikel yang tiada di sini guna tarikh terbit.
+MODIFIED = {
+    "/blog/the-anxious-generation-kecewakan-anak.html": UPDATED,
+    "/blog/review-buku-atomic-habits-bm.html": UPDATED,
+}
+
+KICKER = '<p class="kicker">Pandangan peribadi</p>'
+
+
+def related(href):
+    """Senarai 'Baca juga': artikel lain di laman ini (pautan dalaman bantu pembaca dan Google)."""
+    items = "\n".join(f'        <li><a href="{h}">{t}</a></li>' for h, t, *_ in POSTS if h != href)
+    if not items:
+        return ""
+    return f"""<h2 id="baca-juga">Baca juga</h2>
+      <ul>
+{items}
+      </ul>
+
+      """
+
 
 def posts_list(limit=None):
     rows = []
@@ -214,10 +250,15 @@ except ImportError:
 CONTENT = pathlib.Path(__file__).resolve().parent / "content"
 MONTHS = ["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogo", "Sep", "Okt", "Nov", "Dis"]
 
-# (nama fail tanpa .md, tarikh terbit YYYY-MM-DD, {nama produk: pautan affiliate})
+# (nama fail tanpa .md, tarikh terbit YYYY-MM-DD, {nama produk: pautan affiliate}, tarikh kemas kini atau None)
 MD_ARTICLES = [
-    ("5-hukum-kebodohan-carlo-cipolla", "2026-10-28", {}),
+    ("5-hukum-kebodohan-carlo-cipolla", "2026-10-28", {}, "2026-11-10"),
 ]
+
+
+def _disp(iso):
+    y, mo, d = iso.split("-")
+    return f"{int(d)} {MONTHS[int(mo) - 1]} {y}"
 
 
 def _meta(block, key):
@@ -234,7 +275,7 @@ def _ext_links(h):
     return _re.sub(r'<a href="https?://[^"]+">', fix, h)
 
 
-def md_article(slug, iso, affiliates):
+def md_article(slug, iso, affiliates, updated=None):
     src = (CONTENT / f"{slug}.md").read_text(encoding="utf-8")
     meta = ""
     m = _re.match(r"\s*<!--(.*?)-->", src, _re.S)
@@ -246,15 +287,16 @@ def md_article(slug, iso, affiliates):
     desc = _meta(meta, "Meta description") or lede
     cat = (_meta(meta, "Kategori") or "Blog").split("/")[0].strip()
     mins = _meta(meta, "Anggaran masa baca") or "5 minit"
-    y, mo, d = iso.split("-")
-    disp = f"{int(d)} {MONTHS[int(mo) - 1]} {y}"
+    disp = _disp(iso)
+    modified = updated or iso
+    upd = f' · Dikemas kini <time datetime="{updated}">{_disp(updated)}</time>' if updated and updated != iso else ""
 
     for name, link in affiliates.items():
         src = src.replace(f"[PAUTAN AFFILIATE: {name}]", link)
     body = _md.markdown(src, extensions=["extra", "sane_lists"])
     # Kotak "Jawapan ringkas"
     body = _re.sub(r"<blockquote>\s*<p><strong>Jawapan ringkas:?</strong>:?(.*?)</p>\s*</blockquote>",
-                   r'<div class="note" style="margin-bottom:1.75rem"><p><strong>Jawapan ringkas:</strong>\1</p></div>',
+                   r'<div class="note"><p><strong>Jawapan ringkas:</strong>\1</p></div>',
                    body, flags=_re.S)
     # Pautan affiliate ditanda sponsored
     for link in affiliates.values():
@@ -281,14 +323,16 @@ def md_article(slug, iso, affiliates):
 
   <article>
     <header class="page-head">
+      {KICKER}
       <h1>{title}</h1>
       <p class="lead">{plain_lede.strip()}</p>
-      <p class="article-meta">Oleh <a href="/about.html">{NAME}</a> · <time datetime="{iso}">{disp}</time> · {cat} · {mins} baca</p>
+      <p class="article-meta">Oleh <a href="/about.html">{NAME}</a> · <time datetime="{iso}">{disp}</time>{upd} · {cat} · {mins} baca</p>
     </header>
 
     <div class="prose">
       {disclosure}{body}
 
+      <!--BACA-JUGA:/blog/{slug}.html-->
       <div class="author">
         <img src="{PHOTO}" width="64" height="64" alt="{NAME}" loading="lazy">
         <p><strong>{NAME}</strong><br>Berkongsi pandangan peribadi tentang buku, media sosial dan keputusan hidup, dari Putrajaya.
@@ -298,8 +342,8 @@ def md_article(slug, iso, affiliates):
   </article>"""
     graph = [WEBSITE, PERSON, {
         "@type": "BlogPosting", "@id": f"{url}#article", "headline": title, "description": desc,
-        "datePublished": iso, "dateModified": iso, "url": url, "mainEntityOfPage": url,
-        "inLanguage": "ms-MY", "image": OG,
+        "datePublished": iso, "dateModified": modified, "url": url, "mainEntityOfPage": url,
+        "inLanguage": "ms-MY", "image": og_for(slug),
         "author": {"@id": f"{SITE}/#person"}, "publisher": {"@id": f"{SITE}/#person"},
     }, {
         "@type": "BreadcrumbList", "itemListElement": [
@@ -308,15 +352,16 @@ def md_article(slug, iso, affiliates):
             {"@type": "ListItem", "position": 3, "name": short, "item": url},
         ]}]
     post = (f"/blog/{slug}.html", title, plain_lede.strip(), iso, disp, cat)
-    pg = (f"blog/{slug}.html", f"{title} | {NAME}", desc, page_body,
-          dict(graph=graph, og_type="article", active="/blog.html"))
+    MODIFIED[f"/blog/{slug}.html"] = modified
+    pg = (f"blog/{slug}.html", title, desc, page_body,
+          dict(graph=graph, og_type="article", active="/blog.html", og=og_for(slug), og_alt=title))
     return post, pg
 
 
 MD_PAGES = []
 if _md:
-    for _slug, _iso, _aff in MD_ARTICLES:
-        _post, _pg = md_article(_slug, _iso, _aff)
+    for _slug, _iso, _aff, _upd in MD_ARTICLES:
+        _post, _pg = md_article(_slug, _iso, _aff, _upd)
         POSTS.append(_post)
         MD_PAGES.append(_pg)
 POSTS.sort(key=lambda p: p[3], reverse=True)
@@ -398,15 +443,15 @@ about_body = f"""  <section class="hero" aria-labelledby="nama">
     <div><dt>E-mel</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd></div>
   </dl>
 
-  <div class="prose" style="padding-top:0">
+  <div class="prose prose--flush">
     <p class="lead">Saya Ibrahim Roslan. Laman ini ruang perkongsian peribadi saya. Semua yang ada di
-    sini datang daripada apa yang saya sendiri lalui, bukan teori.</p>
+    sini datang daripada apa yang saya sendiri lalui, baca dan fikirkan.</p>
 
     <p>Saya bercerita tentang pengalaman hidup dan keputusan yang saya betul-betul buat, bermula
     daripada yang kecil seperti memilih perkakas rumah, sampai kepada keputusan besar yang membawa
     komitmen kewangan panjang, termasuklah membina keluarga dan merancang untuk memiliki aset sendiri.</p>
 
-    <p>Apa yang saya kongsikan berdasarkan apa yang telah saya lalui setakat ini. Saya juga tidak lari
+    <p>Apa yang saya kongsikan berdasarkan apa yang telah saya lalui dan fahami setakat ini. Saya juga tidak lari
     daripada melakukan kesilapan dan kesilapan itu pun saya tulis.</p>
 
     <h2>Kenapa nama "Satu perkara, beribu perspektif"?</h2>
@@ -421,13 +466,11 @@ about_body = f"""  <section class="hero" aria-labelledby="nama">
       <li><strong>Keputusan besar</strong>: kewangan, keluarga dan aset, ditulis sebagai catatan perjalanan, bukan nasihat profesional.</li>
     </ul>
 
-    <!-- PROFIL LAIN: bila ada, buang komen ini dan senaraikan pautan profil awam anda.
     <h2>Di mana lagi anda boleh jumpa saya</h2>
     <ul>
-      <li><a href="https://www.linkedin.com/in/..." rel="me">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/..." rel="me">Instagram</a></li>
+      <li><a href="{LINKEDIN}" rel="me noopener" target="_blank">LinkedIn</a></li>
     </ul>
-    -->
+    <!-- PROFIL LAIN: tambah baris <li> baharu di atas dan masukkan pautan yang sama dalam "sameAs" di bahagian PERSON. -->
 
     <h2>Berhubung</h2>
     <p>Ada soalan, nak betulkan saya, atau sekadar mahu menyapa? E-mel saya di
@@ -448,10 +491,10 @@ about_graph = [WEBSITE, PERSON, {
 blog_body = f"""  <header class="page-head">
     <h1>Blog</h1>
     <p class="lead">Pandangan peribadi tentang buku dan media sosial, panduan memilih barang rumah dan pengalaman peribadi. Setiap satu
-    ditulis selepas saya sendiri melaluinya.</p>
+    datang daripada apa yang saya sendiri lalui, baca dan fikirkan.</p>
   </header>
 
-  <section class="section" style="border-top:0" aria-label="Senarai artikel">
+  <section class="section section--plain" aria-label="Senarai artikel">
 {posts_list() if POSTS else EMPTY_POSTS}
   </section>"""
 
@@ -462,7 +505,7 @@ thought_body = f"""  <header class="page-head">
     sini sebagai peringatan untuk diri sendiri, bukan sebagai nasihat.</p>
   </header>
 
-  <section class="section" style="border-top:0" aria-label="Senarai thought">
+  <section class="section section--plain" aria-label="Senarai thought">
 {quotes(True)}
   </section>"""
 
@@ -471,7 +514,7 @@ privacy_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href="/"
   <header class="page-head">
     <h1>Dasar privasi</h1>
     <p class="lead">Apa yang laman ini kumpul, apa yang tidak dan siapa lagi yang mungkin melihat kunjungan anda.</p>
-    <p class="article-meta">Kemas kini: <time datetime="{UPDATED}">27 Okt 2026</time></p>
+    <p class="article-meta">Kemas kini: <time datetime="{PRIVACY_UPDATED}">27 Okt 2026</time></p>
   </header>
   <div class="prose">
     <p>Privasi pelawat penting kepada saya. Halaman ini menerangkan maklumat yang dikumpul apabila anda
@@ -506,7 +549,7 @@ disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href=
   <header class="page-head">
     <h1>Penafian</h1>
     <p class="lead">Dari mana kandungan ini datang, bila saya dapat komisen dan apa yang anda patut semak sendiri sebelum membeli.</p>
-    <p class="article-meta">Kemas kini: <time datetime="{UPDATED}">27 Okt 2026</time></p>
+    <p class="article-meta">Kemas kini: <time datetime="{UPDATED}">{UPDATED_DISP}</time></p>
   </header>
   <div class="prose">
     <h2>Kandungan ini pengalaman peribadi</h2>
@@ -522,7 +565,8 @@ disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href=
     <strong>tanpa sebarang kos tambahan kepada anda</strong>.</p>
     <p>Peraturan yang saya pegang:</p>
     <ul>
-      <li>Saya hanya pautkan barang yang saya sendiri guna, beli, atau kaji secara serius.</li>
+      <li>Saya pautkan barang yang saya sendiri guna, beli atau kaji. Kalau saya belum baca, belum guna atau
+      belum pernah beli daripada penjual tu, saya nyatakan dalam artikel.</li>
       <li>Komisen tidak mengubah penilaian saya. Kalau sesuatu tak berbaloi, saya tulis ia tak berbaloi.</li>
       <li>Setiap artikel yang ada pautan affiliate akan menyatakannya di dalam artikel itu sendiri.</li>
     </ul>
@@ -541,7 +585,7 @@ disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href=
   </div>"""
 
 # ------------------------------------------------------------------ 404
-nf_body = """  <header class="page-head" style="border-bottom:0">
+nf_body = """  <header class="page-head page-head--plain">
     <h1>Halaman ini tak ada.</h1>
     <p class="lead">Halaman yang anda cari sudah dipindahkan atau memang tak pernah ada.</p>
     <div class="actions">
@@ -567,6 +611,7 @@ tpl_body = f"""<!-- ============================================================
 
   <article>
     <header class="page-head">
+      {KICKER}
       <h1>[Tajuk artikel]</h1>
       <p class="lead">[Ringkasan satu atau dua ayat.]</p>
       <p class="article-meta">Oleh <a href="/about.html">{NAME}</a> · <time datetime="2026-11-01">[1 Nov 2026]</time> · [Kategori]</p>
@@ -617,7 +662,10 @@ tpl_graph = [WEBSITE, PERSON, {
 
 # ------------------------------------------------------------------ ARTIKEL: ATOMIC HABITS
 AH_URL = f"{SITE}/blog/review-buku-atomic-habits-bm.html"
-AH_TITLE = "Atomic Habits versi BM: berbaloi beli atau tanya AI je? Pandangan peribadi saya"
+AH_SLUG = "review-buku-atomic-habits-bm"
+AH_TITLE = "Atomic Habits versi BM: berbaloi beli atau tanya AI je?"
+AH_DESC = ("Atomic Habits versi BM berbaloi beli atau cukup tanya AI? Pandangan peribadi saya selepas baca "
+           "versi English, plus cara elak buku cetak rompak.")
 AH_LEDE = "Saya baca versi English tapi banyak belajar daripada perkongsian versi Bahasa Melayu di media sosial. Ini pandangan peribadi saya, plus cara elak buku cetak rompak."
 ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
     <ol><li><a href="/">Laman utama</a></li><li><a href="/blog.html">Blog</a></li><li>Atomic Habits versi BM</li></ol>
@@ -625,25 +673,22 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
 
   <article>
     <header class="page-head">
+      {KICKER}
       <h1>{AH_TITLE}</h1>
       <p class="lead">{AH_LEDE}</p>
       <p class="article-meta">Oleh <a href="/about.html">{NAME}</a> · <time datetime="2026-09-08">8 Sep 2026</time>
-      · Dikemas kini <time datetime="{UPDATED}">27 Okt 2026</time> · Buku · 5 minit baca</p>
+      · Dikemas kini <time datetime="{UPDATED}">{UPDATED_DISP}</time> · Buku · 5 minit baca</p>
     </header>
 
     <div class="prose">
       <p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Jika anda membeli melaluinya saya
       mungkin menerima komisen kecil tanpa kos tambahan kepada anda. <a href="/disclaimer.html">Baca penafian</a>.</p>
 
-      <div class="note" style="margin-bottom:1.75rem">
-        <p><strong>Kandungan</strong></p>
-        <ol style="margin:0.4rem 0 0">
-          <li><a href="#versi-english-dan-bm">Saya baca versi English tapi belajar banyak dari versi BM</a></li>
-          <li><a href="#4-undang-undang">Empat undang-undang perubahan tabiat</a></li>
-          <li><a href="#kesan">Apa yang berubah selepas saya amalkan</a></li>
-          <li><a href="#cetak-rompak">Awas buku cetak rompak</a></li>
-          <li><a href="#keputusan">Berbaloi beli atau cukup tanya AI?</a></li>
-        </ol>
+      <div class="note">
+        <p><strong>Jawapan ringkas:</strong> kalau anda cuma nak tahu empat hukum tabiat dalam
+        <cite>Atomic Habits</cite>, ringkasan AI dah cukup. Tapi bagi saya buku ni berbaloi dibeli kalau anda
+        serius nak ubah rutin, sebab kisah dan contohnya yang membentuk cara berfikir. Elakkan naskhah
+        berharga RM15 hingga RM20 kerana hampir pasti cetak rompak.</p>
       </div>
 
       <p>Buku <cite>Atomic Habits</cite> tulisan James Clear ni dah jadi macam kitab wajib untuk sesiapa
@@ -658,6 +703,17 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
         <figcaption>Naskhah yang saya baca.</figcaption>
       </figure>
       -->
+
+      <div class="note">
+        <p><strong>Kandungan</strong></p>
+        <ol>
+          <li><a href="#versi-english-dan-bm">Saya baca versi English tapi belajar banyak dari versi BM</a></li>
+          <li><a href="#4-undang-undang">Empat undang-undang perubahan tabiat</a></li>
+          <li><a href="#kesan">Apa yang berubah selepas saya amalkan</a></li>
+          <li><a href="#cetak-rompak">Awas buku cetak rompak</a></li>
+          <li><a href="#keputusan">Berbaloi beli atau cukup tanya AI?</a></li>
+        </ol>
+      </div>
 
       <h2 id="versi-english-dan-bm">1. Saya baca versi English tapi belajar banyak dari versi BM</h2>
       <p>Saya baca <cite>Atomic Habits</cite> dalam versi asal bahasa Inggeris. Tapi selepas habis
@@ -680,8 +736,9 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
       </ul>
 
       <h2 id="kesan">3. Apa yang berubah selepas saya amalkan</h2>
-      <p>Ayat yang paling melekat dalam kepala saya sampai sekarang datang daripada versi BM yang ramai kongsi:</p>
-      <blockquote>Kita tidak jatuh ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.</blockquote>
+      <p>Ayat yang paling melekat dalam kepala saya sampai sekarang ialah ayat tentang sistem. Ramai yang
+      kongsi versi BM-nya dan maksudnya begini:</p>
+      <blockquote>Kita tidak naik ke tahap matlamat kita, tetapi kita jatuh ke tahap sistem kita.</blockquote>
       <p>Sebelum ni kalau nak buat sesuatu saya set matlamat besar. Bila penat semuanya terbengkalai.
       Lepas faham konsep sistem saya mula buat perubahan kecil yang konsisten. Contohnya saya kemas meja
       kerja setiap petang walaupun penat. Tak guna tenaga mental yang banyak pun.</p>
@@ -705,16 +762,17 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
       dan dekat dengan bahasa kita.</p>
 
       <div class="buybox">
-        <h3>Di mana nak beli naskhah asli</h3>
+        <h3>Di mana nak beli</h3>
         <ul>
           <li><a href="https://s.shopee.com.my/40gQrkgSLC" rel="sponsored nofollow noopener" target="_blank"><strong>Versi Bahasa Melayu</strong> di Shopee &rarr;</a></li>
           <li><a href="https://s.shopee.com.my/9056p03rZk" rel="sponsored nofollow noopener" target="_blank"><strong>Versi asal bahasa Inggeris</strong> (yang saya baca) di Shopee &rarr;</a></li>
         </ul>
-        <p style="margin:0.75rem 0 0;font-size:var(--fs-small);color:var(--ink-faint)">Kedua-dua penjual ini menjual naskhah asli. Harga di Shopee boleh berubah jadi semak sebelum bayar.</p>
+        <p class="buybox__note">Saya belum pernah beli terus daripada dua penjual ni. Semak rating kedai, ulasan pembeli dan harga sebelum bayar.</p>
       </div>
 
       <p>Petikan ini saya simpan juga di halaman <a href="/thought.html">Thought</a>.</p>
 
+      <!--BACA-JUGA:/blog/review-buku-atomic-habits-bm.html-->
       <div class="author">
         <img src="{PHOTO}" width="64" height="64" alt="{NAME}" loading="lazy">
         <p><strong>{NAME}</strong><br>Berkongsi pandangan peribadi tentang buku, media sosial dan keputusan hidup, dari Putrajaya.
@@ -727,13 +785,13 @@ ah_graph = [WEBSITE, PERSON, {
     "@type": "BlogPosting",
     "@id": f"{AH_URL}#article",
     "headline": AH_TITLE,
-    "description": "Pandangan peribadi tentang buku Atomic Habits: dibaca dalam English, banyak belajar daripada perkongsian versi Bahasa Melayu di media sosial, plus cara elak buku cetak rompak.",
+    "description": AH_DESC,
     "datePublished": "2026-09-08",
     "dateModified": UPDATED,
     "url": AH_URL,
     "mainEntityOfPage": AH_URL,
     "inLanguage": "ms-MY",
-    "image": f"{SITE}/assets/img/og-atomic-habits.png",
+    "image": og_for(AH_SLUG),
     "author": {"@id": f"{SITE}/#person"},
     "publisher": {"@id": f"{SITE}/#person"},
     "about": {"@type": "Book", "name": "Atomic Habits", "author": {"@type": "Person", "name": "James Clear"}},
@@ -749,11 +807,11 @@ ah_graph = [WEBSITE, PERSON, {
 # ------------------------------------------------------------------ ARTIKEL: THE ANXIOUS GENERATION
 AG_SLUG = "the-anxious-generation-kecewakan-anak"
 AG_URL = f"{SITE}/blog/{AG_SLUG}.html"
-AG_TITLE = "The Anxious Generation: betul ke kita patut sengaja kecewakan anak? Pandangan peribadi saya"
+AG_TITLE = "The Anxious Generation: betul ke kita patut sengaja kecewakan anak?"
 AG_LEDE = ("Satu petikan tular kata ibu bapa patut kecewakan anak setiap hari. Saya selidik dari mana ia datang, "
-           "apa isi sebenar buku Jonathan Haidt ni dan bila rasa kecewa jadi baik atau memudaratkan.")
-AG_DESC = ("Betul ke The Anxious Generation suruh kita kecewakan anak? Ringkasan buku Jonathan Haidt, "
-           "cara ajar anak kawal emosi dan bila kecewa jadi memudaratkan.")
+           "apa isi utama buku Jonathan Haidt ni dan bila rasa kecewa jadi baik atau memudaratkan.")
+AG_DESC = ("Betul ke The Anxious Generation suruh kita kecewakan anak? Saya semak asal petikan tular tu, "
+           "isi utama buku Jonathan Haidt dan bila kecewa memudaratkan.")
 AG_SHOPEE = "https://s.shopee.com.my/BUuUvHXIE?share_channel_code=1"
 
 ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
@@ -762,18 +820,21 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
 
   <article>
     <header class="page-head">
+      {KICKER}
       <h1>{AG_TITLE}</h1>
       <p class="lead">{AG_LEDE}</p>
-      <p class="article-meta">Oleh <a href="/about.html">{NAME}</a> · <time datetime="2026-10-27">27 Okt 2026</time> · Buku · 5 minit baca</p>
+      <p class="article-meta">Oleh <a href="/about.html">{NAME}</a> · <time datetime="2026-10-27">27 Okt 2026</time>
+      · Dikemas kini <time datetime="{UPDATED}">{UPDATED_DISP}</time> · Buku · 5 minit baca</p>
     </header>
 
     <div class="prose">
       <p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Jika anda membeli melaluinya saya
       mungkin menerima komisen kecil tanpa kos tambahan kepada anda. <a href="/disclaimer.html">Baca penafian</a>.</p>
 
-      <div class="note" style="margin-bottom:1.75rem">
-        <p><strong>Jawapan ringkas:</strong> saya tak jumpa ayat "frustrate our children everyday" sebiji dalam
-        buku <cite>The Anxious Generation</cite>. Tapi maksudnya selari dengan mesej buku tu: biar anak
+      <div class="note">
+        <p><strong>Jawapan ringkas:</strong> saya tak dapat sahkan ayat "frustrate our children everyday" ada
+        dalam buku <cite>The Anxious Generation</cite>. Saya sendiri belum baca buku tu lagi, jadi ini
+        berdasarkan sumber lain yang saya semak. Maksudnya selari dengan mesej buku tu: biar anak
         berdepan kecewa yang kecil dan sesuai dengan umurnya sambil ibu bapa ada di sisi. Bukan sengaja
         menyakitkan hati anak.</p>
       </div>
@@ -785,9 +846,11 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
       kita nak kita dapat.</p>
       <p>Ayat tu buat saya berhenti sekejap. Sengaja kecewakan anak setiap hari? Bunyinya agak keras.</p>
       <p>Saya sendiri belum ada anak lagi. Tapi ayat ni tetap buat saya terfikir tentang cara saya nak didik
-      anak suatu hari nanti. Jadi saya cuba selidik sendiri. Saya baca beberapa sumber dan tanya AI untuk
-      faham maksud sebenarnya. Apa yang saya tulis di sini ialah apa yang saya faham sebagai pembaca, bukan
-      nasihat daripada ibu bapa yang berpengalaman atau pakar.</p>
+      anak suatu hari nanti. Jadi saya cuba selidik sendiri.</p>
+      <p>Terus terang, buku tu sendiri saya belum baca lagi. Saya baca beberapa sumber tentangnya dan tanya AI
+      untuk faham maksud sebenarnya. Jadi apa yang saya tulis di sini ialah apa yang saya faham setakat ni.
+      Ia bukan ulasan orang yang dah habis membaca dan bukan nasihat daripada ibu bapa yang berpengalaman
+      atau pakar.</p>
 
       <h2 id="maksud">Apa maksud "frustrate our children"?</h2>
       <p>Selepas difikirkan, maksudnya lebih kepada jangan cepat-cepat buang semua rasa kecewa dari hidup
@@ -806,7 +869,7 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
       <h2 id="ringkasan">Ringkasan buku The Anxious Generation</h2>
       <p>Buku ni ditulis oleh Jonathan Haidt, ahli psikologi sosial dan profesor di NYU Stern School of
       Business. Ia terbit pada 2024. Rupanya ayat dalam thread tadi bukan teras utama buku ni. Antara isi
-      utama yang saya faham:</p>
+      utama yang saya faham daripada sumber yang saya baca:</p>
       <ol>
         <li><strong>"Great Rewiring".</strong> Antara 2010 hingga 2015 zaman kanak-kanak berubah daripada
         berasaskan permainan kepada berasaskan telefon. Haidt kaitkan perubahan ni dengan lonjakan
@@ -814,8 +877,9 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
         <li><strong>Terlalu dilindungi di dunia nyata tapi kurang dilindungi di dunia maya.</strong> Ibu bapa
         takut anak main di luar sendirian tapi bebaskan mereka di media sosial. Ayat dalam thread tadi
         paling dekat dengan tema ni.</li>
-        <li><strong>Empat norma yang dicadangkan:</strong> tiada telefon pintar sebelum sekolah menengah,
-        tiada media sosial sebelum umur 16 tahun, sekolah bebas telefon dan lebih banyak permainan bebas.</li>
+        <li><strong>Empat norma yang dicadangkan:</strong> tiada telefon pintar sebelum <em>high school</em>
+        (sekitar umur 14 tahun), tiada media sosial sebelum umur 16 tahun, sekolah bebas telefon dan lebih
+        banyak permainan bebas.</li>
       </ol>
       <p>Buku ni ada juga pengkritiknya. Ahli akademik seperti Candice Odgers dan Amy Orben berpendapat data
       yang ada lebih tunjuk kaitan, belum cukup kuat untuk buktikan telefon punca utama. Data dari Asia
@@ -859,15 +923,16 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
         <ul>
           <li><a href="{AG_SHOPEE}" rel="sponsored nofollow noopener" target="_blank"><strong>The Anxious Generation</strong> oleh Jonathan Haidt di Shopee &rarr;</a></li>
         </ul>
-        <p style="margin:0.75rem 0 0;font-size:var(--fs-small);color:var(--ink-faint)">Harga di Shopee boleh berubah jadi semak sebelum bayar.</p>
+        <p class="buybox__note">Saya sendiri belum baca buku ni lagi. Semak rating kedai, ulasan pembeli dan harga sebelum bayar.</p>
       </div>
 
       <h2 id="soalan-lazim">Soalan lazim</h2>
       <h3>Siapa penulis buku The Anxious Generation?</h3>
       <p>Jonathan Haidt, ahli psikologi sosial dan profesor di NYU Stern School of Business. Buku ni terbit pada 2024.</p>
       <h3>Betul ke ayat "look for opportunities to frustrate our children" ada dalam buku tu?</h3>
-      <p>Saya tak dapat sahkan ayat tu ditulis sebiji begitu. Maksudnya selari dengan tema buku tentang ibu
-      bapa yang terlalu melindungi anak. Idea yang paling hampir datang dari John Rosemond.</p>
+      <p>Saya tak dapat sahkan ayat tu ditulis sebiji begitu. Saya sendiri pun belum baca buku tu. Daripada
+      sumber yang saya semak, maksudnya selari dengan tema buku tentang ibu bapa yang terlalu melindungi
+      anak. Idea yang paling hampir datang dari John Rosemond.</p>
       <h3>Macam mana nak ajar anak kawal emosi bila kecewa?</h3>
       <p>Biar anak berdepan kecewa yang kecil dan sesuai dengan umurnya. Iktiraf perasaannya dan tetap tegas
       dengan keputusan. Pastikan juga dia selalu rasa berjaya selepas berusaha.</p>
@@ -884,6 +949,7 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
         <li>Martin Seligman, kajian learned helplessness</li>
       </ul>
 
+      <!--BACA-JUGA:/blog/the-anxious-generation-kecewakan-anak.html-->
       <div class="author">
         <img src="{PHOTO}" width="64" height="64" alt="{NAME}" loading="lazy">
         <p><strong>{NAME}</strong><br>Berkongsi pandangan peribadi tentang buku, media sosial dan keputusan hidup, dari Putrajaya.
@@ -898,11 +964,11 @@ ag_graph = [WEBSITE, PERSON, {
     "headline": AG_TITLE,
     "description": AG_DESC,
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": UPDATED,
     "url": AG_URL,
     "mainEntityOfPage": AG_URL,
     "inLanguage": "ms-MY",
-    "image": OG,
+    "image": og_for(AG_SLUG),
     "author": {"@id": f"{SITE}/#person"},
     "publisher": {"@id": f"{SITE}/#person"},
     "about": {"@type": "Book", "name": "The Anxious Generation", "author": {"@type": "Person", "name": "Jonathan Haidt"}},
@@ -916,13 +982,12 @@ ag_graph = [WEBSITE, PERSON, {
 }]
 
 PAGES = [
-    (f"blog/{AG_SLUG}.html", AG_TITLE + " | " + NAME, AG_DESC,
-     ag_body, dict(graph=ag_graph, og_type="article", active="/blog.html")),
-    ("blog/review-buku-atomic-habits-bm.html", f"{AH_TITLE} | {NAME}",
-     "Pandangan peribadi tentang buku Atomic Habits: dibaca dalam English, banyak belajar daripada perkongsian versi Bahasa Melayu di media sosial, plus cara elak buku cetak rompak.",
-     ah_body, dict(graph=ah_graph, og_type="article", active="/blog.html", og=f"{SITE}/assets/img/og-atomic-habits.png")),
+    (f"blog/{AG_SLUG}.html", AG_TITLE, AG_DESC,
+     ag_body, dict(graph=ag_graph, og_type="article", active="/blog.html", og=og_for(AG_SLUG), og_alt=AG_TITLE)),
+    (f"blog/{AH_SLUG}.html", AH_TITLE, AH_DESC,
+     ah_body, dict(graph=ah_graph, og_type="article", active="/blog.html", og=og_for(AH_SLUG), og_alt=AH_TITLE)),
     ("index.html", f"{NAME} — Jurnal Peribadi",
-     f"Laman peribadi {NAME} dari Putrajaya: pandangan tentang buku dan media sosial, panduan memilih barang rumah dan cerita tentang keputusan besar hidup.",
+     f"Laman peribadi {NAME} dari Putrajaya: pandangan tentang buku dan media sosial, panduan memilih barang rumah dan cerita keputusan besar hidup.",
      home_body, dict(graph=home_graph, js="/assets/js/prism.js")),
     ("about.html", f"Tentang {NAME}",
      f"Kenali {NAME}, berasal dari Batu Gajah, Perak dan kini menetap di Putrajaya. Menulis tentang keputusan hidup yang betul-betul dilalui.",
@@ -951,17 +1016,19 @@ PAGES.extend(MD_PAGES)
 for path, title, desc, body, kw in PAGES:
     out = OUT / path
     out.parent.mkdir(parents=True, exist_ok=True)
+    body = _re.sub(r"<!--BACA-JUGA:(.*?)-->\n?\s*", lambda m: related(m.group(1)), body)
     out.write_text(page(path, title, desc, body, **kw), encoding="utf-8")
     print("wrote", path)
 
 # ====================================================================== SITEMAP & RSS (dijana automatik)
 import email.utils as _eu, datetime as _dt
-STATIC = ["/", "/about.html", "/blog.html", "/thought.html", "/disclaimer.html", "/privacy.html"]
+STATIC = {"/": UPDATED, "/about.html": UPDATED, "/blog.html": UPDATED, "/thought.html": UPDATED,
+          "/disclaimer.html": UPDATED, "/privacy.html": PRIVACY_UPDATED}
 _sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-for _u in STATIC:
-    _sm.append(f"  <url><loc>{SITE}{_u}</loc><lastmod>{UPDATED}</lastmod></url>")
+for _u, _lm in STATIC.items():
+    _sm.append(f"  <url><loc>{SITE}{_u}</loc><lastmod>{_lm}</lastmod></url>")
 for _href, _t, _ex, _iso, _d, _c in POSTS:
-    _sm.append(f"  <url><loc>{SITE}{_href}</loc><lastmod>{max(_iso, UPDATED) if _href.endswith('atomic-habits-bm.html') else _iso}</lastmod></url>")
+    _sm.append(f"  <url><loc>{SITE}{_href}</loc><lastmod>{MODIFIED.get(_href, _iso)}</lastmod></url>")
 _sm.append("</urlset>")
 (OUT / "sitemap.xml").write_text("\n".join(_sm) + "\n", encoding="utf-8")
 
@@ -984,7 +1051,7 @@ _feed = f"""<?xml version="1.0" encoding="UTF-8"?>
     <link>{SITE}/</link>
     <description>Satu perkara, beribu perspektif. Pandangan peribadi {NAME} tentang buku, media sosial, barang rumah dan keputusan hidup.</description>
     <language>ms-MY</language>
-    <lastBuildDate>{_rfc(POSTS[0][3])}</lastBuildDate>
+    <lastBuildDate>{_rfc(max([UPDATED] + [p[3] for p in POSTS]))}</lastBuildDate>
     <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
 {chr(10).join(_items)}
   </channel>

@@ -14,7 +14,7 @@ Gambar dicadangkan: grafik ringkas 4 kotak (bijak, penyamun, lurus bendul, bodoh
 Permintaan privasi Ibrahim: tiada (kawan yang disebut tidak dinamakan)
 -->
 
-# 5 Hukum Kebodohan Carlo Cipolla: bodoh tu sebab IQ atau tindakan? Pandangan peribadi saya
+# 5 Hukum Kebodohan Carlo Cipolla: bodoh tu sebab IQ atau tindakan?
 
 Saya terbaca tentang "5 hukum asas kebodohan manusia" di media sosial dan perkataan "kebodohan" tu buat saya nak tahu lebih. Ini catatan tentang apa yang saya faham dan apa yang saya bawa pulang.
 
@@ -81,11 +81,15 @@ Pada saya, berani atau takut ialah soal sikap. Bodoh atau bijak ialah soal kesan
 
 Bahagian ni saya masih ragu-ragu. Logik Cipolla begini: penyamun sekurang-kurangnya ada tujuan, iaitu nak untung. Jadi tindakannya boleh dijangka. Orang bodoh tak ada logik yang jelas, jadi susah nak dielak. Nilai yang dimusnahkan pula hilang untuk semua orang.
 
-Yang buat saya lebih cenderung setuju ialah kes Tabung Haji. Laporan Suruhanjaya Siasatan Diraja (RCI) tentang pengurusan Tabung Haji bagi tempoh 2014 hingga 2020 dibahaskan dalam sidang khas Dewan Rakyat pada Ogos 2026. Antara yang dilaporkan ialah kegagalan di pelbagai peringkat yang menyebabkan beberapa pelaburan lebur.
+Yang buat saya lebih cenderung setuju ialah contoh yang dekat dengan kita: mesej palsu dalam group WhatsApp.
 
-Dari apa yang saya baca, saya dapat gambaran keputusan pelaburan dibuat oleh pemimpin yang kurang ilmu dalam bidang tu. Akhirnya yang menanggung ialah orang biasa yang menyimpan duit di situ. Bagi saya, itulah gambaran Hukum 5: satu keputusan buruk di tempat yang berkuasa boleh merosakkan ramai orang sekali gus.
+Cuba bandingkan dua orang. Yang pertama ialah scammer yang hantar pautan palsu untuk curi duit. Dia penyamun. Tujuannya jelas, jadi kita tahu apa yang perlu dijaga: jangan klik pautan tu dan jangan bagi nombor OTP.
 
-Saya bukan pakar dan tak baca keseluruhan laporan tu. Sebab tu saya kata saya lebih kepada setuju, bukan setuju sepenuhnya. Anda boleh semak sendiri sumbernya di bahagian rujukan.
+Yang kedua ialah orang yang forward mesej tak sahih tanpa semak, contohnya amaran palsu tentang makanan atau ubat. Dia tak dapat apa-apa untung. Tapi mesej tu datang daripada orang yang kita kenal, jadi lebih ramai yang percaya dan sebarkan lagi. Akhirnya ramai yang risau atau buat keputusan yang salah dan tak ada siapa pun yang untung.
+
+Menurut Cipolla, kerosakan jadi lebih besar bila orang yang bertindak bodoh tu ada kuasa atau jawatan. Bagi saya, itulah gambaran Hukum 5: satu keputusan buruk di tempat yang berkuasa boleh merosakkan ramai orang sekali gus.
+
+Saya bukan pakar. Sebab tu saya kata saya lebih kepada setuju, bukan setuju sepenuhnya.
 
 ## Apa yang saya bawa pulang
 
@@ -107,12 +111,9 @@ Tidak. Bodoh merujuk kepada tindakan yang menyebabkan orang lain rugi tanpa memb
 Penyamun untung atas kerugian orang lain, jadi tindakannya ada tujuan dan boleh dijangka. Orang bodoh menyebabkan semua pihak rugi, termasuk dirinya, sebab tu Cipolla anggap dia lebih berbahaya.
 
 **Di mana boleh baca esei asal Carlo Cipolla?**
-Esei asal dalam bahasa Inggeris boleh dibaca percuma di Wikisource. Ada juga edisi buku bahasa Inggeris terbitan Doubleday (2019).
+Esei ni masih dilindungi hak cipta, jadi cara yang betul ialah baca bukunya. Edisi bahasa Inggeris *The Basic Laws of Human Stupidity* diterbitkan oleh WH Allen (2019) dan Doubleday (2021).
 
 ## Rujukan
 
-- [The Basic Laws of Human Stupidity, Carlo M. Cipolla (Wikisource)](https://en.wikisource.org/wiki/The_Basic_Laws_of_Human_Stupidity)
+- [The Basic Laws of Human Stupidity, Carlo M. Cipolla (WH Allen, 2019)](https://www.penguin.co.uk/books/1119407/the-basic-laws-of-human-stupidity/9780753554845.html)
 - [The five universal laws of human stupidity (Quartz)](https://qz.com/967554/the-five-universal-laws-of-human-stupidity)
-- [Cabinet declassifies Tabung Haji RCI report (The Star)](https://thestartv.com/v/cabinet-declassifies-tabung-haji-rci-report)
-- [Dewan Rakyat holds special sitting to debate Tabung Haji RCI report (Bernama)](https://bernama.com/en/news.php?id=2592831)
-- [Liputan sidang khas Dewan Rakyat tentang laporan RCI Tabung Haji (The Edge Malaysia)](https://theedgemalaysia.com/node/814122)
