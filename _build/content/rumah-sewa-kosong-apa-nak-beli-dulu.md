@@ -83,7 +83,9 @@ Saya beli langsir siap di Shopee. Murah dan cepat sampai. Nak cantik boleh tempa
 
 **Tempat tidur.** Saya order tilam queen Dr. Macio di Shopee sehari sebelum dapat kunci. Harga RM299, sampai 19 Ogos. Sampai sekarang masih sedap baring.
 
-Bajet betul-betul nipis? Mula dengan toto. Bila dah ada tilam nanti, toto tu tak membazir. Simpan untuk tetamu.
+Saya pun ada beli toto Narita saiz king, RM50.85, dua minggu lepas dapat kunci. Hari biasa saya tidur atas tilam. Bila mak ayah singgah, toto tu la jadi tempat tidur.
+
+Jadi kalau bajet betul-betul nipis, mula dengan toto. Bila dah ada tilam nanti, toto tu tak membazir. Simpan untuk tetamu.
 
 **Karpet.** Sofa belum ada, jadi lantailah tempat duduk. Alas dengan karpet, tak adalah sejuk punggung. Modal RM50 di Shopee pun dah dapat saiz besar.
 
@@ -93,15 +95,15 @@ Bajet betul-betul nipis? Mula dengan toto. Bila dah ada tilam nanti, toto tu tak
 
 ### Pusingan 2: Bila ada duit lebih sikit
 
-**Peti ais.** Kalau ada bajet, beli awal. Ambil besar sikit kalau boleh, sebab benda ni pakai bertahun-tahun. Saya punya RM1,200, beli baru di Shopee.
+**Peti ais.** Kalau ada bajet, beli awal. Ambil besar sikit kalau boleh, sebab benda ni pakai bertahun-tahun. Saya punya Toshiba 2 pintu inverter 273L, RM1,165, beli baru di Shopee.
 
 **TV, rak TV, meja makan dan rangka katil.** Semua ni saya beli secondhand. Jimat banyak! Caranya saya kongsi di bawah.
 
 ### Pusingan 3: Boleh tunggu dulu
 
-**Mesin basuh (RM800).** Saya beli awal, tapi bila fikir balik, tak perlu tergesa pun. Putrajaya ni dobi bersepah.
+**Mesin basuh (RM680).** Saya beli awal, Sharp top load 7.5kg. Tapi bila fikir balik, tak perlu tergesa pun. Putrajaya ni dobi bersepah.
 
-**Sofa (RM800).** Boleh tunggu. Karpet dah cukup untuk permulaan.
+**Sofa (RM799).** Boleh tunggu. Karpet dah cukup untuk permulaan.
 
 **Vacuum, steam iron dan water heater.** Memang berbaloi ada, tapi bukan untuk bulan pertama.
 
@@ -119,13 +121,13 @@ Yang lain? Pejam mata dulu. Kumpul duit pelan-pelan.
 
 ## Kos sebenar: berapa habis untuk isi rumah kosong?
 
-Untuk lapan barang paling besar je, saya habis RM4,249.
+Untuk lapan barang paling besar je, saya habis RM4,093.
 
 Baru, dari Shopee:
 
-- Peti ais: RM1,200
-- Mesin basuh: RM800
-- Sofa: RM800
+- Peti ais: RM1,165
+- Mesin basuh: RM680
+- Sofa: RM799
 - Tilam queen: RM299
 
 Secondhand, dari Carousell:
@@ -135,7 +137,7 @@ Secondhand, dari Carousell:
 - Rak TV: RM150
 - Rangka katil: RM100
 
-Itu belum campur langsir, alat cuci, barang dapur dan barang kecil. Bila campur semua, lepas RM5,000. Jangan pandang remeh barang kecil. Nampak sikit, tapi bila kumpul boleh tahan rabak juga poket.
+Itu belum campur toto, langsir, alat cuci, barang dapur dan banyak lagi barang kecil. Bila campur semua, lepas RM5,000. Jangan pandang remeh barang kecil. Nampak sikit, tapi bila kumpul boleh tahan rabak juga poket.
 
 ## Rahsia jimat: teknik beli secondhand di Carousell
 
