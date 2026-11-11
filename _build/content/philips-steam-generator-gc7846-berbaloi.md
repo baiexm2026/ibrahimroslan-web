@@ -91,7 +91,7 @@ Walaupun ada empat kekurangan ni, bagi saya ia tak mengurangkan kelebihannya. Go
 
 Satu benda yang perlu tahu bila pakai steam generator: cuci kerak kapur (descale). Bila guna air paip, lama-lama ada kerak putih yang boleh tersumbat dalam saluran wap.
 
-Bagusnya model ni ada sistem Smart Calc-Clean. Menurut pengeluar, bila tiba masa nak cuci, ia akan beri amaran dengan lampu dan bunyi. Bekas Calc-Clean pun disertakan sekali dalam kotak, dan tak perlu beli kartrij. Ikut langkah dalam buku panduan bila amaran tu keluar.
+Bagusnya model ni ada sistem Smart Calc-Clean. Menurut pengeluar, bila tiba masa nak cuci, ia akan beri amaran dengan lampu dan bunyi. Bekas Calc-Clean pun disertakan sekali dalam kotak. Tak perlu beli kartrij. Ikut langkah dalam buku panduan bila amaran tu keluar.
 
 Pengeluar juga sebut air paip biasa sesuai untuk model ni.
 
