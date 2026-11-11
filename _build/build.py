@@ -16,7 +16,7 @@ UPDATED = "2026-11-10"            # tarikh kemas kini terakhir halaman & artikel
 UPDATED_DISP = "10 Nov 2026"
 PRIVACY_UPDATED = "2026-10-27"    # dasar privasi tidak berubah sejak tarikh ini
 LINKEDIN = "https://www.linkedin.com/in/ibrahim-roslan-478582153/"
-CSS_VER = "5"                     # naikkan nombor ini setiap kali main.css diubah
+CSS_VER = "6"                     # naikkan nombor ini setiap kali main.css diubah
 
 PERSON = {
     "@type": "Person",

@@ -33,7 +33,7 @@ Ini cerita sebenar saya: apa yang patut dibeli dulu, apa yang boleh tunggu dan b
 
 Saya dapat kuarter kerajaan di apartmen Presint 5, Putrajaya, lepas tunggu hampir dua tahun setengah. Statusnya sama macam rumah sewa. Bila tiba masanya, kena pulangkan balik.
 
-Masa tu saya bujang lagi. Sebelum ni saya sewa bilik je, jadi "harta" saya cuma alatan mandi, barang basuh-basuh, meja dan kerusi.
+Masa tu saya bujang lagi. Sebelum ni saya sewa bilik je, jadi "harta" saya cuma meja belajar dengan kerusi.
 
 Ini yang dah sedia ada dalam unit saya:
 
@@ -89,7 +89,7 @@ Jadi kalau bajet betul-betul nipis, mula dengan toto. Bila dah ada tilam nanti, 
 
 **Karpet.** Sofa belum ada, jadi lantailah tempat duduk. Alas dengan karpet, tak adalah sejuk punggung. Modal RM50 di Shopee pun dah dapat saiz besar.
 
-**Barang dapur asas.** Periuk nasi kecil, kuali, dapur gas, tong gas dan cerek air. Saya bukan kaki masak. Selalunya makan luar, atau beli lauk di kedai dan masak nasi sendiri. Kuali tu serba boleh: goreng telur, goreng ayam dan masak Maggi.
+**Barang dapur asas.** Periuk nasi kecil, kuali, dapur gas, tong gas dan cerek air. Saya bukan reti sangat memasak, setakat masak yang simple-simple je. Selalunya makan luar, atau beli lauk di kedai dan masak nasi sendiri. Kuali tu serba boleh: goreng telur, goreng ayam dan masak Maggi.
 
 **Barang kecil yang selalu lupa.** Extension wayar, tong sampah, baldi, penyangkut baju, pinggan, cawan dan pita pengukur. Pita pengukur ni saya beli awal sebab nak ukur tingkap untuk langsir dan ruang untuk karpet. Masa mula-mula senaraikan pun saya terlupa, huhu.
 
@@ -167,11 +167,22 @@ Saya rakam video rumah masa kosong. Niatnya nak buat kenangan dan kongsi dengan 
 
 Rupanya ada guna lain. Untuk penyewa, [Speedhome](https://speedhome.com/blog/how-should-i-document-my-rental-unit-before-handover-to-protect-a/) sarankan rakam keadaan asal rumah: gambar dekat setiap kerosakan dan bacaan meter elektrik dan air. Senang buat bukti kalau ada isu bila pindah keluar nanti.
 
-Dua lagi petua daripada bacaan saya:
+Dua lagi petua daripada bacaan saya. Ni saya tak buat masa tu, tapi rasanya berbaloi:
 
-- Uji semua soket, suis lampu, kipas dan paip sebelum barang masuk ([Utusan Malaysia](https://www.utusan.com.my/ringgit/2023/04/bahagian-rumah-yang-wajib-diperiksa-dan-kaedahnya/)).
-- Kenal pasti injap air utama dan kotak fius, ambil gambar lokasinya ([The Rakyat Post](https://www.therakyatpost.com/trpbm/tips/2026/05/08/baru-pindah-rumah-ini-tips-yang-boleh-anda-lakukan-bukan-hias-dulu-tau/)).
+**Uji semua benda sebelum barang masuk.** [Utusan Malaysia](https://www.utusan.com.my/ringgit/2023/04/bahagian-rumah-yang-wajib-diperiksa-dan-kaedahnya/) cadangkan semak bahagian rumah satu per satu masa masih kosong. Senang buat sendiri:
 
+- **Soket:** bawa charger telefon, cucuk di setiap soket dan tengok telefon mengecas atau tidak.
+- **Lampu dan kipas:** petik setiap suis, pusing kipas sampai laju maksimum dan dengar ada bunyi pelik atau tidak.
+- **Paip dan tandas:** buka paip di dapur dan bilik air, pam tandas dan tengok bawah sinki ada titisan air atau tidak.
+
+Kalau jumpa yang rosak, buat aduan awal. Masa rumah kosong, senang tukang nak masuk baiki.
+
+**Tahu di mana injap air utama dan kotak fius.** [The Rakyat Post](https://www.therakyatpost.com/trpbm/tips/2026/05/08/baru-pindah-rumah-ini-tips-yang-boleh-anda-lakukan-bukan-hias-dulu-tau/) cadangkan cari dua benda ni dan ambil gambar lokasinya.
+
+- **Injap air utama** ialah kepala paip yang tutup air ke seluruh rumah. Kalau paip pecah tengah malam, inilah yang perlu ditutup dulu.
+- **Kotak fius** (orang panggil DB box) ialah kotak suis elektrik rumah. Bila elektrik trip, di sinilah kena naikkan suis semula.
+
+Lokasinya berbeza ikut rumah, jadi cari masa rumah masih kosong dan senang nak nampak. Simpan gambarnya dalam telefon.
 <figure>
   <img src="/assets/img/rumah-sewa-kosong/ruang-tamu-dua-bulan.jpg" width="1200" height="675" alt="Ruang tamu yang sama dua bulan kemudian, sudah ada langsir, karpet, TV dan rak TV" loading="lazy">
   <figcaption>Ruang tamu yang sama, dua bulan kemudian (13 Oktober 2023).</figcaption>
