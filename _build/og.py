@@ -21,6 +21,7 @@ CARDS = [
     ("the-anxious-generation-kecewakan-anak", "The Anxious Generation", "Betul ke kita patut sengaja kecewakan anak?"),
     ("review-buku-atomic-habits-bm", "Atomic Habits versi BM", "Berbaloi beli atau tanya AI je?"),
     ("rumah-sewa-kosong-apa-nak-beli-dulu", "Masuk rumah sewa kosong", "Apa nak beli dulu kalau bajet terhad?"),
+    ("philips-steam-generator-gc7846-berbaloi", "Philips GC7846", "Berbaloi ganti seterika biasa?"),
 ]
 
 LOGO = ('<svg viewBox="0 0 64 64" width="84" height="84" aria-hidden="true">'

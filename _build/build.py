@@ -254,6 +254,7 @@ MONTHS = ["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogo", "Sep", "Okt", 
 MD_ARTICLES = [
     ("5-hukum-kebodohan-carlo-cipolla", "2026-10-28", {}, "2026-11-10"),
     ("rumah-sewa-kosong-apa-nak-beli-dulu", "2026-11-11", {}, None),
+    ("philips-steam-generator-gc7846-berbaloi", "2026-11-11", {}, None),
 ]
 
 
