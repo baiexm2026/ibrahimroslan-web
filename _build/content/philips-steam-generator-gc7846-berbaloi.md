@@ -51,9 +51,9 @@ Philips ada banyak model steam generator. Saya ambil yang paling murah, asalkan 
 
 Ini kelebihan paling padu. Philips panggil fungsi ni OptimalTEMP dan menurut pengeluar, ia dijamin tak akan membakar mana-mana kain yang boleh digosok. Tukar dari satu jenis kain ke kain lain pun tak payah tunggu seterika sejuk. Letak terlungkup atas papan seterika atau atas baju pun tak hangus.
 
-### 2. Boleh gosok sambil layan drama
+### 2. Boleh gosok sambil layan Netflix
 
-Saya gosok baju tak banyak, paling kuat pun 10 pasang seminggu. Tapi sekarang semuanya dibuat sekali harung. Sambil tangan gosok, mata boleh lekat di TV layan drama Korea atau movie. Sebab apa? Otak tak payah risau baju berlubang kalau leka sikit.
+Saya gosok baju tak banyak, paling kuat pun 10 pasang seminggu. Tapi sekarang semuanya dibuat sekali harung. Sambil tangan gosok, mata boleh lekat di TV layan drama Korea atau movie di Netflix. Sebab apa? Otak tak payah risau baju berlubang kalau leka sikit.
 
 ### 3. Wap kuat, kedut cepat hilang
 
