@@ -20,6 +20,7 @@ CARDS = [
     ("5-hukum-kebodohan-carlo-cipolla", "5 Hukum Kebodohan Carlo Cipolla", "Bodoh tu sebab IQ atau tindakan?"),
     ("the-anxious-generation-kecewakan-anak", "The Anxious Generation", "Betul ke kita patut sengaja kecewakan anak?"),
     ("review-buku-atomic-habits-bm", "Atomic Habits versi BM", "Berbaloi beli atau tanya AI je?"),
+    ("rumah-sewa-kosong-apa-nak-beli-dulu", "Masuk rumah sewa kosong", "Apa nak beli dulu kalau bajet terhad?"),
 ]
 
 LOGO = ('<svg viewBox="0 0 64 64" width="84" height="84" aria-hidden="true">'
