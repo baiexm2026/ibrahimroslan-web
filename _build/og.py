@@ -24,6 +24,7 @@ CARDS = [
     ("philips-steam-generator-gc7846-berbaloi", "Philips GC7846", "Berbaloi ganti seterika biasa?"),
     ("vacuum-karcher-wd1s-berbaloi", "Vacuum Karcher WD 1s", "Berbaloi berbanding cordless?"),
     ("peti-ais-toshiba-273l-2-pintu", "Peti ais Toshiba 273L", "Cukup ke untuk bujang dan pasangan?"),
+    ("microwave-samsung-23l-jarang-masak", "Microwave Samsung 23L", "Perlu ke kalau jarang masak?"),
 ]
 
 LOGO = ('<svg viewBox="0 0 64 64" width="84" height="84" aria-hidden="true">'
