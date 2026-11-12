@@ -16,101 +16,125 @@ Permintaan privasi Ibrahim: tiada
 
 # Vacuum Karcher WD 1s: berbaloi untuk rumah berbanding cordless?
 
-Dah lebih tiga tahun saya guna vacuum Karcher WD 1s untuk rumah 1,200 kaki persegi. Asalnya saya terpengaruh dengan akak cleaner di ofis. Ini cerita kenapa saya pilih vacuum "orang ofis" ni dan satu perkara yang saya agak menyesal.
+Dah lebih tiga tahun saya guna vacuum Karcher WD 1s untuk bersihkan rumah 1,200 kaki persegi. Asalnya langsung tak terfikir nak beli jenama ni. Semuanya sebab terpengaruh dengan akak cleaner di ofis.
 
-> **Jawapan ringkas:** Bagi saya vacuum Karcher WD 1s berbaloi kalau anda nak sedutan kuat dan nak vacuum seluruh rumah sekali jalan tanpa risau bateri habis. Harganya lebih kurang sama dengan cordless murah, tapi sedutannya lebih padu. Kekurangannya bising, makan tempat dan berwayar. Kalau beli semula, saya ambil saiz yang lebih kecil.
+> **Jawapan ringkas:** Memang berbaloi kalau anda nak sedutan padu dan nak vacuum seluruh rumah sekali jalan tanpa risau bateri habis. Harganya lebih kurang sama dengan vacuum cordless bajet, tapi sedutannya jauh berbeza. Kekurangannya bising, makan tempat dan kena rajin urus wayar. Kalau beli semula, saya ambil model yang lebih kecil.
+
+Ini cerita kenapa saya pilih vacuum "orang ofis" ni, apa yang ramai terlepas pandang dan satu perkara yang buat saya agak menyesal.
 
 **Fakta ringkas**
 
-- **Barang:** Karcher WD 1s, vacuum wet & dry
+- **Barang:** Karcher WD 1s, vacuum wet & dry (sedut basah dan kering)
 - **Harga saya bayar:** RM263 selepas baucar (September 2023)
 - **Beli di:** Shopee
 - **Tempoh guna:** lebih tiga tahun
-- **Kekerapan:** dua tiga kali sebulan, seluruh rumah
-- **Sesuai untuk:** orang yang nak vacuum seluruh rumah sekali gus dengan bajet bawah RM500
+- **Kekerapan:** dua atau tiga kali sebulan, seluruh rumah
+- **Paling sesuai untuk:** sesiapa yang nak bersihkan rumah sekali gus dengan bajet bawah RM500
 
-## Kenapa saya beli vacuum Karcher ni
+## Macam mana boleh terbeli Karcher ni?
 
-Masa beli, saya bukan nak sangat ciri "wet" tu pun. Saya terpengaruh dengan apa yang saya nampak di ofis.
+Masa nak beli vacuum, saya bukan kisah sangat pun pasal fungsi "wet" tu. Idea nak beli vacuum bentuk tong ni datang dari ofis.
 
-Akak cleaner di ofis guna vacuum jenis ni setiap hari. Tak pernah nampak rosak. Kerjanya pun cepat: tolak sekejap, kotoran terus hilang. Dari situ saya rasa vacuum jenis ni mesti tahan lama.
+Akak cleaner di ofis guna vacuum jenis ni setiap hari. Hari-hari lenjan pun tak pernah nampak rosak. Kerjanya cepat: tolak sekejap, kotoran terus lesap. Dari situ saya rasa vacuum jenis ni memang tahan lasak.
 
-Lepas tu saya cari maklumat. Ramai kata barang Karcher memang tahan lama. Bajet saya masa tu pula bawah RM500. Dalam bajet tu, model ni yang paling menarik.
+Bila cari maklumat di internet, ramai setuju barang Karcher tahan lama. Kebetulan bajet saya masa tu bawah RM500. Dalam bajet tu, model ni yang paling menarik.
 
-## Apa lagi yang saya timbang
+### Pilihan yang saya tolak
 
-- **Vacuum rumah biasa.** Saya pernah beli sebelum ni. Sedutannya kurang sikit.
-- **Vacuum cordless.** Saya pernah cuba Dyson beberapa kali di rumah keluarga. Pada saya, sedutannya tak la kuat sangat. Lagipun cordless yang bagus jauh melepasi bajet saya.
+- **Vacuum rumah biasa:** Pernah beli dan guna sebelum ni. Sedutannya kurang sikit.
+- **Vacuum cordless:** Pernah cuba Dyson beberapa kali di rumah keluarga. Untuk saya, sedutannya tak la sekuat mana melainkan tekan mod maksimum, tapi bateri pula cepat habis. Lagipun cordless yang betul-betul bagus harganya jauh melepasi bajet.
 
-## Apa yang saya suka selepas tiga tahun guna
+## Apa yang best lepas tiga tahun guna?
 
-**Sedutan kuat.** Sekali tolak, habuk dah hilang. Tak perlu ulang-alik banyak kali di tempat yang sama.
+### 1. Sedutan sangat kuat
 
-**Siap seluruh rumah sekali jalan.** Berwayar, jadi tak ada isu bateri habis separuh jalan. Rumah saya banyak plug point, jadi senang tukar soket bila pindah bilik.
+Sekali tolak, habuk terus lesap. Tak perlu ulang-alik banyak kali di tempat yang sama. Memang jimat tenaga.
 
-**Tak berat bila guna.** Ada roda, jadi saya cuma tarik je badannya ikut saya.
+### 2. Siap seluruh rumah sekali jalan
 
-**Kos beg penapis rendah.** Satu beg penapis kertas boleh tahan lebih dua bulan untuk rumah saya. Selalunya saya buang pun sebelum penuh, sebab takut lupa. Rumah 1,200 kaki persegi dan tak ramai yang duduk, jadi habuk mungkin kurang sikit. Pek tiga beg di Shopee lebih kurang RM20 hingga RM30.
+Sebab berwayar, tak ada langsung isu "eh bateri dah nak habis" separuh jalan. Rumah saya banyak plug point, jadi senang tukar soket bila pindah dari bilik ke bilik.
 
-**Tak pernah rosak.** Setakat ni, lebih tiga tahun, tak ada masalah.
+### 3. Ringan bila ditarik
 
-## Apa yang saya tak suka
+Badannya nampak besar, tapi bawahnya ada roda. Pegang batang hos, tarik sikit, badan tong tu ikut dari belakang. Tak rasa berat pun.
 
-**Bising.** Ini paling ketara. Jangan vacuum masa orang tengah tidur.
+### 4. Kos beg penapis murah
 
-**Makan tempat.** Badannya besar macam tong. Kena ada satu sudut khas untuk simpan.
+Satu beg penapis kertas boleh tahan lebih dua bulan. Selalunya saya buang sebelum penuh pun, sebab takut terlupa. Mungkin sebab rumah saya tak ramai yang duduk, baru berdua, jadi habuk kurang sikit. Nak ganti pun murah: pek tiga beg di Shopee sekitar RM20 hingga RM30 je.
 
-**Saya beli saiz yang terlalu besar.** Ini yang saya agak menyesal. Karcher ada model lebih kecil, WD 1 Classic. Menurut spesifikasi, kuasanya tak jauh beza: 180 air watts berbanding 200 air watts untuk WD 1s. Bezanya, bekas sampahnya lebih kecil (15 liter berbanding 18 liter) dan harganya lebih murah. Untuk rumah, saya rasa model kecil tu dah cukup. Yang saya pakai ni macam "overpower" sikit, hehe.
+### 5. Ada fungsi blower
 
-**Rupa tak cantik.** Rupa vacuum industri. Kalau nak yang cantik diletak di sudut ruang tamu, ni bukan pilihannya.
+Ini yang ramai terlepas pandang. Menurut spesifikasi pengeluar, WD 1s ada fungsi tiup angin (blower). Boleh guna untuk tiup habuk di tempat yang susah disedut, contohnya celah landasan pintu gelangsar. Cara pasangnya ada dalam buku panduan.
 
-## Beg penapis atau tanpa beg?
+### 6. Belum pernah meragam
 
-Saya pernah terbaca tips orang: pilih vacuum yang guna beg penapis pakai buang sebab lebih tahan lama. Saya tak pasti sebab teknikalnya.
+Lebih tiga tahun lenjan, motor masih elok macam baru beli.
 
-Tapi saya ada satu perbandingan sendiri. Di rumah keluarga ada vacuum jenis bekas guna semula, tanpa beg pakai buang. Harganya lebih mahal daripada saya punya, tapi lepas setahun lebih sedutannya dah tak kuat. Karcher saya masih kuat selepas tiga tahun.
+## Apa yang kurang best (dan satu penyesalan)
 
-Itu satu contoh je, bukan ujian. Tapi cukup untuk buat saya lebih yakin dengan jenis berbeg.
+### 1. Bising macam di kilang
 
-## Wet & dry: pernah guna untuk air?
+Ini paling ketara. Bunyi motornya memang bising. Jangan vacuum masa ahli keluarga tengah tidur, boleh buat orang terjaga terkejut.
 
-Tak pernah. Saya guna untuk sedut habuk dan kotoran kering je. Di ofis, saya ada nampak orang guna jenis ni untuk sedut air. Jadi kalau anda tak perlukan fungsi tu, jangan jadikan ia sebab utama beli.
+### 2. Wayar kena gulung sendiri
+
+Tak macam sesetengah vacuum rumah yang tekan butang, wayar bergulung masuk sendiri. Wayar Karcher ni, menurut spesifikasi 5 meter, kena gulung guna tangan dan sangkut pada badan tong. Leceh sikit.
+
+### 3. Makan tempat dan rupa industri
+
+Badannya besar macam tong cat. Kena sediakan satu sudut khas di stor atau dapur untuk simpan. Rupanya memang rupa vacuum industri. Kalau nak vacuum cantik yang sedap mata memandang di sudut ruang tamu, ini bukan pilihannya.
+
+### 4. Tersilap beli saiz (penyesalan utama)
+
+Ini yang saya agak menyesal. Karcher ada model lebih kecil, WD 1 Classic. Ikut spesifikasi, kuasanya tak jauh beza: 180 air watts untuk WD 1 Classic berbanding 200 air watts untuk WD 1s. Bezanya bekas sampah lebih kecil (15 liter plastik berbanding 18 liter keluli) dan harganya lebih murah.
+
+Untuk rumah biasa, model kecil tu dah sangat mencukupi. Yang saya pakai ni terasa macam "overpower" dan terlalu besar, hehe.
+
+## Beg penapis kertas atau tanpa beg (bagless)?
+
+Saya pernah baca tips supaya pilih vacuum berbeg berbanding jenis bekas guna semula. Penjelasan yang biasa diberi: beg kertas jadi tapisan tambahan, jadi habuk halus kurang sampai ke motor.
+
+Saya ada satu perbandingan sendiri. Bukan ujian, sekadar pemerhatian. Di rumah keluarga ada vacuum bagless yang harganya lebih mahal daripada Karcher ni. Lepas setahun lebih guna, sedutannya mula lemau. Karcher saya masih kuat selepas tiga tahun. Perkara ni buat saya lebih yakin dengan vacuum jenis berbeg.
+
+## Sedut air: info penting untuk first-timer
+
+Sepanjang tiga tahun, saya tak pernah guna fungsi basah sebab cuma sedut habuk kering. Di ofis, memang nampak cleaner guna untuk sedut air tumpah.
+
+Kalau nak guna fungsi basah, satu perkara penting: keluarkan beg penapis kertas dari dalam tangki dulu. Beg kertas tak dibuat untuk air. Kalau tersedut air dengan beg tu sekali, beg boleh kembang dan koyak di dalam. Ikut langkah dalam buku panduan sebelum mula.
 
 ## Sesuai untuk siapa?
 
-**Sesuai:**
+**Sangat sesuai kalau:**
 
-- Nak vacuum seluruh rumah sekali gus tanpa berhenti cas bateri
-- Rumah banyak karpet, atau ada haiwan peliharaan
-- Bajet bawah RM500 tapi nak sedutan kuat
+- Nak vacuum seluruh rumah sekali gus tanpa berhenti tunggu bateri cas
+- Rumah banyak karpet, atau ada bela kucing atau anjing
+- Bajet bawah RM500 tapi nak mesin tahan lasak dan kuat menyedut
 
-**Kurang sesuai:**
+**Kurang sesuai kalau:**
 
 - Dah biasa dengan cordless dan tak suka berurusan dengan wayar
-- Rumah kecil yang tiada tempat simpan
-- Nak vacuum yang senyap
+- Rumah kecil yang tiada stor atau ruang simpan barang besar
+- Cari vacuum yang senyap
 
 ## Vacuum Karcher WD 1s berbaloi ke?
 
-Bagi saya, berbaloi. Kalau dibandingkan dengan cordless pada harga lebih kurang sama, saya akan pilih Karcher ni. Confirm tak menyesal.
+Bagi saya, sangat berbaloi. Kalau dibanding dengan vacuum cordless pada harga yang sama, saya tetap pilih Karcher ni. Memang tak menyesal bab prestasi. Cuma kalau beli semula, saya pilih WD 1 Classic sebab lebih kecil dan lebih murah.
 
-Cuma kalau beli semula, saya pilih WD 1 Classic yang lebih kecil dan lebih murah.
-
-Vacuum ni bukan keperluan bulan pertama masuk rumah. Penyapu dan mop dah cukup untuk permulaan. Saya senaraikan apa yang patut didahulukan dalam artikel [masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html).
+Satu lagi, vacuum macam ni bukan keperluan terdesak bulan pertama masuk rumah sewa. Mop dan penyapu dah memadai. Baca [senarai barang yang patut didahulukan bila masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html).
 
 ## Soalan lazim
 
-**Vacuum wet & dry sesuai ke untuk rumah?**
-Sesuai, terutama untuk sedutan kuat dan rumah yang banyak karpet. Saya sendiri guna untuk kotoran kering je, tak pernah sedut air.
+**Vacuum tong wet & dry macam ni sesuai ke untuk rumah?**
+Sangat sesuai, terutama untuk rumah yang ada karpet sebab sedutannya kuat. Boleh guna untuk habuk kering sahaja pun.
 
 **Berapa lama beg penapis Karcher WD 1s tahan?**
-Untuk rumah saya yang 1,200 kaki persegi, satu beg tahan lebih dua bulan dengan vacuum dua tiga kali sebulan.
+Untuk rumah 1,200 kaki persegi, satu beg tahan lebih dua bulan dengan vacuum dua tiga kali sebulan.
 
 **Apa beza Karcher WD 1 Classic dengan WD 1s?**
-Menurut spesifikasi, WD 1s ada tangki keluli tahan karat 18 liter dan 200 air watts. WD 1 Classic tangkinya plastik 15 liter dan 180 air watts. WD 1 Classic lebih murah.
+Ikut spesifikasi, WD 1s ada tangki keluli tahan karat 18 liter dan 200 air watts. WD 1 Classic tangkinya plastik 15 liter dan 180 air watts. WD 1 Classic lebih murah.
 
-**Karcher atau vacuum cordless?**
-Kalau harga lebih kurang sama, saya pilih Karcher sebab sedutannya lebih kuat dan tak risau bateri. Kalau anda nak ringan dan tanpa wayar, cordless lebih sesuai.
+**Karcher atau vacuum cordless, mana lebih baik?**
+Kalau bajet terhad, Karcher menang dari segi sedutan dan tak risau bateri. Kalau nak yang ringan, cepat dicapai bila ada benda tumpah dan tanpa wayar, cordless lebih sesuai.
 
 ## Rujukan
 
