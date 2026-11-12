@@ -16,89 +16,113 @@ Permintaan privasi Ibrahim: tiada
 
 # Microwave Samsung 23L: perlu ke untuk orang yang jarang masak?
 
-Saya bukan reti sangat memasak. Selalunya beli lauk di kedai, tapi bila sampai rumah lauk dah sejuk. Microwave Samsung 23L ni saya beli pada April 2024 untuk selesaikan masalah tu. Sekarang ia antara barang yang paling kerap saya guna di dapur.
+Jujur cakap, bab memasak memang bukan kepakaran saya. Rutin biasa: balik kerja, singgah kedai dan beli lauk tapau. Masalahnya, bila sampai rumah lauk dah sejuk.
 
-> **Jawapan ringkas:** Sangat berbaloi, sama ada bujang atau dah kahwin, terutama kalau selalu beli lauk atau simpan lebihan makanan. Panaskan makanan jadi cepat dan dapur tak kotor. Jenis solo dah cukup kalau cuma nak panaskan. Satu perkara yang saya belajar: kalau tak guna ciri-ciri lain, fokus pada saiz dan bukan fungsi.
+> **Jawapan ringkas:** Sangat berbaloi, tak kisah bujang atau dah kahwin, terutama kalau selalu beli lauk luar atau suka simpan lebihan makanan. Boleh panaskan sekelip mata dan dapur tak bersepah. Jenis solo (panaskan sahaja) dah memadai. Satu pengajaran: kalau memang takkan guna butang-butang fungsi tambahan, lebih baik fokus pada saiz besar berbanding kecanggihan.
+
+Nak selesaikan masalah remeh tapi menjengkelkan ni, saya beli microwave Samsung 23L pada April 2024. Sekarang, masuk tahun ketiga, ia antara barang elektrik yang paling kerap saya guna di dapur.
+
+Ini cerita kenapa microwave ni sangat membantu dan beberapa perkara yang orang selalu tersilap masa mula-mula pakai.
 
 **Fakta ringkas**
 
 - **Barang:** Samsung microwave solo 23L (MS23K3513AK)
 - **Harga saya bayar:** RM277.52 selepas baucar (April 2024)
 - **Beli di:** Shopee
-- **Tempoh guna:** lebih dua setengah tahun
-- **Guna untuk:** panaskan lauk dan nasi
-- **Sesuai untuk:** bujang atau pasangan yang selalu beli lauk
+- **Tempoh guna:** lebih dua tahun setengah
+- **Tujuan utama:** panaskan lauk, nasi dan lebihan makanan semalam
+- **Sesuai untuk:** geng tapau lauk kedai dan orang yang malas basuh kuali
 
-## Kenapa saya beli microwave
+## Kenapa tiba-tiba terbeli microwave?
 
-Saya dengar kawan cerita, hidup lebih senang bila dah ada microwave. Bila fikir balik, memang kena dengan rutin saya.
+Semuanya sebab dengar kawan borak. Katanya hidup jadi jauh lebih senang bila dah ada microwave. Bila fikir balik rutin harian saya, memang tepat.
 
-Selalunya saya beli lauk di kedai. Sampai rumah, kadang-kadang lauk dah sejuk. Kalau tak ada microwave, saya kena panaskan guna kuali. Lepas tu kena basuh kuali dan lap dapur pula.
+Selalunya saya beli lauk di kedai. Sampai rumah, lauk dah sejuk. Kalau tak ada microwave, terpaksa tuang lauk masuk kuali, buka api dan panaskan. Lepas tu? Kena basuh kuali dan lap percikan minyak di dapur gas. Leceh dan buang masa.
 
-Lauk semalam yang tak habis pun saya simpan dalam peti ais. Dengan microwave, panaskan sekejap je dah boleh makan.
+Lauk lebihan semalam dari peti ais pun sama. Masuk microwave sekejap, siap. Boleh terus makan.
 
 ## Kenapa pilih jenis solo?
 
-Microwave ada beberapa jenis: solo yang fokus panaskan, jenis ada grill dan jenis convection yang boleh jadi oven. Saya pilih solo atas dua sebab.
+Di pasaran, microwave ada tiga jenis utama: solo yang fokus panaskan, grill yang ada pemanas untuk bakar atau garingkan serta convection yang dah macam oven. Saya pilih solo atas dua sebab.
 
-**Satu barang, satu fungsi.** Bagi saya senang kalau barang tu buat satu kerja je. Andai kata rosak, barang lain tak terganggu. Kalau microwave dan oven dalam satu badan, rosak satu, dua-dua tak boleh guna.
+### 1. Satu barang, satu fungsi
 
-**Saya memang tak guna grill dan oven.** Masa nak beli, saya tak bakar atau grill apa-apa. Tak berbaloi bayar lebih untuk fungsi yang tak diguna.
+Bagi saya lebih mudah kalau satu barang fokus buat satu kerja. Andai kata rosak, barang lain tak terganggu. Kalau beli microwave yang bergabung dengan oven, rosak satu, dua-dua fungsi tak boleh pakai.
 
-Kenapa Samsung? Ada jenama lain yang lebih murah. Tapi bagi saya, rupa Samsung ni nampak okay, huhu.
+### 2. Tak perlukan fungsi bakar
 
-## Apa yang saya suka
+Masa nak beli, saya memang sedar diri takkan grill ayam atau bakar kek. Tak berbaloi bayar lebih untuk fungsi yang akhirnya jadi perhiasan.
 
-**Panaskan lauk cepat.** Ini sebab utama saya beli dan ia buat kerja tu dengan baik. Lauk kedai yang dah sejuk atau lebihan semalam dari peti ais, panas dalam masa sekejap.
+Kenapa Samsung, sedangkan ada jenama lain yang lebih murah? Sejujurnya, sebab rekaan Samsung ni nampak kemas, hehe.
 
-**Dapur tak kotor.** Kalau panaskan guna kuali, kena basuh dan lap dapur. Microwave cuma perlu pinggan atau mangkuk yang selamat untuk microwave.
+## Apa yang best?
 
-**Bahagian dalam senang lap.** Menurut Samsung, bahagian dalamnya bersalut seramik enamel yang mudah dibersihkan dan tahan calar.
+### 1. Lauk sejuk jadi panas sekelip mata
 
-## Apa yang saya kurang suka
+Ini objektif utama beli dan ia buat kerja tu dengan baik. Lauk kedai atau baki makanan semalam dari peti ais, panaskan sekejap, siap.
 
-**Saiz sederhana.** 23 liter tak besar dan tak kecil. Untuk periuk besar sikit, kena bahagikan lauk kepada dua bekas dan panaskan dua kali. Menurut Samsung, diameter pinggan pusingnya 28.8 cm.
+### 2. Dapur kekal bersih
 
-**Banyak fungsi yang saya tak guna.** Menurut buku manual, model ni boleh masak terus dalam microwave dan ada fungsi nyah beku makanan (Quick Defrost) sebelum dimasak. Ada juga program memasak automatik. Saya tak pernah guna sepenuhnya.
+Tak payah keluar kuali, tak payah buka api. Masukkan je pinggan atau mangkuk. Lepas makan, basuh pinggan tu je. Tak ada episod lap dapur berminyak malam-malam.
 
-Bila fikir balik, sepatutnya saya fokus cari microwave untuk panaskan je dengan saiz lebih besar. Pada harga yang sama, mungkin boleh dapat saiz lebih besar dengan jenama yang okay.
+### 3. Bahagian dalam senang dilap
 
-## Tips kecil: penutup microwave
+Menurut Samsung, dinding dalamnya bersalut seramik enamel yang mudah dibersihkan, tahan calar dan tak mudah berubah warna. Kalau terpercik kuah, lap dengan kain basah dah hilang. Ada juga fungsi deodorization untuk hilangkan bau makanan di dalam.
 
-Kalau risau lauk berkuah terpercik ke dinding dalam, ada penutup khas microwave yang boleh dibeli. Saya sendiri tak beli pun, tapi ia pilihan kalau nak bahagian dalam sentiasa bersih.
+## Apa yang kurang best (dan sedikit penyesalan)
+
+### 1. Saiz 23 liter ni sederhana
+
+Tak besar dan tak kecil sangat. Menurut Samsung, diameter pinggan pusingnya 28.8 cm. Pinggan makan biasa atau mangkuk tomyam lepas. Tapi kalau nak masukkan periuk atau bekas yang besar sikit, memang tak muat. Kena bahagikan lauk kepada dua bekas dan panaskan dua kali.
+
+### 2. Banyak fungsi yang tak pernah ditekan
+
+Model ni ada Quick Defrost untuk nyah beku ayam atau daging. Ada juga program memasak automatik. Menurut buku manual, boleh juga masak terus dalam microwave. Masuk tahun ketiga, saya tak pernah guna fungsi-fungsi ni sepenuhnya.
+
+Bila fikir balik, sepatutnya saya tak payah pandang fungsi tambahan. Cari microwave solo yang saiznya lebih besar, contohnya 25 liter ke atas, pada harga yang sama.
+
+## Info wajib tahu untuk first-timer
+
+Bagi yang pertama kali pakai microwave, ini beberapa pantang larang dan tips yang selalu disarankan:
+
+- **Jangan masukkan besi atau aluminium.** Sudu, garfu, periuk logam atau aluminium foil boleh keluarkan percikan api dalam microwave. Guna bekas kaca, seramik atau plastik yang ada label "microwave safe".
+- **Jangan panaskan telur berkulit.** Telur yang masih berkulit boleh meletup.
+- **Renjis air pada nasi.** Nasi sejuk dari peti ais boleh jadi keras bila dipanaskan. Renjis sikit air sebelum masuk microwave.
+- **Guna penutup microwave.** Penutup plastik khas microwave boleh elak kuah terpercik ke dinding dalam. Saya sendiri tak beli, tapi ia pilihan yang baik untuk lauk berkuah.
+- **Rujuk buku manual** untuk bekas dan cara yang disarankan untuk model masing-masing.
 
 ## Sesuai untuk siapa?
 
-**Sangat sesuai:**
+**Sangat sesuai kalau:**
 
-- Bujang atau pasangan yang selalu beli lauk di kedai
-- Yang suka simpan lebihan makanan dalam peti ais
-- Yang malas basuh kuali dan lap dapur semata-mata nak panaskan lauk
+- Bujang atau pasangan yang selalu beli lauk bungkus
+- Suka simpan lauk lebihan dalam peti ais untuk esoknya
+- Nak jimat masa dan malas basuh kuali semata-mata nak panaskan lauk
 
-**Fikir dulu kalau:**
+**Kena fikir balik kalau:**
 
-- Selalu panaskan dalam periuk besar. Cari saiz lebih besar.
-- Nak bakar atau grill. Jenis solo tak sesuai, pilih microwave dengan grill atau convection.
+- Keluarga besar yang selalu panaskan lauk dalam bekas besar. Cari saiz 25 liter ke atas.
+- Memang nak bakar ayam atau buat biskut. Pilih jenis grill atau convection terus.
 
 ## Microwave Samsung 23L berbaloi ke?
 
-Sangat berbaloi. Tak kisah bujang atau dah kahwin, ia memudahkan urusan harian. Kalau beli semula, saya masih pilih jenis solo, tapi saya akan utamakan saiz yang lebih besar berbanding fungsi tambahan.
+Tiga ratus peratus berbaloi. Ia mudahkan urusan harian lepas penat balik kerja. Kalau terpaksa beli baru, saya tetap cari jenis solo. Tapi kali ni saya pejam mata pada fungsi automatik dan cari kapasiti yang lebih besar.
 
-Microwave bukan keperluan bulan pertama masuk rumah. Saya beli lapan bulan lepas pindah. Untuk barang yang patut didahulukan, baca [senarai barang masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html).
+Sama macam barang lain, microwave bukan barang wajib bulan pertama masuk rumah. Saya beli lapan bulan selepas pindah. Untuk susunan keutamaan, baca [senarai barang masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html).
 
 ## Soalan lazim
 
-**Microwave 23L besar ke kecil?**
-Bagi saya 23 liter saiz sederhana. Cukup untuk pinggan dan mangkuk biasa, tapi periuk besar kena bahagi dua.
+**Microwave 23L dikira besar ke kecil?**
+Bagi saya saiz sederhana. Cukup untuk pinggan dan mangkuk biasa, tapi periuk atau bekas besar tak muat.
 
-**Microwave solo atau ada grill, mana lebih baik?**
-Kalau cuma nak panaskan makanan, solo dah cukup dan lebih murah. Kalau nak bakar atau grill, pilih yang ada fungsi grill atau convection.
+**Microwave solo atau ada grill, mana lagi elok?**
+Kalau setakat nak panaskan lauk atau nyah beku daging, solo dah cukup dan lebih murah. Kalau nak garingkan sosej atau bakar, baru beli yang ada grill.
 
-**Perlu ke microwave untuk orang yang jarang masak?**
-Bagi saya sangat perlu, terutama kalau selalu beli lauk. Panaskan lauk jadi cepat tanpa kotorkan dapur.
+**Orang yang jarang masak patut ke beli microwave?**
+Sangat patut. Orang yang jarang masak selalunya kerap tapau makanan dari luar. Panaskan lauk jadi cepat tanpa kotorkan dapur.
 
-**Microwave Samsung MS23K3513AK berapa watt?**
-Menurut Samsung, kuasa keluaran microwave 800 W dan penggunaan kuasanya 1,150 W.
+**Microwave Samsung MS23K3513AK guna elektrik berapa watt?**
+Menurut Samsung, kuasa keluaran microwave 800 W dan penggunaan kuasanya 1,150 W bila sedang berjalan.
 
 ## Rujukan
 
