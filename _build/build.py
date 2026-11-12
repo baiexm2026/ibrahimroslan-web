@@ -256,6 +256,7 @@ MD_ARTICLES = [
     ("rumah-sewa-kosong-apa-nak-beli-dulu", "2026-11-11", {}, None),
     ("philips-steam-generator-gc7846-berbaloi", "2026-11-11", {}, None),
     ("vacuum-karcher-wd1s-berbaloi", "2026-11-12", {}, None),
+    ("peti-ais-toshiba-273l-2-pintu", "2026-11-12", {}, None),
 ]
 
 
