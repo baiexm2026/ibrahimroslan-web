@@ -18,7 +18,7 @@ Permintaan privasi Ibrahim: tiada
 
 Dah lebih tiga tahun saya guna vacuum Karcher WD 1s untuk bersihkan rumah 1,200 kaki persegi. Asalnya langsung tak terfikir nak beli jenama ni. Semuanya sebab terpengaruh dengan akak cleaner di ofis.
 
-> **Jawapan ringkas:** Memang berbaloi kalau anda nak sedutan padu dan nak vacuum seluruh rumah sekali jalan tanpa risau bateri habis. Harganya lebih kurang sama dengan vacuum cordless bajet, tapi sedutannya jauh berbeza. Kekurangannya bising, makan tempat dan kena rajin urus wayar. Kalau beli semula, saya ambil model yang lebih kecil.
+> **Jawapan ringkas:** Memang berbaloi kalau nak sedutan padu dan nak vacuum seluruh rumah sekali jalan tanpa risau bateri habis. Harganya lebih kurang sama dengan vacuum cordless bajet, tapi sedutannya jauh berbeza. Kekurangannya bising, makan tempat dan kena rajin urus wayar. Kalau beli semula, saya ambil model yang lebih kecil.
 
 Ini cerita kenapa saya pilih vacuum "orang ofis" ni, apa yang ramai terlepas pandang dan satu perkara yang buat saya agak menyesal.
 

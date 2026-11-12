@@ -39,7 +39,7 @@ Terus terang, masa beli tu tak adalah fikir terlalu jauh pasal saiz atau jenama.
 
 Ini syarat pertama. Saya memang tak nak peti ais satu pintu.
 
-Kalau anda tengah timbang, satu perkara yang selalu orang sebut: peti ais satu pintu biasanya jenis yang ais tebal melekat di dinding bahagian beku. Lama-lama kena cairkan ais (defrost) secara manual. Banyak peti ais 2 pintu pula jenis tanpa fros, jadi ais tak menebal. Semak spesifikasi model yang anda nak beli.
+Kalau tengah timbang, satu perkara yang selalu orang sebut: peti ais satu pintu biasanya jenis yang ais tebal melekat di dinding bahagian beku. Lama-lama kena cairkan ais (defrost) secara manual. Banyak peti ais 2 pintu pula jenis tanpa fros, jadi ais tak menebal. Semak spesifikasi model yang nak dibeli.
 
 ### 2. Tolak tepi jenis banyak pintu
 
@@ -75,7 +75,7 @@ Lepas peti ais diletak di dapur, biarkan ia berdiri tegak dulu sebelum hidupkan 
 
 ### Jangan rapat sangat ke dinding
 
-Tinggalkan ruang di belakang dan tepi peti ais supaya haba boleh keluar. Kalau terlalu rapat, peti ais terpaksa kerja lebih keras. Jarak yang disarankan ada dalam buku manual model anda.
+Tinggalkan ruang di belakang dan tepi peti ais supaya haba boleh keluar. Kalau terlalu rapat, peti ais terpaksa kerja lebih keras. Jarak yang disarankan ada dalam buku manual model masing-masing.
 
 ## Apa yang kurang best?
 

@@ -19,7 +19,7 @@ Permintaan privasi Ibrahim: tiada
 
 Dah dua tahun saya guna steam generator Philips GC7846. Rutin sekarang: seminggu sekali gosok baju untuk stok seminggu terus, sambil lepak layan drama Korea. Ini cerita kenapa saya dah tak nak patah balik ke seterika biasa.
 
-> **Jawapan ringkas:** Memang berbaloi, lebih-lebih lagi kalau anda jenis suka gosok banyak baju sekali gus. Tak perlu pening laras suhu dan tak payah risau baju berlubang sebab terbakar. Kekurangannya, ia lebih berat, makan tempat dan kena tunggu sekejap sebelum panas. Tapi bagi saya, kelebihannya jauh lebih besar.
+> **Jawapan ringkas:** Memang berbaloi, lebih-lebih lagi kalau jenis suka gosok banyak baju sekali gus. Tak perlu pening laras suhu dan tak payah risau baju berlubang sebab terbakar. Kekurangannya, ia lebih berat, makan tempat dan kena tunggu sekejap sebelum panas. Tapi bagi saya, kelebihannya jauh lebih besar.
 
 **Fakta ringkas**
 

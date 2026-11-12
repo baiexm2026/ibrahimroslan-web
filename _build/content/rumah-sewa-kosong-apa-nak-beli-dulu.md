@@ -109,7 +109,7 @@ Jadi kalau bajet betul-betul nipis, mula dengan toto. Bila dah ada tilam nanti, 
 
 ## Simulasi: kalau bajet cuma RM1,000?
 
-Katakan anda ada RM1,000 ngam-ngam. Fokus pada ni je:
+Katakan ada RM1,000 ngam-ngam dalam tangan. Fokus pada ni je:
 
 1. Penyapu, mop dan sabun lantai
 2. Langsir untuk ruang utama dan bilik tidur
@@ -197,7 +197,7 @@ Barang cuci rumah, langsir, tempat tidur dan barang dapur asas. Yang lain boleh 
 Saya habis lebih RM5,000 pada 2023, termasuk peti ais, mesin basuh, sofa dan beberapa barang secondhand. Kalau nak jimat, RM1,000 pun cukup untuk keperluan asas.
 
 **Perlu ke beli mesin basuh terus?**
-Tak semestinya. Kalau kawasan anda banyak dobi, mesin basuh boleh tunggu.
+Tak semestinya. Kalau kawasan tu banyak dobi, mesin basuh boleh tunggu.
 
 **Toto atau tilam dulu?**
 Kalau bajet ketat, toto dulu. Bila dah ada tilam, toto tu masih berguna untuk tetamu.

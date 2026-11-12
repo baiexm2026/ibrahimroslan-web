@@ -315,8 +315,8 @@ def md_article(slug, iso, affiliates, updated=None):
         return f'<h2 id="{sid}">{mh.group(1)}</h2>'
     body = _re.sub(r"<h2>(.*?)</h2>", _id, body)
 
-    disclosure = ('<p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Jika anda membeli melaluinya saya\n'
-                  '      mungkin menerima komisen kecil tanpa kos tambahan kepada anda. <a href="/disclaimer.html">Baca penafian</a>.</p>\n'
+    disclosure = ('<p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Kalau beli melalui pautan ni, saya\n'
+                  '      mungkin dapat komisen kecil tanpa kos tambahan. <a href="/disclaimer.html">Baca penafian</a>.</p>\n'
                   if affiliates else "")
     short = title.split(":")[0].strip()
     url = f"{SITE}/blog/{slug}.html"
@@ -470,7 +470,7 @@ about_body = f"""  <section class="hero" aria-labelledby="nama">
       <li><strong>Keputusan besar</strong>: kewangan, keluarga dan aset, ditulis sebagai catatan perjalanan, bukan nasihat profesional.</li>
     </ul>
 
-    <h2>Di mana lagi anda boleh jumpa saya</h2>
+    <h2>Di mana lagi boleh jumpa saya</h2>
     <ul>
       <li><a href="{LINKEDIN}" rel="me noopener" target="_blank">LinkedIn</a></li>
     </ul>
@@ -517,28 +517,28 @@ thought_body = f"""  <header class="page-head">
 privacy_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href="/">Laman utama</a></li><li>Dasar privasi</li></ol></nav>
   <header class="page-head">
     <h1>Dasar privasi</h1>
-    <p class="lead">Apa yang laman ini kumpul, apa yang tidak dan siapa lagi yang mungkin melihat kunjungan anda.</p>
+    <p class="lead">Apa yang laman ini kumpul, apa yang tidak dan siapa lagi yang mungkin nampak kunjungan ke sini.</p>
     <p class="article-meta">Kemas kini: <time datetime="{PRIVACY_UPDATED}">27 Okt 2026</time></p>
   </header>
   <div class="prose">
-    <p>Privasi pelawat penting kepada saya. Halaman ini menerangkan maklumat yang dikumpul apabila anda
+    <p>Privasi pelawat penting kepada saya. Halaman ini menerangkan maklumat yang dikumpul bila sesiapa
     melawat <strong>ibrahimroslan.com</strong>, dalam bahasa biasa, bukan bahasa peguam.</p>
 
     <h2>Maklumat yang dikumpul</h2>
     <p>Laman ini mungkin menggunakan perkhidmatan analisis trafik ringkas untuk melihat maklumat asas
     seperti jumlah paparan halaman, jenis pelayar dan jenis peranti. Maklumat ini bersifat agregat dan
-    tidak mengenal pasti anda sebagai individu.</p>
+    tidak mengenal pasti sesiapa sebagai individu.</p>
     <p>Saya tidak mempunyai borang pendaftaran, tidak menyimpan senarai e-mel dan tidak meminta nama
-    atau nombor telefon anda di mana-mana halaman.</p>
+    atau nombor telefon di mana-mana halaman.</p>
 
     <h2>Cookies dan pihak ketiga</h2>
-    <p>Laman ini sendiri hanya menyimpan satu pilihan kecil dalam pelayar anda: sama ada anda memilih
-    mod terang atau gelap. Pautan <em>affiliate</em> yang saya guna (contohnya Shopee) mungkin
+    <p>Laman ini sendiri hanya menyimpan satu pilihan kecil dalam pelayar: sama ada mod terang
+    atau gelap yang dipilih. Pautan <em>affiliate</em> yang saya guna (contohnya Shopee) mungkin
     menggunakan cookies di laman mereka untuk mengesan rujukan. Butiran ada di halaman
     <a href="/disclaimer.html">Penafian</a>.</p>
 
     <h2>Pautan luar</h2>
-    <p>Setelah anda klik keluar ke laman lain, dasar privasi laman tersebut yang terpakai. Saya tidak
+    <p>Bila klik keluar ke laman lain, dasar privasi laman tersebut yang terpakai. Saya tidak
     bertanggungjawab ke atas kandungan atau amalan privasi laman pihak ketiga.</p>
 
     <h2>Perubahan pada dasar ini</h2>
@@ -552,7 +552,7 @@ privacy_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href="/"
 disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href="/">Laman utama</a></li><li>Penafian</li></ol></nav>
   <header class="page-head">
     <h1>Penafian</h1>
-    <p class="lead">Dari mana kandungan ini datang, bila saya dapat komisen dan apa yang anda patut semak sendiri sebelum membeli.</p>
+    <p class="lead">Dari mana kandungan ini datang, bila saya dapat komisen dan apa yang patut disemak sendiri sebelum membeli.</p>
     <p class="article-meta">Kemas kini: <time datetime="{UPDATED}">{UPDATED_DISP}</time></p>
   </header>
   <div class="prose">
@@ -560,13 +560,13 @@ disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href=
     <p>Semua maklumat, pandangan dan cerita di <strong>ibrahimroslan.com</strong> berdasarkan
     pengalaman peribadi saya. Ia untuk maklumat umum, bukan nasihat profesional sama ada kewangan,
     undang-undang, perubatan atau teknikal.</p>
-    <p>Apa yang sesuai untuk saya, dengan bajet dan keadaan saya, mungkin tidak sesuai untuk anda.
+    <p>Apa yang sesuai untuk saya, dengan bajet dan keadaan saya, mungkin tidak sesuai untuk orang lain.
     Timbang sendiri sebelum ikut.</p>
 
     <h2>Pendedahan pautan affiliate</h2>
     <p>Sesetengah artikel mungkin mengandungi pautan <em>affiliate</em> ke platform seperti Shopee.
-    Jika anda membeli melalui pautan tersebut, saya mungkin menerima komisen kecil,
-    <strong>tanpa sebarang kos tambahan kepada anda</strong>.</p>
+    Kalau beli melalui pautan tersebut, saya mungkin dapat komisen kecil,
+    <strong>tanpa sebarang kos tambahan kepada pembeli</strong>.</p>
     <p>Peraturan yang saya pegang:</p>
     <ul>
       <li>Saya pautkan barang yang saya sendiri guna, beli atau kaji. Kalau saya belum baca, belum guna atau
@@ -581,7 +581,7 @@ disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href=
 
     <h2>Tiada jaminan hasil</h2>
     <p>Bila saya tulis tentang tabiat atau keputusan hidup, saya bercerita tentang apa yang berlaku
-    kepada saya. Tiada jaminan anda akan dapat hasil yang sama.</p>
+    kepada saya. Tiada jaminan orang lain akan dapat hasil yang sama.</p>
 
     <h2>Soalan?</h2>
     <p>Kalau ada apa-apa yang tidak jelas atau tidak adil, beritahu saya di
@@ -591,7 +591,7 @@ disclaimer_body = f"""  <nav class="crumbs" aria-label="Laluan"><ol><li><a href=
 # ------------------------------------------------------------------ 404
 nf_body = """  <header class="page-head page-head--plain">
     <h1>Halaman ini tak ada.</h1>
-    <p class="lead">Halaman yang anda cari sudah dipindahkan atau memang tak pernah ada.</p>
+    <p class="lead">Halaman yang dicari sudah dipindahkan atau memang tak pernah ada.</p>
     <div class="actions">
       <a class="btn" href="/">Laman utama</a>
       <a class="btn btn--ghost" href="/blog.html">Blog</a>
@@ -623,8 +623,8 @@ tpl_body = f"""<!-- ============================================================
 
     <div class="prose">
       <!-- Kalau ada pautan affiliate, kekalkan kotak ini. Kalau tiada, padam. -->
-      <p class="disclosure">Artikel ini mengandungi pautan affiliate. Jika anda membeli melaluinya, saya
-      mungkin menerima komisen kecil tanpa kos tambahan kepada anda. <a href="/disclaimer.html">Baca penafian</a>.</p>
+      <p class="disclosure">Artikel ini mengandungi pautan affiliate. Kalau beli melalui pautan ni, saya
+      mungkin dapat komisen kecil tanpa kos tambahan. <a href="/disclaimer.html">Baca penafian</a>.</p>
 
       <p>[Perenggan pembuka.]</p>
 
@@ -685,12 +685,12 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
     </header>
 
     <div class="prose">
-      <p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Jika anda membeli melaluinya saya
-      mungkin menerima komisen kecil tanpa kos tambahan kepada anda. <a href="/disclaimer.html">Baca penafian</a>.</p>
+      <p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Kalau beli melalui pautan ni, saya
+      mungkin dapat komisen kecil tanpa kos tambahan. <a href="/disclaimer.html">Baca penafian</a>.</p>
 
       <div class="note">
-        <p><strong>Jawapan ringkas:</strong> kalau anda cuma nak tahu empat hukum tabiat dalam
-        <cite>Atomic Habits</cite>, ringkasan AI dah cukup. Tapi bagi saya buku ni berbaloi dibeli kalau anda
+        <p><strong>Jawapan ringkas:</strong> kalau cuma nak tahu empat hukum tabiat dalam
+        <cite>Atomic Habits</cite>, ringkasan AI dah cukup. Tapi bagi saya buku ni berbaloi dibeli kalau
         serius nak ubah rutin, sebab kisah dan contohnya yang membentuk cara berfikir. Elakkan naskhah
         berharga RM15 hingga RM20 kerana hampir pasti cetak rompak.</p>
       </div>
@@ -758,10 +758,10 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
       walaupun harganya lebih tinggi.</p>
 
       <h2 id="keputusan">5. Berbaloi beli atau cukup tanya AI?</h2>
-      <p>Kalau anda cuma nak tahu empat hukum di atas, ringkasan AI atau perkongsian di media sosial dah
+      <p>Kalau cuma nak tahu empat hukum di atas, ringkasan AI atau perkongsian di media sosial dah
       cukup dalam masa 5 minit. <strong>Tetapi</strong> buku ni bukan sekadar senarai hukum. Ia penuh
       dengan kisah dan contoh yang membentuk cara kita berfikir.</p>
-      <p>Bagi saya <strong>ia berbaloi dibeli</strong> kalau anda serius nak ubah rutin hidup. Pilih
+      <p>Bagi saya <strong>ia berbaloi dibeli</strong> kalau serius nak ubah rutin hidup. Pilih
       versi English kalau selesa dengan bahasa Inggeris atau versi BM kalau nak bacaan yang lebih santai
       dan dekat dengan bahasa kita.</p>
 
@@ -832,8 +832,8 @@ ag_body = f"""  <nav class="crumbs" aria-label="Laluan">
     </header>
 
     <div class="prose">
-      <p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Jika anda membeli melaluinya saya
-      mungkin menerima komisen kecil tanpa kos tambahan kepada anda. <a href="/disclaimer.html">Baca penafian</a>.</p>
+      <p class="disclosure">Artikel ini mengandungi pautan affiliate Shopee. Kalau beli melalui pautan ni, saya
+      mungkin dapat komisen kecil tanpa kos tambahan. <a href="/disclaimer.html">Baca penafian</a>.</p>
 
       <div class="note">
         <p><strong>Jawapan ringkas:</strong> saya tak dapat sahkan ayat "frustrate our children everyday" ada
