@@ -22,6 +22,7 @@ CARDS = [
     ("review-buku-atomic-habits-bm", "Atomic Habits versi BM", "Berbaloi beli atau tanya AI je?"),
     ("rumah-sewa-kosong-apa-nak-beli-dulu", "Masuk rumah sewa kosong", "Apa nak beli dulu kalau bajet terhad?"),
     ("philips-steam-generator-gc7846-berbaloi", "Philips GC7846", "Berbaloi ganti seterika biasa?"),
+    ("vacuum-karcher-wd1s-berbaloi", "Vacuum Karcher WD 1s", "Berbaloi berbanding cordless?"),
 ]
 
 LOGO = ('<svg viewBox="0 0 64 64" width="84" height="84" aria-hidden="true">'
