@@ -86,7 +86,7 @@ Badannya besar macam tong cat. Kena sediakan satu sudut khas di stor atau dapur 
 
 ### 4. Tersilap beli saiz (penyesalan utama)
 
-Ini yang saya agak menyesal. Karcher ada model lebih kecil, WD 1 Classic. Ikut spesifikasi, kuasanya tak jauh beza: 180 air watts untuk WD 1 Classic berbanding 200 air watts untuk WD 1s. Bezanya bekas sampah lebih kecil (15 liter plastik berbanding 18 liter keluli) dan harganya lebih murah.
+Ini yang saya agak menyesal. Karcher ada model lebih kecil, WD 1 Classic. Ikut spesifikasi, kuasanya tak jauh beza: 180 air watts untuk WD 1 Classic berbanding 200 air watts untuk WD 1s. Bezanya bekas sampah lebih kecil (15 liter plastik berbanding 18 liter keluli) dan harganya lebih murah. Saya pernah angkat dua-dua model ni di kedai. Yang kecil tu memang terasa lebih ringan sikit, walaupun saya tak timbang.
 
 Untuk rumah biasa, model kecil tu dah sangat mencukupi. Yang saya pakai ni terasa macam "overpower" dan terlalu besar, hehe.
 
@@ -118,7 +118,7 @@ Kalau nak guna fungsi basah, satu perkara penting: keluarkan beg penapis kertas 
 
 ## Vacuum Karcher WD 1s berbaloi ke?
 
-Bagi saya, sangat berbaloi. Kalau dibanding dengan vacuum cordless pada harga yang sama, saya tetap pilih Karcher ni. Memang tak menyesal bab prestasi. Cuma kalau beli semula, saya pilih WD 1 Classic sebab lebih kecil dan lebih murah.
+Bagi saya, sangat berbaloi. Kalau dibanding dengan vacuum cordless pada harga yang sama, saya tetap pilih Karcher ni. Memang tak menyesal bab prestasi. Cuma kalau beli semula, saya pilih WD 1 Classic sebab lebih kecil, lebih ringan dan lebih murah.
 
 Satu lagi, vacuum macam ni bukan keperluan terdesak bulan pertama masuk rumah sewa. Mop dan penyapu dah memadai. Baca [senarai barang yang patut didahulukan bila masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html).
 
