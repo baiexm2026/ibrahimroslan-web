@@ -258,6 +258,9 @@ MD_ARTICLES = [
     ("vacuum-karcher-wd1s-berbaloi", "2026-11-12", {}, None),
     ("peti-ais-toshiba-273l-2-pintu", "2026-11-12", {}, None),
     ("microwave-samsung-23l-jarang-masak", "2026-11-12", {}, None),
+    ("rak-besi-boltless-4-tingkat-stor", "2026-11-12", {}, None),
+    ("wagon-trolley-lipat-apartmen", "2026-11-12", {}, None),
+    ("periuk-nasi-giselle-1-2l-bujang", "2026-11-12", {}, None),
 ]
 
 
