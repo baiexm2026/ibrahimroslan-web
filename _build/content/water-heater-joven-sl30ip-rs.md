@@ -63,7 +63,7 @@ Kenapa tak panggil orang luar? Bukan tak nak, tapi mereka lebih arif tentang str
 
 ## Perlu ke beli jenis ada pam?
 
-Terus terang, masa beli tu saya tak pasti tekanan air rumah perlukan pam atau tak. Jadi saya ambil jalan selamat dan beli model yang ada pam, sebab kadang-kadang air rasa perlahan sikit.
+Terus terang, masa beli tu saya tak pasti tekanan air rumah perlukan pam atau tak. Jadi saya ambil jalan selamat dan beli model yang ada pam sebab kadang-kadang air rasa perlahan sikit.
 
 Bila tukang pasang datang, dia beritahu tekanan air di kawasan ni sebenarnya dah cukup kuat. Air perlahan tu jarang sangat berlaku. Jadi kalau tekanan air rumah memang dah laju, model tanpa pam mungkin dah memadai dan lebih murah.
 

@@ -18,7 +18,7 @@ Permintaan privasi Ibrahim: tiada (kawan yang disebut tidak dinamakan)
 
 Saya terbaca tentang "5 hukum asas kebodohan manusia" di media sosial dan perkataan "kebodohan" tu buat saya nak tahu lebih. Ini catatan tentang apa yang saya faham dan apa yang saya bawa pulang.
 
-> **Jawapan ringkas:** Dalam 5 hukum kebodohan Carlo Cipolla, "bodoh" bukan bermaksud IQ rendah. Ia merujuk kepada tindakan yang merugikan orang lain tanpa memberi apa-apa untung kepada diri sendiri. Saya setuju dengan definisi ni, sebab ikut cara Cipolla, sesiapa pun boleh bertindak bodoh. Termasuk saya.
+> **Jawapan ringkas:** Dalam 5 hukum kebodohan Carlo Cipolla, "bodoh" bukan bermaksud IQ rendah. Ia merujuk kepada tindakan yang merugikan orang lain tanpa memberi apa-apa untung kepada diri sendiri. Saya setuju dengan definisi ni sebab ikut cara Cipolla, sesiapa pun boleh bertindak bodoh. Termasuk saya.
 
 ## Bagaimana saya mula terfikir tentang topik ni
 
@@ -59,7 +59,7 @@ Waktu pagi, dia tolong rakan baru yang tersekat dengan sistem. Rakannya jimat ma
 
 Waktu makan tengah hari, dia cepat-cepat ambil potongan piza terakhir di pantri walaupun tahu ada kawan yang belum makan. Itu **penyamun**.
 
-Waktu petang, dia setuju siapkan kerja seorang rakan yang tak mendesak pun, sebab rakan tu kata "awak lebih pandai buat". Ali balik lewat, rakannya balik awal. Itu **lurus bendul**.
+Waktu petang, dia setuju siapkan kerja seorang rakan yang tak mendesak pun sebab rakan tu kata "awak lebih pandai buat". Ali balik lewat, rakannya balik awal. Itu **lurus bendul**.
 
 Sebelum balik, dia cuba "baiki" tetapan mesin pencetak yang elok berfungsi. Mesin rosak. Esoknya tiada siapa boleh guna dan Ali dimarahi pengurus. Itu **bodoh**. Mungkin niat dia baik, tapi Cipolla menilai hasil, bukan niat.
 
@@ -108,7 +108,7 @@ Ia lima "hukum" dalam esei *The Basic Laws of Human Stupidity* tulisan ahli seja
 Tidak. Bodoh merujuk kepada tindakan yang menyebabkan orang lain rugi tanpa memberi untung kepada diri sendiri. Orang yang sangat pandai pun boleh bertindak bodoh.
 
 **Apa beza orang bodoh dan penyamun?**
-Penyamun untung atas kerugian orang lain, jadi tindakannya ada tujuan dan boleh dijangka. Orang bodoh menyebabkan semua pihak rugi, termasuk dirinya, sebab tu Cipolla anggap dia lebih berbahaya.
+Penyamun untung atas kerugian orang lain, jadi tindakannya ada tujuan dan boleh dijangka. Orang bodoh menyebabkan semua pihak rugi, termasuk dirinya sebab tu Cipolla anggap dia lebih berbahaya.
 
 **Di mana boleh baca esei asal Carlo Cipolla?**
 Esei ni masih dilindungi hak cipta, jadi cara yang betul ialah baca bukunya. Edisi bahasa Inggeris *The Basic Laws of Human Stupidity* diterbitkan oleh WH Allen (2019) dan Doubleday (2021).

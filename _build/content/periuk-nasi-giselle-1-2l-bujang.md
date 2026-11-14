@@ -28,7 +28,7 @@ Periuk nasi mini Giselle 1.2L ni selesaikan masalah tu. Cuma agak ralat sikit se
 - **Kuasa:** 200 W (ikut senarai produk)
 - **Harga saya bayar:** RM41.30 selepas baucar
 - **Beli di:** Shopee
-- **Berapa kali beli:** dua kali, sebab yang pertama rosak dek salah sendiri
+- **Berapa kali beli:** dua kali sebab yang pertama rosak dek salah sendiri
 - **Paling sesuai untuk:** bujang, pasangan atau keluarga kecil
 
 ## Kenapa tukar ke periuk kecil?
@@ -77,13 +77,13 @@ Giselle ni okay sebab memang dijual untuk pasaran Malaysia. Kalau nak tengok jen
 **Sangat sesuai kalau:**
 
 - Bujang yang tinggal sendiri atau pelajar
-- Pasangan baru kahwin, atau keluarga kecil yang tak kisah masak lebih kerap
+- Pasangan baru kahwin atau keluarga kecil yang tak kisah masak lebih kerap
 - Nak elak membazir nasi setiap hari
 - Ruang dapur terhad
 
 **Kurang sesuai kalau:**
 
-- Keluarga besar, atau anak-anak dah besar dan tak nak masak banyak kali sehari
+- Keluarga besar atau anak-anak dah besar dan tak nak masak banyak kali sehari
 - Selalu jemput kawan makan di rumah
 - Nak periuk yang lebih tahan lama dan kurang perlu dijaga
 
@@ -101,7 +101,7 @@ Periuk nasi mini antara barang dapur asas paling awal yang saya beli masa masuk 
 Untuk kami berdua, lebih dari cukup. Masak penuh rasanya boleh untuk 3 hingga 4 orang dewasa, bergantung pada selera.
 
 **Kenapa salutan non-stick periuk nasi tertanggal?**
-Dalam kes saya, sebab sental guna span atau berus kasar. Guna span lembut dan senduk plastik atau kayu.
+Dalam kes saya sebab sental guna span atau berus kasar. Guna span lembut dan senduk plastik atau kayu.
 
 **Lebih baik beli periuk nasi mahal atau murah?**
 Periuk mahal mungkin lebih tahan lama, tapi harganya dua hingga empat kali ganda. Untuk bujang atau pasangan, yang murah pun dah cukup asalkan dijaga.

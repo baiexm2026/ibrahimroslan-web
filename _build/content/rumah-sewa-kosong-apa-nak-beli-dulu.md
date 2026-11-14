@@ -89,13 +89,13 @@ Jadi kalau bajet betul-betul nipis, mula dengan toto. Bila dah ada tilam nanti, 
 
 **Karpet.** Sofa belum ada, jadi lantailah tempat duduk. Alas dengan karpet, tak adalah sejuk punggung. Modal RM50 di Shopee pun dah dapat saiz besar.
 
-**Barang dapur asas.** Periuk nasi kecil, kuali, dapur gas, tong gas dan cerek air. Saya bukan reti sangat memasak, setakat masak yang simple-simple je. Selalunya makan luar, atau beli lauk di kedai dan masak nasi sendiri. Kuali tu serba boleh: goreng telur, goreng ayam dan masak Maggi.
+**Barang dapur asas.** Periuk nasi kecil, kuali, dapur gas, tong gas dan cerek air. Saya bukan reti sangat memasak, setakat masak yang simple-simple je. Selalunya makan luar atau beli lauk di kedai dan masak nasi sendiri. Kuali tu serba boleh: goreng telur, goreng ayam dan masak Maggi.
 
 **Barang kecil yang selalu lupa.** Extension wayar, tong sampah, baldi, penyangkut baju, pinggan, cawan dan pita pengukur. Pita pengukur ni saya beli awal sebab nak ukur tingkap untuk langsir dan ruang untuk karpet. Masa mula-mula senaraikan pun saya terlupa, huhu.
 
 ### Pusingan 2: Bila ada duit lebih sikit
 
-**Peti ais.** Kalau ada bajet, beli awal. Ambil besar sikit kalau boleh, sebab benda ni pakai bertahun-tahun. Saya punya Toshiba 2 pintu inverter 273L, RM1,165, beli baru di Shopee.
+**Peti ais.** Kalau ada bajet, beli awal. Ambil besar sikit kalau boleh sebab benda ni pakai bertahun-tahun. Saya punya Toshiba 2 pintu inverter 273L, RM1,165, beli baru di Shopee.
 
 **TV, rak TV, meja makan dan rangka katil.** Semua ni saya beli secondhand. Jimat banyak! Caranya saya kongsi di bawah.
 

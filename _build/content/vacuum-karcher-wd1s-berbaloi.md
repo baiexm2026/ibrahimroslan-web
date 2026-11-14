@@ -60,7 +60,7 @@ Badannya nampak besar, tapi bawahnya ada roda. Pegang batang hos, tarik sikit, b
 
 ### 4. Kos beg penapis murah
 
-Satu beg penapis kertas boleh tahan lebih dua bulan. Selalunya saya buang sebelum penuh pun, sebab takut terlupa. Mungkin sebab rumah saya tak ramai yang duduk, baru berdua, jadi habuk kurang sikit. Nak ganti pun murah: pek tiga beg di Shopee sekitar RM20 hingga RM30 je.
+Satu beg penapis kertas boleh tahan lebih dua bulan. Selalunya saya buang sebelum penuh pun sebab takut terlupa. Mungkin sebab rumah saya tak ramai yang duduk, baru berdua, jadi habuk kurang sikit. Nak ganti pun murah: pek tiga beg di Shopee sekitar RM20 hingga RM30 je.
 
 ### 5. Ada fungsi blower
 
@@ -107,7 +107,7 @@ Kalau nak guna fungsi basah, satu perkara penting: keluarkan beg penapis kertas 
 **Sangat sesuai kalau:**
 
 - Nak vacuum seluruh rumah sekali gus tanpa berhenti tunggu bateri cas
-- Rumah banyak karpet, atau ada bela kucing atau anjing
+- Rumah banyak karpet atau ada bela kucing atau anjing
 - Bajet bawah RM500 tapi nak mesin tahan lasak dan kuat menyedut
 
 **Kurang sesuai kalau:**

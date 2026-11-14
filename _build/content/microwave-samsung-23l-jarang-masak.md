@@ -53,7 +53,7 @@ Bagi saya lebih mudah kalau satu barang fokus buat satu kerja. Andai kata rosak,
 
 Masa nak beli, saya memang sedar diri takkan grill ayam atau bakar kek. Tak berbaloi bayar lebih untuk fungsi yang akhirnya jadi perhiasan.
 
-Kenapa Samsung, sedangkan ada jenama lain yang lebih murah? Sejujurnya, sebab rekaan Samsung ni nampak kemas, hehe.
+Kenapa Samsung, sedangkan ada jenama lain yang lebih murah? Sejujurnya sebab rekaan Samsung ni nampak kemas, hehe.
 
 ## Apa yang best?
 

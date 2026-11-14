@@ -50,7 +50,7 @@ Bila keluarga dari jauh datang ramai-ramai ke rumah, beg dan barang mereka pun b
 
 ### Isteri pun senang guna
 
-Isteri saya pun senang tarik sendiri. Tak perlu guna tenaga banyak. Bagi saya ini penting, sebab barang tak perlu tunggu saya ada baru boleh diangkat.
+Isteri saya pun senang tarik sendiri. Tak perlu guna tenaga banyak. Bagi saya ini penting sebab barang tak perlu tunggu saya ada baru boleh diangkat.
 
 ## Di mana simpan?
 

@@ -90,8 +90,8 @@ Saiz memang banyak pilihan. Tapi rekaan dan warna rak boltless di Shopee masa sa
 **Sangat sesuai kalau:**
 
 - Ada stor atau bilik sempit yang barangnya bertaburan atas lantai
-- Nak simpan barang pelbagai saiz, sebab papan boleh dilaras
-- Duduk rumah sewa, sebab rak boleh dibuka semula bila nak pindah
+- Nak simpan barang pelbagai saiz sebab papan boleh dilaras
+- Duduk rumah sewa sebab rak boleh dibuka semula bila nak pindah
 
 **Kurang sesuai kalau:**
 
@@ -113,7 +113,7 @@ Rak yang boleh dipasang tanpa nat, skru atau pemutar skru. Kepingan besinya ada 
 Tak susah. Seorang pun boleh, tapi dua orang lagi cepat. Saya siap dalam kurang 30 minit.
 
 **Boleh ke laras ketinggian papan rak boltless?**
-Boleh. Papan tengah boleh diletak di mana-mana lubang pada tiang, ikut tinggi barang. Cuma fikir dulu sebelum pasang, sebab nak ubah kemudian agak leceh.
+Boleh. Papan tengah boleh diletak di mana-mana lubang pada tiang, ikut tinggi barang. Cuma fikir dulu sebelum pasang sebab nak ubah kemudian agak leceh.
 
 **Sesuai ke rak boltless untuk ruang tamu?**
 Kurang sesuai sebab rupanya macam rak kilang. Lebih sesuai untuk stor, dapur basah atau bilik belakang.

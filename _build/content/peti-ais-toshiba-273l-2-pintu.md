@@ -81,7 +81,7 @@ Tinggalkan ruang di belakang dan tepi peti ais supaya haba boleh keluar. Kalau t
 
 Sepanjang pakai, tak ada isu besar yang buat sakit hati. Mungkin sebab saya tak pernah pakai peti ais jenis lain, jadi dah terbiasa dengan susunan peti ais 2 pintu macam ni. Cuma ada dua had:
 
-- **Bukan untuk kaki stok barang dapur.** Kalau jenis suka beli stok lauk basah untuk sebulan terus, atau keluarga makin besar, saiz 273L ni akan rasa sempit.
+- **Bukan untuk kaki stok barang dapur.** Kalau jenis suka beli stok lauk basah untuk sebulan terus atau keluarga makin besar, saiz 273L ni akan rasa sempit.
 - **Fungsi asas sahaja.** Jangan harap ada pembuat ais automatik atau dispenser air sejuk di luar. Model ni fokus pada sejukkan barang dan jimat elektrik.
 
 ## Sesuai untuk siapa?
@@ -89,7 +89,7 @@ Sepanjang pakai, tak ada isu besar yang buat sakit hati. Mungkin sebab saya tak 
 **Sangat sesuai kalau:**
 
 - Bujang yang baru nak isi rumah sendiri atau rumah sewa
-- Pasangan baru kahwin, atau rumah yang didiami 2 hingga 3 orang dewasa
+- Pasangan baru kahwin atau rumah yang didiami 2 hingga 3 orang dewasa
 - Nak jimat bil elektrik dalam jangka panjang
 
 **Kurang sesuai kalau:**

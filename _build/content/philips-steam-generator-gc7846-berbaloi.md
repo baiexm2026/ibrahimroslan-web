@@ -113,7 +113,7 @@ Papan Philips GC221 ni juga ada banyak tahap ketinggian. Boleh rendahkan sampai 
 
 **Kurang sesuai kalau:**
 
-- Rutin gosok sehelai dua baju je setiap pagi, sebab kena tunggu panas
+- Rutin gosok sehelai dua baju je setiap pagi sebab kena tunggu panas
 - Jenis tak sabar dan selalu kelam-kabut
 - Rumah atau bilik sewa yang sangat sempit dan tiada tempat simpan
 

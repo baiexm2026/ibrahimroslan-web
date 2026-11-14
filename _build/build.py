@@ -168,7 +168,7 @@ QUOTES = [
      "Ayat inilah yang menukar cara saya fikir tentang azam. Matlamat cuma menetapkan arah; yang "
      "benar-benar menentukan kemajuan ialah rutin harian yang cukup kecil sampai tak perlu semangat untuk mula. "
      '<a href="/blog/review-buku-atomic-habits-bm.html">Baca pandangan penuh saya</a>.', "petikan"),
-    ("Adakah kita benar-benar inginkan perkara ini, atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?",
+    ("Adakah kita benar-benar inginkan perkara ini atau kita cuma inginkan persepsi orang lain terhadap kita apabila kita memilikinya?",
      "Morgan Housel", "The Psychology of Money",
      "Soalan yang menyakitkan bila ditanya betul-betul, terutama sebelum membuat pembelian besar. Saya "
      "simpan ia sebagai penapis sebelum keputusan yang membawa komitmen kewangan panjang.", "idea"),
@@ -483,7 +483,7 @@ about_body = f"""  <section class="hero" aria-labelledby="nama">
     <!-- PROFIL LAIN: tambah baris <li> baharu di atas dan masukkan pautan yang sama dalam "sameAs" di bahagian PERSON. -->
 
     <h2>Berhubung</h2>
-    <p>Ada soalan, nak betulkan saya, atau sekadar mahu menyapa? E-mel saya di
+    <p>Ada soalan, nak betulkan saya atau sekadar mahu menyapa? E-mel saya di
     <a href="mailto:{EMAIL}">{EMAIL}</a>. Saya baca semua, walaupun kadang lambat balas.</p>
   </div>"""
 
@@ -697,7 +697,7 @@ ah_body = f"""  <nav class="crumbs" aria-label="Laluan">
       <div class="note">
         <p><strong>Jawapan ringkas:</strong> kalau cuma nak tahu empat hukum tabiat dalam
         <cite>Atomic Habits</cite>, ringkasan AI dah cukup. Tapi bagi saya buku ni berbaloi dibeli kalau
-        serius nak ubah rutin, sebab kisah dan contohnya yang membentuk cara berfikir. Elakkan naskhah
+        serius nak ubah rutin sebab kisah dan contohnya yang membentuk cara berfikir. Elakkan naskhah
         berharga RM15 hingga RM20 kerana hampir pasti cetak rompak.</p>
       </div>
 
