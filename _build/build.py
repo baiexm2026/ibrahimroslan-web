@@ -261,6 +261,8 @@ MD_ARTICLES = [
     ("rak-besi-boltless-4-tingkat-stor", "2026-11-12", {}, None),
     ("wagon-trolley-lipat-apartmen", "2026-11-12", {}, None),
     ("periuk-nasi-giselle-1-2l-bujang", "2026-11-12", {}, None),
+    ("toto-atau-tilam-rumah-baru", "2026-11-14", {}, None),
+    ("water-heater-joven-sl30ip-rs", "2026-11-14", {}, None),
 ]
 
 

@@ -27,6 +27,8 @@ CARDS = [
     ("microwave-samsung-23l-jarang-masak", "Microwave Samsung 23L", "Perlu ke kalau jarang masak?"),
     ("rak-besi-boltless-4-tingkat-stor", "Rak besi boltless", "Berbaloi untuk stor rumah sewa?"),
     ("wagon-trolley-lipat-apartmen", "Wagon trolley lipat", "Berbaloi untuk duduk apartmen?"),
+    ("toto-atau-tilam-rumah-baru", "Toto atau tilam?", "Mana nak beli dulu bila masuk rumah?"),
+    ("water-heater-joven-sl30ip-rs", "Water heater Joven", "Berbaloi ke? Pengalaman awal saya"),
     ("periuk-nasi-giselle-1-2l-bujang", "Periuk nasi Giselle 1.2L", "Cukup ke untuk bujang dan pasangan?"),
 ]
 
