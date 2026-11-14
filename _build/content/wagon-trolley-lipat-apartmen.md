@@ -16,78 +16,93 @@ Permintaan privasi Ibrahim: tiada
 
 # Wagon trolley lipat: berbaloi ke untuk duduk apartmen?
 
-Antara semua barang rumah saya, inilah yang paling saya menyesal lambat ada. Wagon trolley lipat ni hadiah kahwin daripada kawan. Kalau saya tahu ia seberguna ni, dah lama saya beli sendiri.
+Antara banyak-banyak barang kelengkapan rumah, inilah satu barang yang buat saya mengeluh panjang: "Kenapa la dari dulu tak beli benda ni?"
 
-> **Jawapan ringkas:** Sangat berbaloi kalau duduk apartmen. Barang dapur, barang pindah atau beg tetamu boleh diangkut dari parking ke rumah sekali jalan. Tak perlu ulang-alik ke lif banyak kali. Kekurangan bagi saya cuma satu: model saya tak ada meja lipat untuk berkelah.
+> **Jawapan ringkas:** Sangat berbaloi untuk yang duduk apartmen, flat atau kondo. Barang dapur, beg pindah rumah atau beg tetamu boleh diangkut dari parking ke rumah sekali jalan. Tak payah seksa diri ulang-alik ke lif banyak kali. Kekurangan bagi saya cuma satu: model saya tak ada meja lipat untuk berkelah.
+
+Wagon trolley lipat ni asalnya hadiah kahwin daripada kawan. Lepas guna sendiri, baru sedar betapa bergunanya. Kalau tahu ia boleh mudahkan hidup sampai macam ni, dari zaman bujang lagi saya dah beli pakai duit sendiri.
 
 **Fakta ringkas**
 
 - **Barang:** wagon trolley lipat (hadiah kahwin)
-- **Tempoh guna:** sejak kahwin
+- **Tempoh guna:** sejak awal kahwin sampai sekarang
 - **Simpan di:** dalam kereta atau di rumah
-- **Guna untuk:** barang dapur, barang pindah, barang tetamu
-- **Sesuai untuk:** sesiapa yang duduk apartmen atau kondo
+- **Guna untuk:** barang dapur, pindah barang dan barang tetamu
+- **Sesuai untuk:** geng duduk rumah bertingkat atau yang parking jauh dari pintu
 
-## Masalah duduk apartmen
+## Realiti duduk apartmen
 
-Duduk apartmen, setiap kali bawa barang naik memang satu kerja. Parking ke lif, lif ke rumah. Kalau barang banyak, kena ulang-alik dua tiga kali.
+Masalah utama duduk rumah bertingkat: setiap kali bawa balik barang, ia jadi senaman angkat berat percuma. Dari parking ke lif, lepas tu dari lif menapak pula sampai ke pintu rumah.
 
-Wagon ni selesaikan masalah tu. Semua barang masuk dalam wagon, tarik, sekali jalan je.
+Kalau barang dapur banyak sikit, mula la jari merah menahan tali beg plastik. Kadang-kadang terpaksa buat dua tiga trip turun naik lif semata-mata nak habiskan barang dari bonet kereta. Leceh.
 
-## Saya guna untuk apa?
+Bila wagon ni ada, masalah tu selesai. Semua barang masuk dalam wagon, tarik dan terus ke rumah sekali jalan.
 
-### Pindah barang
+## Guna untuk barang dapur je ke?
 
-Paling banyak saya angkut barang adik. Dia pernah menumpang sekejap di rumah saya sementara cari bilik sewa. Bila dah jumpa bilik, semua barang dia masuk wagon dan turun sekali harung. Memang senang.
+Bukan setakat barang dapur. Ini situasi yang paling ia berjasa untuk saya.
 
-### Beli barang dapur banyak
+### 1. Pindah barang
 
-Bila beli barang dapur banyak-banyak, terus masuk wagon dari kereta. Tak payah tangan penuh beg plastik.
+Paling ketara masa angkut barang adik saya. Dia pernah menumpang sekejap di rumah sementara cari bilik sewa. Bila dah jumpa bilik, semua barang dia masuk dalam wagon dan turun sekali harung. Jimat masa, jimat tenaga.
 
-### Keluarga datang ramai
+### 2. Isteri pun senang uruskan
 
-Bila keluarga dari jauh datang ramai-ramai ke rumah, beg dan barang mereka pun boleh diangkut sekali jalan.
+Isteri saya senang tarik sendiri tanpa guna tenaga banyak. Bagi saya ini sangat penting. Barang tak payah tersadai dalam kereta tunggu saya ada baru boleh diangkat.
 
-### Isteri pun senang guna
+### 3. Keluarga datang bertandang
 
-Isteri saya pun senang tarik sendiri. Tak perlu guna tenaga banyak. Bagi saya ini penting sebab barang tak perlu tunggu saya ada baru boleh diangkat.
+Bila keluarga dari jauh datang ramai-ramai ke rumah, beg dan barang mereka semua boleh dimasukkan dalam wagon sekali gus. Tetamu pun tak berpeluh angkut barang naik ke rumah.
 
-## Di mana simpan?
+### Apa lagi yang saya nampak orang guna
 
-Saya simpan sama ada dalam kereta atau di rumah. Bila dilipat, saiznya padat. Setakat ni saya tak pernah bawa ke pasar atau tempat lain.
+Saya tak pernah bawa wagon ni ke tempat lain. Tapi saya ada nampak orang bawa ke mall, bukan setakat ke pantai. Di kawasan rumah saya pun ada yang guna untuk bawa sampah ke rumah sampah. Ada juga ibu bapa yang letak anak kecil dalam wagon untuk main-main. Setakat yang saya nampak, budak bawah 7 tahun la. Budak sekolah menengah belum nampak lagi, huhu.
 
-## Apa yang kurang best?
+## Info wajib tahu untuk first-timer
 
-Hampir tak ada. Cuma satu perkara: ada wagon jenis yang datang dengan meja. Boleh guna untuk berkelah, wagon jadi meja kecil. Model saya tak ada meja, jadi kalau nak beli, jenis bermeja tu nampak menarik juga.
+Kalau tergerak hati nak beli lepas baca ni, ini beberapa perkara yang selalu disarankan sebelum pilih di Shopee:
+
+- **Tengok saiz tayar.** Tayar yang besar dan lebar biasanya lebih senang ditolak atas permukaan tak rata dan kurang tersangkut di celah pintu lif atau penutup longkang.
+- **Cari yang ada brek tayar.** Berguna kalau kawasan rumah ada laluan cerun. Wagon tak meluncur sendiri bila dilepaskan.
+- **Kain yang boleh ditanggalkan.** Kalau ada tumpahan kuah atau santan masa angkut barang dapur, kain yang boleh dibuka lebih senang dibasuh.
+- **Semak had berat.** Lihat had berat dalam keterangan produk dan jangan muatkan lebih daripada tu.
+
+## Cara simpan dan apa yang kurang best?
+
+Bila dilipat, saiznya padat. Saya simpan sama ada dalam kereta supaya sedia bila-bila masa pergi beli barang atau di rumah.
+
+Apa yang kurang best? Jujur kata, hampir tak ada.
+
+Cuma, ada wagon jenis yang datang dengan papan meja yang boleh dipasang di atas. Terus jadi meja lepak. Model hadiah saya tak ada meja tu. Kalau kaki camping atau suka berkelah hujung minggu, model bermeja tu memang nampak menarik.
 
 ## Sesuai untuk siapa?
 
-**Sangat sesuai:**
+**Sangat sesuai kalau:**
 
-- Duduk apartmen, kondo atau rumah yang jauh dari parking
+- Duduk kondo, apartmen atau rumah yang parking jauh dari pintu
 - Selalu beli barang dapur banyak sekali gus
-- Selalu terima tetamu atau tolong keluarga pindah barang
+- Kerap terima tetamu bermalam atau selalu tolong keluarga dan kawan pindah barang
 
-**Mungkin tak perlu:**
+**Mungkin tak perlu kalau:**
 
-- Duduk rumah teres yang kereta parkir betul-betul depan pintu
+- Duduk rumah teres yang kereta boleh parkir betul-betul depan pintu. Buka bonet, terus angkat masuk dapur.
 
 ## Wagon trolley lipat berbaloi ke?
 
-Sangat berbaloi. Kalau ada kawan yang baru pindah masuk apartmen, ini antara hadiah yang saya akan cadangkan.
+Sangat berbaloi. Tak tipu. Kalau ada kawan yang baru pindah masuk apartmen atau baru kahwin, ini antara idea hadiah paling mantap. Confirm mereka hargai.
 
-Dalam [senarai barang masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html), wagon ni saya letak sebagai barang yang paling saya menyesal lambat ada. Kalau duduk apartmen, ia layak dibeli awal.
+Dalam [senarai barang masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-beli-dulu.html), wagon ni saya letak sebagai barang yang paling saya menyesal lambat ada. Kalau duduk rumah bertingkat, tak payah tunggu lama. Ia layak dibeli awal.
 
 ## Soalan lazim
 
-**Wagon trolley lipat berbaloi untuk apartmen?**
-Sangat berbaloi. Barang dari parking ke rumah boleh diangkut sekali jalan tanpa ulang-alik ke lif.
+**Betul ke wagon trolley lipat mudahkan hidup di apartmen?**
+Betul. Barang dari parking ke rumah boleh diangkut dengan sekali tarik. Tak payah ulang-alik tunggu lif banyak kali.
 
-**Boleh ke perempuan tarik wagon trolley penuh barang?**
-Pada pengalaman saya, isteri saya senang tarik sendiri tanpa guna tenaga banyak.
+**Berat ke nak tarik? Perempuan boleh uruskan?**
+Pada pengalaman saya, isteri boleh tarik sendiri tanpa guna tenaga banyak.
 
-**Wagon trolley boleh simpan dalam kereta?**
+**Boleh simpan dalam kereta?**
 Boleh. Bila dilipat saiznya padat. Saya sendiri kadang-kadang simpan dalam kereta.
 
-**Wagon trolley dengan meja atau tanpa meja?**
-Kalau cuma nak angkut barang, tanpa meja dah cukup. Kalau suka berkelah, jenis bermeja boleh jadi meja kecil.
+**Lebih elok beli yang ada meja atau tanpa meja?**
+Kalau cuma nak angkut barang ke rumah, tanpa meja dah cukup. Kalau rajin bawa keluarga berkelah atau lepak pantai, jenis bermeja lebih berbaloi. Boleh jadi tempat letak air.
