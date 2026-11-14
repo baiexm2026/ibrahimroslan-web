@@ -58,7 +58,9 @@ Masa awal guna, nasi langsung tak melekat dan tak berkerak. Bila dah lama pakai,
 
 Periuk ni datang dengan bekas pengukus. Jujur cakap, saya tak pernah guna. Ada nampak orang kongsi video guna bekas tu untuk kukus makanan sambil masak nasi. Saya tak tahu menjadi atau tidak sebab tak pernah cuba sendiri.
 
-Satu lagi, kuasanya cuma 200 W ikut senarai produk. Periuk berkuasa rendah mungkin ambil masa lebih lama berbanding periuk besar, jadi jangan masak last minute bila dah betul-betul lapar.
+## Berapa lama nak masak?
+
+Pada pengalaman saya, dalam masa 30 minit nasi dah siap. Kuasanya cuma 200 W ikut senarai produk, jadi jangan masak last minute bila dah betul-betul lapar.
 
 ## Pesanan: semak plug sebelum check-out!
 
@@ -98,6 +100,9 @@ Dalam kes saya, sebab sental guna span atau berus kasar. Guna span lembut dan se
 
 **Lebih baik beli periuk nasi mahal atau murah?**
 Periuk mahal mungkin lebih tahan lama, tapi harganya dua hingga empat kali ganda. Untuk bujang atau pasangan, yang murah pun dah cukup asalkan dijaga.
+
+**Periuk nasi Giselle 1.2L ambil masa berapa lama untuk masak?**
+Pada pengalaman saya, dalam masa 30 minit dah siap.
 
 **Apa perlu disemak sebelum beli periuk nasi kecil online?**
 Semak plug. Pastikan sesuai untuk soket Malaysia supaya tak perlu adapter.
