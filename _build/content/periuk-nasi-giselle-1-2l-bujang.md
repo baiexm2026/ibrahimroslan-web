@@ -29,7 +29,7 @@ Periuk nasi mini Giselle 1.2L ni selesaikan masalah tu. Cuma agak ralat sikit se
 - **Harga saya bayar:** RM41.30 selepas baucar
 - **Beli di:** Shopee
 - **Berapa kali beli:** dua kali, sebab yang pertama rosak dek salah sendiri
-- **Paling sesuai untuk:** bujang atau pasangan tanpa anak
+- **Paling sesuai untuk:** bujang, pasangan atau keluarga kecil
 
 ## Kenapa tukar ke periuk kecil?
 
@@ -38,6 +38,10 @@ Masalah periuk besar untuk orang yang makan seorang: nasi selalu berlebih. Saya 
 Dengan periuk 1.2 liter ni, masak cukup-cukup untuk seorang. Bila dah kahwin, saiz ni masih lebih dari cukup untuk kami berdua.
 
 Kalau masak penuh, rasanya boleh untuk 3 hingga 4 orang dewasa, bergantung pada selera. Kalau jenis kuat makan, mungkin cukup untuk dua orang je, haha.
+
+### Kalau dah ada anak?
+
+Bagi saya pasangan yang dah ada anak pun boleh guna, cuma kena masak lebih kerap. Untuk kami berdua, satu kali masak cukup untuk makan petang dan malam. Kalau bertiga dengan anak kecil bawah 4 tahun, rasanya lebih kurang sama. Bila anak dah besar, satu kali masak mungkin cukup untuk makan petang je dan kena masak lagi untuk makan malam.
 
 ## Tragedi beli dua kali
 
@@ -73,13 +77,14 @@ Giselle ni okay sebab memang dijual untuk pasaran Malaysia. Kalau nak tengok jen
 **Sangat sesuai kalau:**
 
 - Bujang yang tinggal sendiri atau pelajar
-- Pasangan baru kahwin tanpa anak
+- Pasangan baru kahwin, atau keluarga kecil yang tak kisah masak lebih kerap
 - Nak elak membazir nasi setiap hari
 - Ruang dapur terhad
 
 **Kurang sesuai kalau:**
 
-- Keluarga besar atau selalu jemput kawan makan di rumah
+- Keluarga besar, atau anak-anak dah besar dan tak nak masak banyak kali sehari
+- Selalu jemput kawan makan di rumah
 - Nak periuk yang lebih tahan lama dan kurang perlu dijaga
 
 ## Periuk nasi Giselle 1.2L berbaloi ke?
@@ -100,6 +105,9 @@ Dalam kes saya, sebab sental guna span atau berus kasar. Guna span lembut dan se
 
 **Lebih baik beli periuk nasi mahal atau murah?**
 Periuk mahal mungkin lebih tahan lama, tapi harganya dua hingga empat kali ganda. Untuk bujang atau pasangan, yang murah pun dah cukup asalkan dijaga.
+
+**Periuk nasi 1.2 liter sesuai ke kalau dah ada anak?**
+Boleh, cuma kena masak lebih kerap. Untuk dua orang dewasa dengan anak kecil, satu kali masak rasanya cukup untuk dua waktu makan. Bila anak dah besar, mungkin cukup untuk satu waktu je.
 
 **Periuk nasi Giselle 1.2L ambil masa berapa lama untuk masak?**
 Pada pengalaman saya, dalam masa 30 minit dah siap.
