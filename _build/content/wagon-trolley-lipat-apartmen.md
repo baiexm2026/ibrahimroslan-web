@@ -20,11 +20,11 @@ Antara banyak-banyak barang kelengkapan rumah, inilah satu barang yang buat saya
 
 > **Jawapan ringkas:** Sangat berbaloi untuk yang duduk apartmen, flat atau kondo. Barang dapur, beg pindah rumah atau beg tetamu boleh diangkut dari parking ke rumah sekali jalan. Tak payah seksa diri ulang-alik ke lif banyak kali. Kekurangan bagi saya cuma satu: model saya tak ada meja lipat untuk berkelah.
 
-Wagon trolley lipat ni asalnya hadiah kahwin daripada kawan. Lepas guna sendiri, baru sedar betapa bergunanya. Kalau tahu ia boleh mudahkan hidup sampai macam ni, dari zaman bujang lagi saya dah beli pakai duit sendiri.
+Wagon trolley lipat ni asalnya hadiah kahwin daripada kawan-kawan ofis. Mereka kumpul duit sama-sama untuk belikan. Lepas guna sendiri, baru sedar betapa bergunanya. Kalau tahu ia boleh mudahkan hidup sampai macam ni, dari zaman bujang lagi saya dah beli pakai duit sendiri.
 
 **Fakta ringkas**
 
-- **Barang:** wagon trolley lipat (hadiah kahwin)
+- **Barang:** wagon trolley lipat (hadiah kahwin daripada kawan-kawan ofis)
 - **Tempoh guna:** sejak awal kahwin sampai sekarang
 - **Simpan di:** dalam kereta atau di rumah
 - **Guna untuk:** barang dapur, pindah barang dan barang tetamu
@@ -48,7 +48,7 @@ Paling ketara masa angkut barang adik saya. Dia pernah menumpang sekejap di ruma
 
 ### 2. Isteri pun senang uruskan
 
-Isteri saya senang tarik sendiri tanpa guna tenaga banyak. Bagi saya ini sangat penting. Barang tak payah tersadai dalam kereta tunggu saya ada baru boleh diangkat.
+Isteri saya senang tarik sendiri walaupun barang berat, tanpa guna tenaga banyak. Bagi saya ini sangat penting. Barang tak payah tersadai dalam kereta tunggu saya ada baru boleh diangkat.
 
 ### 3. Keluarga datang bertandang
 
@@ -69,7 +69,7 @@ Kalau tergerak hati nak beli lepas baca ni, ini beberapa perkara yang selalu dis
 
 ## Cara simpan dan apa yang kurang best?
 
-Bila dilipat, saiznya padat. Saya simpan sama ada dalam kereta supaya sedia bila-bila masa pergi beli barang atau di rumah.
+Cara lipat pun senang. Tarik tali di bahagian tengah dan wagon terus terlipat. Bila dilipat, saiznya padat. Saya simpan sama ada dalam kereta supaya sedia bila-bila masa pergi beli barang atau di rumah.
 
 Apa yang kurang best? Jujur kata, hampir tak ada.
 
@@ -99,10 +99,10 @@ Dalam [senarai barang masuk rumah sewa kosong](/blog/rumah-sewa-kosong-apa-nak-b
 Betul. Barang dari parking ke rumah boleh diangkut dengan sekali tarik. Tak payah ulang-alik tunggu lif banyak kali.
 
 **Berat ke nak tarik? Perempuan boleh uruskan?**
-Pada pengalaman saya, isteri boleh tarik sendiri tanpa guna tenaga banyak.
+Pada pengalaman saya, isteri boleh tarik sendiri walaupun barang berat, tanpa guna tenaga banyak.
 
 **Boleh simpan dalam kereta?**
-Boleh. Bila dilipat saiznya padat. Saya sendiri kadang-kadang simpan dalam kereta.
+Boleh. Tarik tali di tengah untuk lipat dan saiznya jadi padat. Saya sendiri kadang-kadang simpan dalam kereta.
 
 **Lebih elok beli yang ada meja atau tanpa meja?**
 Kalau cuma nak angkut barang ke rumah, tanpa meja dah cukup. Kalau rajin bawa keluarga berkelah atau lepak pantai, jenis bermeja lebih berbaloi. Boleh jadi tempat letak air.
