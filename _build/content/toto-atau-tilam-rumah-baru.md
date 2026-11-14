@@ -38,7 +38,7 @@ Sekarang setiap bilik dah ada katil, jadi toto jarang diguna untuk harian. Tapi 
 
 ### Selesa ke tidur atas toto?
 
-Bergantung pada badan masing-masing. Kalau tak pernah tidur atas toto, mungkin malam pertama rasa tak selesa. Kalau jenis letak kepala terus lena, memang tak ada masalah. Mak ayah saya okay je tidur atas toto masa mula-mula saya masuk rumah dulu.
+Bergantung pada badan masing-masing. Kalau tak pernah tidur atas toto, mungkin malam pertama rasa tak selesa. Kalau jenis letak kepala terus lena, memang tak ada masalah.
 
 ### Tips: terus beli saiz king
 
@@ -62,7 +62,7 @@ Yang paling saya ingat, penghantarannya agak lambat. Saya order 10 Ogos dan tila
 
 ### 3. Mendap atau berlekuk lepas tiga tahun?
 
-Alhamdulillah, setakat ni permukaan tilam masih rata. Tak mendap dan tak berlekuk. Mungkin sebab saya tak berat sangat dan tak ada yang lompat-lompat atas tilam.
+Alhamdulillah, setakat ni permukaan tilam masih rata. Tak mendap dan tak berlekuk. Mungkin sebab berat badan pun sederhana dan tak ada budak kecil yang buat tilam ni macam trampolin.
 
 ## Info wajib tahu untuk first-timer
 
