@@ -10,7 +10,7 @@ Kategori: Rumah
 Kata kunci utama: water heater Joven
 Kata kunci sampingan: kos pasang water heater, water heater dengan pam, water heater rain shower
 Gambar diperlukan: water heater di bilik air, tombol suhu, rain shower
-Perkara untuk disemak: bil elektrik atau bil air (jawapan Ibrahim sebut "bil air")
+Perkara untuk disemak: tiada
 Permintaan privasi Ibrahim: tiada
 -->
 
@@ -69,9 +69,9 @@ Model ni jenis panas serta-merta, jadi air panas bila dibuka. Tekanan air pun ta
 
 Cuma ada satu had. Kalau air dibuka paling laju, ia tak rasa panas sangat. Bila aliran sederhana, memang panas.
 
-## Bil naik ke?
+## Bil elektrik naik ke?
 
-Setakat ni bil tak naik banyak bagi saya. Masih awal, jadi saya akan kemas kini selepas guna lebih lama.
+Setakat ni bil elektrik dan bil air tak naik banyak bagi saya, terutama bil elektrik yang paling saya perhatikan. Masih awal, jadi saya akan kemas kini selepas guna lebih lama.
 
 ## Apa yang kurang best?
 
